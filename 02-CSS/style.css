@@ -1,0 +1,182 @@
+* {
+  padding: 0 2% 0 2%;
+  font-family: Arial, Helvetica, sans-serif;
+}
+body {
+  background-image: linear-gradient(150deg, gray, #202020, black);
+  background-repeat: no-repeat;
+  color: white;
+  height: 95.7vh;
+}
+
+/* navigation section  */
+.logo img {
+  height: 100px;
+  width: 100px;
+  float: left;
+  margin-top: -30px;
+  margin-left: -30px;
+}
+nav ul {
+  list-style: none;
+  text-align: right;
+  margin-top: 25px;
+}
+nav li {
+  display: inline;
+  padding: 2px 5px 2px 5px;
+}
+.shooping-cart {
+  padding-left: 10%;
+}
+.signup-btn {
+  background-color: #00c58d;
+  padding: 10px;
+  border-radius: 5px;
+  color: white;
+}
+
+/* Main section  */
+
+/* cover title  */
+table {
+  width: 100%;
+}
+td {
+  width: 50%;
+  padding: 10px 0 0 0;
+}
+.title1 {
+  color: gray;
+  text-transform: uppercase;
+  margin: 0px;
+}
+.title2 {
+  font-size: 80px;
+  margin: 0;
+}
+.title-heilight {
+  color: tomato;
+}
+.title3 {
+  color: gray;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+/* cover button  */
+.cover-btn table{
+    width: 100%;
+}
+.order-btn{
+    width: 30%;
+}
+.menu-btn{
+    width: 70%;
+    padding-top: 35px;
+}
+
+.order-btn button {
+  background-color: goldenrod;
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+  color: white;
+  margin: 23px 0 0 80px;
+}
+
+.order-btn img {
+  height: 250px;
+  rotate: 90deg;
+  margin-left: -140px;
+  margin-top:-20px;
+  position: absolute;
+}
+
+/* dropdown function*/
+.dropdown-btn {
+  color: goldenrod;
+  border: 1px solid goldenrod;
+  padding: 10px;
+}
+.dropdown {
+  position: relative;
+  display: inline;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  min-width: 560px;
+  color: #daa520bb;
+  z-index: 1;
+}
+.dropdown-content ul li {
+  border-bottom: 1px solid rgba(218, 165, 32, 0.359);
+  padding: 1px;
+  transition: 1s;
+}
+
+.dropdown-content ul li:hover {
+  color: white;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown-table{
+    width: 100%;
+}
+.dropdown-table td{
+    padding: 6px;
+    width: 33%;
+}
+/* cover image  */
+.cover-image img {
+  width: 270px;
+  margin-left: 200px;
+}
+
+
+/* tooltip section  */
+.tooltip {
+  position: relative;
+  /* display: inline-block; */
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 150px;
+  background-color: #ffffff;
+  color: black;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 100%;
+  left: 50%;
+  margin-left: -60px;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.tooltip .tooltiptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color:#ffffff transparent transparent transparent;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+}
+.tooltiptext img{
+    width: 120px;
+}
