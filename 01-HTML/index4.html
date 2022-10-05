@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Form</title>
+        <style>
+            input {
+                margin: 10px;
+                display: inline;
+            }
+            
+        </style>
+    </head>
+    <body>
+        <form action="">
+            <label for="text"
+                >Name:
+                <input id="text" type="text" placeholder="Enter your name" />
+            </label>
+
+            <label for="email"
+                >Email:
+                <input id="email" type="email" placeholder="Enter your Email" />
+            </label>
+
+            <label for="number"
+                >Phone:
+                <input
+                    id="number"
+                    type="number"
+                    placeholder="Enter your number"
+                />
+            </label>
+
+            <label for="password"
+                >Password:
+                <input
+                    id="password"
+                    type="password"
+                    placeholder="Enter your Password"
+                />
+            </label>
+
+            <fieldset>
+                <legend>Choose One</legend>
+                <label for="cookies1">
+                    <input type="radio" id="cookies1" name="choose" />
+                    Accept All Cookies
+                </label>
+                <label for="cookies2">
+                    <input type="radio" id="cookies2" name="choose" />
+                    Don't Accept All Cookies
+                </label>
+            </fieldset>
+        </form>
+    </body>
+</html>

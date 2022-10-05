@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>CSS3</title>
+        <style>
+            h1::before {
+                content: "I am added by css using before psudo ";
+            }
+            h1::after {
+                content: " I am added by css using after psudo";
+                background-color: aquamarine;
+            }
+            .box {
+                background-image: linear-gradient(
+                    aquamarine,
+                    lightgreen,
+                    lightblue
+                );
+                height: 100px;
+                width: 100px;
+                border: 5px solid;
+                border-image-slice: 30%;
+                border-image: linear-gradient(to bottom, red, #00000000)
+                    1 100%;
+                font-size: 30px;
+                font-weight: bold;
+            }
+
+            .absolute{
+                position: absolute;
+                left: 100px;
+                top:10px;
+            }
+            .sticky{
+                position: sticky;
+                bottom: 50px;
+                top:400px;
+                left: 300px;
+            }
+            .relative{
+                position: relative;
+            }
+            .fixed{
+                position: fixed;
+                width: 400px;
+                height: 400px;
+                background-color: yellow;
+            }
+            
+        </style>
+    </head>
+    <body>
+        <h1>Heading-1</h1>
+        <h1>Heading-2</h1>
+        <h1>Heading-3</h1>
+        <h1>Heading-4</h1>
+        <h1>Heading-5</h1>
+        <h1>Heading-6</h1>
+
+        <div class="box relative">Relative</div>
+        <div class="box absolute">Absolute</div>
+        <div class="box sticky">Sticky</div>
+        <div class="fixed">Fixed</div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+
+    </body>
+</html>
