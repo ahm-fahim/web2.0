@@ -6,11 +6,17 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Form</title>
         <style>
+            body{
+                padding: 3% 23%;
+            }
             input {
                 margin: 10px;
                 display: inline;
             }
-            
+            form{
+                background-color:rgba(127, 255, 212, 0.571) ;
+                padding: 20px;
+            }
         </style>
     </head>
     <body>
@@ -29,7 +35,7 @@
                 >Phone:
                 <input
                     id="number"
-                    type="number"
+                    type="tel"
                     placeholder="Enter your number"
                 />
             </label>
@@ -54,6 +60,13 @@
                     Don't Accept All Cookies
                 </label>
             </fieldset>
+            <fieldset>
+                <legend>Discription</legend>
+                <textarea name="discription" id="" cols="30" rows="10"></textarea>
+            </fieldset>
+            <br>
+            <button type="submit">Submit</button>
+            <button type="reset">Reset</button>
         </form>
     </body>
 </html>
