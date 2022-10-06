@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Flexbox1</title>
+        <style>
+            .box1 {
+                background-color: gold;
+            }
+            .box2 {
+                background-color: dodgerblue;
+            }
+            .box3 {
+                background-color: mediumspringgreen;
+            }
+            .box4 {
+                background-color: salmon;
+            }
+            .box5 {
+                background-color: chartreuse;
+            }
+            .box6 {
+                background-color: darkred;
+            }
+            .box7 {
+                background-color: darkturquoise;
+            }
+            .box8 {
+                background-color: orange;
+            }
+            .box {
+                width: 100px;
+                height: 100px;
+            }
+            .container {
+                display: flex;
+                justify-content: space-around; /*space-between, center, flex-end, sapce-evenly.......*/
+                border: 2px solid coral;
+                height: 200px;
+                margin: 10px;
+            }
+
+            .container2{
+                display: flex;
+                justify-content: space-evenly;
+                align-items: flex-end;
+                border: 2px dotted tomato;
+                height: 200px;
+                margin: 10px;
+            }
+            .c2box {
+                width: 100px;
+                height: 100px;
+            }
+            
+            .container3{
+                display: flex;
+                justify-content: space-evenly;
+                align-items: center;
+                border: 2px dotted tomato;
+                height: 200px;
+                margin: 10px;
+            }
+            .c3box {
+                width: 100px;
+                height: 100px;
+            }
+
+              .container4{
+                display: flex;
+                justify-content: center;
+                align-items: stretch;
+                border: 2px dotted tomato;
+                height: 200px;
+                margin: 10px;
+            }
+            .c4box {
+                width: 100px;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Flexbox</h1>
+        <div class="container">
+            <div class="box box1">BOX-1</div>
+            <div class="box box2">BOX-2</div>
+            <div class="box box3">BOX-3</div>
+            <div class="box box4">BOX-3</div>
+        </div>
+
+        <div class="container2">
+            <div class="c2box box5">BOX-5</div>
+            <div class="c2box box6">BOX-6</div>
+            <div class="c2box box7">BOX-7</div>
+            <div class="c2box box8">BOX-8</div>
+        </div>
+
+        <div class="container3">
+            <div class="c3box box5">BOX-9</div>
+            <div class="c3box box6">BOX-10</div>
+            <div class="c3box box7">BOX-11</div>
+            <div class="c3box box8">BOX-12</div>
+        </div>
+
+        <div class="container4">
+            <div class="c4box box1">BOX13</div>
+            <div class="c4box box2">BOX14</div>
+            <div class="c4box box3">BOX15</div>
+            <div class="c4box box4">BOX16</div>
+        </div>
+    </body>
+</html>
