@@ -24,8 +24,10 @@
         </style>
     </head>
     <body>
-        <!-- Break point  -->
-        <div class="container">
+        <!-------------------------------------------------------------------
+                                    Break Point
+        -------------------------------------------------------------------->
+        <div class="BREAKPOINT container">
             <h1 class="text-primary">Breakpoint</h1>
             <h4 class="text-secondary">
                 Breakpoints are customizable widths that determine how your
@@ -81,21 +83,28 @@
                 <li>xxl: 1400px</li>
             </ul>
         </div>
-
-        <!-- container  -->
-        <div class="container border mt-3">
+        <!-------------------------------------------------------------------
+                                    End Breakpoint
+        -------------------------------------------------------------------->
+        <!-------------------------------------------------------------------
+                                        Container
+        -------------------------------------------------------------------->
+        <div class="CONTAINER container border mt-3">
             <h1 class="text-primary">Containers</h1>
 
             <img
                 src="../assets/images/bootstrap documents/container.png"
                 alt=""
-                width="800px"
-                height="300px"
+                class="w-100"
             />
         </div>
-
-        <!-- Grid  -->
-        <div class="container border mt-3">
+        <!-------------------------------------------------------------------
+                                       End Container
+        -------------------------------------------------------------------->
+        <!-------------------------------------------------------------------
+                                        Grid
+        -------------------------------------------------------------------->
+        <div class="GRID container border mt-3">
             <h1 class="text-primary">Grid</h1>
             <div class="row text-center bg-warning">
                 <div class="col border p-3">Column</div>
@@ -117,15 +126,22 @@
                 </ul>
             </div>
         </div>
+        <!-------------------------------------------------------------------
+                                        End Grid
+        -------------------------------------------------------------------->
+        <!-------------------------------------------------------------------
+                                        Column
+        -------------------------------------------------------------------->
 
-        <!-- column  -->
-        <div class="container border mt-3">
+        <div class="COLUMN container border mt-3">
             <h1 class="text-primary">Column</h1>
             <h2>Alignment</h2>
             <p class="text-secondary">
                 Use flexbox alignment utilities to vertically and horizontally
                 align columns.
             </p>
+
+            <!-- Vertical alignment -->
 
             <h3>Vertical alignment</h3>
             <div class="text-center">
@@ -169,6 +185,9 @@
                     </div>
                 </div>
             </div>
+
+            <!-- Horizontal alignment  -->
+
             <div class="container mt-2">
                 <h3>Horizontal alignment</h3>
                 <div class="container text-center">
@@ -176,12 +195,12 @@
                         <div class="col-4 border p-3 bg-warning">
                             justify-content-start
                         </div>
-                        <div class="col-4 border p-3 bg-warning">
+                        <div class="col-4 border p-3 bg-info">
                             justify-content-start
                         </div>
                     </div>
                     <div class="row m-3 justify-content-center">
-                        <div class="col-4 border p-3 bg-warning">
+                        <div class="col-4 border p-3 bg-primary">
                             justify-content-center
                         </div>
                         <div class="col-4 border p-3 bg-warning">
@@ -189,7 +208,7 @@
                         </div>
                     </div>
                     <div class="row m-3 justify-content-end">
-                        <div class="col-4 border p-3 bg-warning">
+                        <div class="col-4 border p-3 bg-success">
                             justify-content-end
                         </div>
                         <div class="col-4 border p-3 bg-warning">
@@ -197,7 +216,7 @@
                         </div>
                     </div>
                     <div class="row m-3 justify-content-around">
-                        <div class="col-4 border p-3 bg-warning">
+                        <div class="col-4 border p-3 bg-info">
                             justify-content-around
                         </div>
                         <div class="col-4 border p-3 bg-warning">
@@ -205,15 +224,15 @@
                         </div>
                     </div>
                     <div class="row m-3 justify-content-between">
-                        <div class="col-4 border p-3 bg-warning">
+                        <div class="col-4 border p-3 bg-primary">
                             justify-content-between
                         </div>
-                        <div class="col-4 border p-3 bg-warning">
+                        <div class="col-4 border p-3 bg-success">
                             justify-content-between
                         </div>
                     </div>
                     <div class="row m-3 justify-content-evenly">
-                        <div class="col-4 border p-3 bg-warning">
+                        <div class="col-4 border p-3 bg-light">
                             justify-content-evenly
                         </div>
                         <div class="col-4 border p-3 bg-warning">
@@ -222,6 +241,9 @@
                     </div>
                 </div>
             </div>
+
+            <!-- Ordering -->
+
             <div class="container">
                 <h3>Ordering</h3>
                 <div class="border row text-center text-light">
@@ -249,15 +271,16 @@
             </div>
 
             <!-- offset  -->
-            <div class="container bg-primary">
+
+            <div class="container">
                 <h3>Offseting</h3>
-                <div class="row text-center">
+                <div class="row mt-3 text-center">
                     <div class="col-md-4 bg-warning p-3">col-md-4</div>
                     <div class="col-md-4 offset-md-4 bg-warning p-3">
                         col-md-4 offset-md-4
                     </div>
                 </div>
-                <div class="row text-center">
+                <div class="row text-center mt-3">
                     <div class="col-md-3 offset-md-3 bg-success p-3">
                         col-md-3 offset-md-3
                     </div>
@@ -265,15 +288,273 @@
                         col-md-3 offset-md-3
                     </div>
                 </div>
-                <div class="row">
-                    <div class="col-md-6 offset-md-3">
+                <div class="row mt-3">
+                    <div class="col-md-6 offset-md-3 bg-warning p-3">
                         .col-md-6 .offset-md-3
+                    </div>
+                </div>
+                <div class="row mt-3">
+                    <div class="col-sm-5 col-md-6 bg-secondary p-3">
+                        .col-sm-5 .col-md-6
+                    </div>
+                    <div
+                        class="col-sm-5 offset-sm-2 col-md-6 offset-md-0 bg-info p-3"
+                    >
+                        .col-sm-5 .offset-sm-2 .col-md-6 .offset-md-0
+                    </div>
+                </div>
+                <div class="row mt-3">
+                    <div class="col-sm-6 col-md-5 col-lg-6 bg-danger p-3">
+                        .col-sm-6 .col-md-5 .col-lg-6
+                    </div>
+                    <div
+                        class="col-sm-6 col-md-5 offset-md-2 col-lg-6 offset-lg-0 bg-primary p-3"
+                    >
+                        .col-sm-6 .col-md-5 .offset-md-2 .col-lg-6 .offset-lg-0
+                    </div>
+                </div>
+            </div>
+
+            <!-- margin utilities  -->
+
+            <div class="container">
+                <h3>Margin Utilites</h3>
+                <div class="row text-center">
+                    <div class="col-md-4 bg-info p-3">col-md-4</div>
+                    <div class="col-md-4 ms-auto bg-info p-3">
+                        col-md-4 ms-auto
+                    </div>
+                </div>
+                <div class="row mt-3">
+                    <div class="col-md-3 ms-md-auto bg-info p-3">
+                        col-md-3 ms-md-auto
+                    </div>
+                    <div class="col-md-3 ms-md-auto bg-success p-3">
+                        col-md-3 ms-md-auto
+                    </div>
+                </div>
+                <div class="row mt-3">
+                    <div class="col-auto me-auto bg-success p-3">
+                        .col-auto .me-auto
+                    </div>
+                    <div class="col-auto bg-success p-3">.col-auto</div>
+                </div>
+            </div>
+
+            <!-- Standalone column classes  -->
+
+            <div class="container mt-3 pt-3">
+                <h3>Standalone column classes</h3>
+                <div class="clearfix">
+                    <img
+                        src="../assets/images/courses/course-2.png"
+                        class="col-md-4 float-md-end mb-3 ms-md-3 w-50"
+                        alt="..."
+                    />
+
+                    <p class="text-secondary">
+                        A paragraph of placeholder text. We're using it here to
+                        show the use of the clearfix class. We're adding quite a
+                        few meaningless phrases here to demonstrate how the
+                        columns interact here with the floated image. Lorem
+                        ipsum dolor sit amet consectetur, adipisicing elit.
+                        Aperiam quibusdam voluptatibus est ratione accusantium
+                        excepturi nisi non nostrum, accusamus laudantium
+                        officiis blanditiis impedit dignissimos debitis commodi,
+                        hic obcaecati tenetur minus? Debitis, modi? Non labore
+                        velit eligendi vero repellendus inventore, excepturi
+                        consequuntur odit incidunt, assumenda natus optio sit
+                        laudantium tenetur numquam! Lorem, ipsum dolor sit amet
+                        consectetur adipisicing elit. Ut repellat ad suscipit
+                        fugiat quas voluptatem deserunt et, minima aliquid
+                        reprehenderit totam a nisi quaerat dolorum itaque, rerum
+                        voluptates eaque earum.
+                    </p>
+
+                    <p class="text-secondary">
+                        As you can see the paragraphs gracefully wrap around the
+                        floated image. Now imagine how this would look with some
+                        actual content in here, rather than just this boring
+                        placeholder text that goes on and on, but actually
+                        conveys no tangible information at. It simply takes up
+                        space and should not really be read.
+                    </p>
+
+                    <p class="text-secondary">
+                        And yet, here you are, still persevering in reading this
+                        placeholder text, hoping for some more insights, or some
+                        hidden easter egg of content. A joke, perhaps.
+                        Unfortunately, there's none of that here.
+                    </p>
+                </div>
+            </div>
+
+            <!-------------------------------------------------------------------
+                                         End Column
+             -------------------------------------------------------------------->
+        </div>
+        <!-------------------------------------------------------------------
+                                            Gutters  
+        -------------------------------------------------------------------->
+        <div class="GUTTERS container mt-3 border">
+            <h1 class="text-primary">Gutters</h1>
+            <h4 class="text-secondary">
+                Gutters are the padding between your columns, used to
+                responsively space and align content in the Bootstrap grid
+                system.
+            </h4>
+            <h3>How they work</h3>
+            <ul>
+                <li>
+                    Gutters are the gaps between column content, created by
+                    horizontal padding. We set padding-right and padding-left on
+                    each column, and use negative margin to offset that at the
+                    start and end of each row to align content.
+                </li>
+                <li>
+                    Gutters start at 1.5rem (24px) wide. This allows us to match
+                    our grid to the padding and margin spacers scale.
+                </li>
+                <li>
+                    Gutters can be responsively adjusted. Use
+                    breakpoint-specific gutter classes to modify horizontal
+                    gutters, vertical gutters, and all gutters.
+                </li>
+            </ul>
+
+            <!-- Gutters property -->
+            <h4>Gutters property</h4>
+            <ul class="text-danger">
+                <li>(gx-*) - Horizontal Gutters</li>
+                <li>(gy-*) - Vertical Gutters</li>
+                <li>(g-*) - Horizontal & vertical gutters</li>
+                <li>(g-0) - No Gutters</li>
+            </ul>
+            <!-- Horizontal gutters -->
+
+            <div class="container px-4">
+                <h3>Horizontal gutters</h3>
+                <div class="row gx-5 text-center">
+                    <p class="text-secondary">used -"gx-5"</p>
+
+                    <div class="col">
+                        <div class="p-3 border bg-light">
+                            Custom column padding
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="p-3 border bg-light">
+                            Custom column padding
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Vertical gutters -->
+
+            <div class="container overflow-hidden">
+                <h3>Vertical gutters</h3>
+                <div class="row gy-5 text-center">
+                    <div class="col-6">
+                        <div class="p-3 border bg-light">
+                            Custom column padding
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="p-3 border bg-light">
+                            Custom column padding
+                        </div>
+                    </div>
+                    <p>used -"gy-5"</p>
+                    <div class="col-6">
+                        <div class="p-3 border bg-light">
+                            Custom column padding
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="p-3 border bg-light">
+                            Custom column padding
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Horizontal & vertical gutters -->
+
+            <div class="container">
+                <h3>Horizontal & vertical gutters</h3>
+                <div class="row g-2 text-center">
+                    <div class="col-6">
+                        <div class="p-3 border bg-light">
+                            Custom column padding
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="p-3 border bg-light">
+                            Custom column padding
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="p-3 border bg-light">
+                            Custom column padding
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="p-3 border bg-light">
+                            Custom column padding
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Row columns gutters -->
+
+            <div class="container">
+                <h3>Row columns gutters</h3>
+                <p>Used property- "row-cols-2 row-cols-lg-5 g-2 g-lg-3"</p>
+                <div
+                    class="row row-cols-2 row-cols-lg-5 g-2 g-lg-3 text-center"
+                >
+                    <div class="col">
+                        <div class="p-3 border bg-light">Row column</div>
+                    </div>
+                    <div class="col">
+                        <div class="p-3 border bg-light">Row column</div>
+                    </div>
+                    <div class="col">
+                        <div class="p-3 border bg-light">Row column</div>
+                    </div>
+                    <div class="col">
+                        <div class="p-3 border bg-light">Row column</div>
+                    </div>
+                    <div class="col">
+                        <div class="p-3 border bg-light">Row column</div>
+                    </div>
+                    <div class="col">
+                        <div class="p-3 border bg-light">Row column</div>
+                    </div>
+                    <div class="col">
+                        <div class="p-3 border bg-light">Row column</div>
+                    </div>
+                    <div class="col">
+                        <div class="p-3 border bg-light">Row column</div>
+                    </div>
+                    <div class="col">
+                        <div class="p-3 border bg-light">Row column</div>
+                    </div>
+                    <div class="col">
+                        <div class="p-3 border bg-light">Row column</div>
                     </div>
                 </div>
             </div>
         </div>
+        <!-------------------------------------------------------------------
+                                          End Gutters  
+        -------------------------------------------------------------------->
 
-        <!-- script js -->
+        <!------------------------------------------------
+                                script js 
+        -------------------------------------------------->
         <script
             src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
             integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
