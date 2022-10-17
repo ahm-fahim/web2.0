@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Form</title>
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+            crossorigin="anonymous"
+        />
+    </head>
+    <body>
+        <!-- form control  -->
+        <section class="container">
+            <h1 class="text-primary">Form Control</h1>
+            <p class="text-danger">"form-label" - class for label tag</p>
+            <p class="text-danger">"form-control" - class for input tag</p>
+            <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label"
+                    >Email address</label
+                >
+                <input
+                    type="email"
+                    id="exampleFormControlInput1"
+                    class="form-control"
+                    placeholder="name@example.com"
+                />
+            </div>
+            <div class="mb-3">
+                <label for="exampleFormControlTextarea1" class="form-label"
+                    >Example textarea</label
+                >
+                <textarea
+                    class="form-control"
+                    id="exampleFormControlTextarea1"
+                    rows="3"
+                ></textarea>
+            </div>
+
+            <!-- Sizing  -->
+            <div class="container">
+                <h2>Sizing</h2>
+                <p class="text-danger">"form-control-lg"</p>
+                <p class="text-danger">"form-control-sm"</p>
+                <input
+                    class="form-control form-control-lg"
+                    type="text"
+                    placeholder=".form-control-lg"
+                    aria-label=".form-control-lg example"
+                />
+                <input
+                    class="form-control"
+                    type="text"
+                    placeholder="Default input"
+                    aria-label="default input example"
+                />
+                <input
+                    class="form-control form-control-sm"
+                    type="text"
+                    placeholder=".form-control-sm"
+                    aria-label=".form-control-sm example"
+                />
+            </div>
+            <!--End Sizing  -->
+
+            <!-- disable  -->
+            <div class="container">
+                <h3>Disable</h3>
+                <input
+                    class="form-control"
+                    type="text"
+                    placeholder="Disabled input"
+                    aria-label="Disabled input example"
+                    disabled
+                />
+                <input
+                    class="form-control"
+                    type="text"
+                    value="Disabled readonly input"
+                    aria-label="Disabled input example"
+                    disabled
+                    readonly
+                />
+            </div>
+            <!--End disable  -->
+            <!-- Readonly plain text -->
+            <div class="container">
+                <h3>Readonly plain text</h3>
+                <p class="text-danger">".form-control-plaintext"</p>
+                <div class="mb-3 row">
+                    <label for="staticEmail" class="col-sm-2 col-form-label"
+                        >Email</label
+                    >
+                    <div class="col-sm-10">
+                        <input
+                            type="text"
+                            readonly
+                            class="form-control-plaintext"
+                            id="staticEmail"
+                            value="email@example.com"
+                        />
+                    </div>
+                </div>
+                <div class="mb-3 row">
+                    <label for="inputPassword" class="col-sm-2 col-form-label"
+                        >Password</label
+                    >
+                    <div class="col-sm-10">
+                        <input
+                            type="password"
+                            class="form-control"
+                            id="inputPassword"
+                        />
+                    </div>
+                </div>
+            </div>
+            <!--End Readonly plain text -->
+            <!-- File Input  -->
+            <div class="container">
+                <h3>File Input</h3>
+                <p class="text-secondary">
+                    1. inpute type ="file" <br />
+                    2. multiple file input, set attribute ="multiple" <br />
+                    3. "form-control-sm"- small size <br />
+                    4. "form-control-lg" - large size <br />
+                    5 Disable file input set attribute -"Disabled"
+                </p>
+                <div class="mb-3">
+                    <label for="formFile" class="form-label"
+                        >Default file input example</label
+                    >
+                    <input class="form-control" type="file" id="formFile" />
+                </div>
+                <div class="mb-3">
+                    <label for="formFileMultiple" class="form-label"
+                        >Multiple files input example</label
+                    >
+                    <input
+                        class="form-control"
+                        type="file"
+                        id="formFileMultiple"
+                        multiple
+                    />
+                </div>
+                <div class="mb-3">
+                    <label for="formFileDisabled" class="form-label"
+                        >Disabled file input example</label
+                    >
+                    <input
+                        class="form-control"
+                        type="file"
+                        id="formFileDisabled"
+                        disabled
+                    />
+                </div>
+                <div class="mb-3">
+                    <label for="formFileSm" class="form-label"
+                        >Small file input example</label
+                    >
+                    <input
+                        class="form-control form-control-sm"
+                        id="formFileSm"
+                        type="file"
+                    />
+                </div>
+                <div>
+                    <label for="formFileLg" class="form-label"
+                        >Large file input example</label
+                    >
+                    <input
+                        class="form-control form-control-lg"
+                        id="formFileLg"
+                        type="file"
+                    />
+                </div>
+            </div>
+            <!--End file Input  -->
+
+            <!-- color  -->
+            <div class="container">
+                <h3>COLOR</h3>
+                <label for="exampleColorInput" class="form-label"
+                    >Color picker</label
+                >
+                <input
+                    type="color"
+                    class="form-control form-control-color"
+                    id="exampleColorInput"
+                    value="#4ECF00"
+                    title="Choose your color"
+                />
+            </div>
+            <!-- End Color  -->
+            <!-- Detalist  -->
+            <div class="container">
+                <h3>Datalist</h3>
+                <label for="exampleDataList" class="form-label"
+                    >Datalist example</label
+                >
+                <input
+                    class="form-control"
+                    list="datalistOptions"
+                    id="exampleDataList"
+                    placeholder="Type to search..."
+                />
+                <datalist id="datalistOptions">
+                    <option value="San Francisco"></option>
+                    <option value="New York"></option>
+                    <option value="Seattle"></option>
+                    <option value="Los Angeles"></option>
+                    <option value="Chicago"></option>
+                </datalist>
+            </div>
+            <!-- End datalist  -->
+        </section>
+        <!-- end form control  -->
+
+        <!-- select  -->
+        <section class="container">
+            <h1 class="text-primary">Select</h1>
+            <h4>Size-</h4>
+            <p class="text-danger">1. "form-select-sm"</p>
+            <p class="text-danger">2. "form-select-lg"</p>
+            <p class="text-danger">
+                3.disable select menu set attribute - "Disabled"
+            </p>
+            <!-- default  -->
+            <div class="container">
+                <h3>Default</h3>
+                <select name="" id="" class="form-select">
+                    <option selected>Selected</option>
+                    <option value="1">Item-2</option>
+                    <option value="2">Item-3</option>
+                    <option value="3">Item-4</option>
+                </select>
+            </div>
+        </section>
+        <!-- End select  -->
+
+        <!-- Check and Radios -->
+        <section class="container">
+            <h3>Checks and radios</h3>
+            <div class="container">
+                <h3>Checks</h3>
+                <div class="form-check">
+                    <input
+                        class="form-check-input"
+                        type="checkbox"
+                        value=""
+                        id="flexCheckDefault"
+                    />
+                    <label class="form-check-label" for="flexCheckDefault">
+                        Default checkbox
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input
+                        class="form-check-input"
+                        type="checkbox"
+                        value=""
+                        id="flexCheckChecked"
+                        checked
+                    />
+                    <label class="form-check-label" for="flexCheckChecked">
+                        Checked checkbox
+                    </label>
+                </div>
+                <div class="container">
+                    <h3>Indeterminate</h3>
+                    <div class="form-check">
+                        <input
+                            class="form-check-input"
+                            type="checkbox"
+                            value=""
+                            id="flexCheckIndeterminate"
+                        />
+                        <label
+                            class="form-check-label"
+                            for="flexCheckIndeterminate"
+                        >
+                            Indeterminate checkbox
+                        </label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container">
+                <h2>Radios</h2>
+                <div class="form-check">
+                    <input
+                        class="form-check-input"
+                        type="radio"
+                        name="flexRadioDefault"
+                        id="flexRadioDefault1"
+                    />
+                    <label class="form-check-label" for="flexRadioDefault1">
+                        Default radio
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input
+                        class="form-check-input"
+                        type="radio"
+                        name="flexRadioDefault"
+                        id="flexRadioDefault2"
+                        checked
+                    />
+                    <label class="form-check-label" for="flexRadioDefault2">
+                        Default checked radio
+                    </label>
+                </div>
+            </div>
+
+            <div class="container">
+                <h2>switch</h2>
+                <div class="form-check form-switch">
+                    <input
+                        class="form-check-input"
+                        type="checkbox"
+                        role="switch"
+                        id="flexSwitchCheckDefault"
+                    />
+                    <label class="form-check-label" for="flexSwitchCheckDefault"
+                        >Default switch checkbox input</label
+                    >
+                </div>
+                <div class="form-check form-switch">
+                    <input
+                        class="form-check-input"
+                        type="checkbox"
+                        role="switch"
+                        id="flexSwitchCheckChecked"
+                        checked
+                    />
+                    <label class="form-check-label" for="flexSwitchCheckChecked"
+                        >Checked switch checkbox input</label
+                    >
+                </div>
+                <div class="form-check form-switch">
+                    <input
+                        class="form-check-input"
+                        type="checkbox"
+                        role="switch"
+                        id="flexSwitchCheckDisabled"
+                        disabled
+                    />
+                    <label
+                        class="form-check-label"
+                        for="flexSwitchCheckDisabled"
+                        >Disabled switch checkbox input</label
+                    >
+                </div>
+                <div class="form-check form-switch">
+                    <input
+                        class="form-check-input"
+                        type="checkbox"
+                        role="switch"
+                        id="flexSwitchCheckCheckedDisabled"
+                        checked
+                        disabled
+                    />
+                    <label
+                        class="form-check-label"
+                        for="flexSwitchCheckCheckedDisabled"
+                        >Disabled checked switch checkbox input</label
+                    >
+                </div>
+            </div>
+            <div class="container">
+                <h3>Inline</h3>
+                <p class="text-secondary">
+                    Inline all checkbox set class - "form-check-inline"
+                </p>
+                <h3>Reverse</h3>
+                <p class="text-secondary">
+                    move checkbox in right side set the class
+                    -"form-check-reverse"
+                </p>
+            </div>
+            <div class="container">
+                <h2>Toggle Button</h2>
+                <input
+                    type="checkbox"
+                    class="btn-check"
+                    id="btn-check"
+                    autocomplete="off"
+                />
+                <label class="btn btn-primary" for="btn-check"
+                    >Single toggle</label
+                >
+            </div>
+            <div class="container">
+                <h3>Outline styles</h3>
+                <input
+                    type="checkbox"
+                    class="btn-check"
+                    id="btn-check-outlined"
+                    autocomplete="off"
+                />
+                <label class="btn btn-outline-primary" for="btn-check-outlined"
+                    >Single toggle</label
+                ><br />
+
+                <input
+                    type="checkbox"
+                    class="btn-check"
+                    id="btn-check-2-outlined"
+                    checked
+                    autocomplete="off"
+                />
+                <label
+                    class="btn btn-outline-secondary"
+                    for="btn-check-2-outlined"
+                    >Checked</label
+                ><br />
+
+                <input
+                    type="radio"
+                    class="btn-check"
+                    name="options-outlined"
+                    id="success-outlined"
+                    autocomplete="off"
+                    checked
+                />
+                <label class="btn btn-outline-success" for="success-outlined"
+                    >Checked success radio</label
+                >
+
+                <input
+                    type="radio"
+                    class="btn-check"
+                    name="options-outlined"
+                    id="danger-outlined"
+                    autocomplete="off"
+                />
+                <label class="btn btn-outline-danger" for="danger-outlined"
+                    >Danger radio</label
+                >
+            </div>
+        </section>
+        <!-- End Check and Radios -->
+
+        <!------------------------------------------------
+                                script js 
+        -------------------------------------------------->
+        <script
+            src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+            integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+            crossorigin="anonymous"
+        ></script>
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js"
+            integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk"
+            crossorigin="anonymous"
+        ></script>
+    </body>
+</html>
