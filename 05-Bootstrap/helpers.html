@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Helpers</title>
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+            crossorigin="anonymous"
+        />
+    </head>
+    <body>
+        <section class="container">
+            <h1 class="text-primary">Color & Background</h1>
+            <div class="container border d-flex">
+                <p class="text-primary">text-primary</p>
+                <p class="text-secondary">text-secondary</p>
+                <p class="text-warning">text-warning</p>
+                <p class="text-danger">text-danger</p>
+                <p class="text-info">textinfo-</p>
+                <p class="text-light">text-light</p>
+                <p class="text-dark">text-dark</p>
+                <p class="text-success">text-success</p>
+            </div>
+            <div class="container border d-flex">
+                <a href="#" class="link-primary">link-primary</a>
+                <a href="#" class="link-secondary">link-secondary</a>
+                <a href="#" class="link-warning">link-warning</a>
+                <a href="#" class="link-danger">link-danger</a>
+                <a href="#" class="link-info">link-info-</a>
+                <a href="#" class="link-light">link-light</a>
+                <a href="#" class="link-dark">link-dark</a>
+                <p href="#" class="link-success">link-success</p>
+            </div>
+            <div class="container">
+                <h3>Background Color</h3>
+                <p class="text-secondary">ClASS NAME = "text-bg-colorName"</p>
+                <div class="text-bg-primary p-3">
+                    Primary with contrasting color
+                </div>
+                <div class="text-bg-secondary p-3">
+                    Secondary with contrasting color
+                </div>
+                <div class="text-bg-success p-3">
+                    Success with contrasting color
+                </div>
+                <div class="text-bg-danger p-3">
+                    Danger with contrasting color
+                </div>
+                <div class="text-bg-warning p-3">
+                    Warning with contrasting color
+                </div>
+                <div class="text-bg-info p-3">Info with contrasting color</div>
+                <div class="text-bg-light p-3">
+                    Light with contrasting color
+                </div>
+                <div class="text-bg-dark p-3">Dark with contrasting color</div>
+            </div>
+
+            <div class="container">
+                <h3>Class <span class="text-danger">badge</span></h3>
+                <span class="badge text-bg-primary">Primary</span>
+                <span class="badge text-bg-info">Info</span>
+            </div>
+        </section>
+
+        <!-- position  -->
+        <section class="container">
+            <h1 class="text-primary">Position</h1>
+            <ul class="text-secondary">
+                <li>fixed-top</li>
+                <li>fixed-bottom</li>
+                <li>sticky-top</li>
+                <li>sticky-bottom</li>
+            </ul>
+            <h3>Responsive</h3>
+            <ul class="text-secondary">
+                <li>sticky-sm-top</li>
+                <li>sticky-md-top</li>
+                <li>sticky-lg-top</li>
+                <li>sticky-xl-top</li>
+                <li>sticky-xxl-top</li>
+            </ul>
+        </section>
+        <!--End position  -->
+
+        <!-- ratio  -->
+        <section class="container">
+            <h1>Ratio</h1>
+            <ul class="text-warning">
+                <li>ratio ratio-1x1</li>
+                <li>ratio ratio-4x3</li>
+                <li>ratio ratio-16x9</li>
+                <li>ratio ratio-21x9</li>
+            </ul>
+            <h4>Custom Ratio</h4>
+            <div
+                class="ratio border bg-secondary text-light"
+                style="--bs-aspect-ratio: 50%"
+            >
+                <div>
+                    <p>2x1</p>
+                    <p>style="--bs-aspect-ratio: 50%"</p>
+                </div>
+            </div>
+            <div class="ratio ratio-21x9">
+                <iframe
+                    src="https://www.youtube.com/embed/zpOULjyy-n8?rel=0"
+                    title="YouTube video"
+                    allowfullscreen
+                ></iframe>
+            </div>
+        </section>
+        <!-- end ratio  -->
+
+        <!-- Stacks  -->
+        <section class="container">
+            <h1 class="text-primary">Stacks</h1>
+            <p class="text-secodary">
+                Shorthand helpers that build on top of our flexbox utilities to
+                make component layout faster and easier than ever
+            </p>
+
+            <h4>Vertical(<span class="text-danger">vstack</span> )</h4>
+            <div class="vstack gap-3">
+                <div class="bg-light border">First item</div>
+                <div class="bg-light border">Second item</div>
+                <div class="bg-light border">Third item</div>
+            </div>
+            <h4>Horizontal( <span class="text-danger">hstack</span> )</h4>
+            <div class="hstack gap-3">
+                <div class="bg-light border">First item</div>
+                <div class="bg-light border">Second item</div>
+                <div class="vr bg-danger"></div>
+                <div class="bg-light border">Third item</div>
+            </div>
+
+            <h3>Vertical rules( <span class="text-dagner">vr</span> )</h3>
+        </section>
+        <!-- End Stacks  -->
+        <!-- stretched link  -->
+        <section class="container">
+            <h1>stretched Link</h1>
+            <div class="card" style="width: 18rem">
+                <img
+                    src="../assets/images/cartoon/cartoon6.png"
+                    class="card-img-top"
+                    alt="..."
+                />
+                <div class="card-body">
+                    <h5 class="card-title">Card with stretched links</h5>
+                    <p class="card-text">
+                        Some quick example text to build on the card title and
+                        make up the bulk of the card's content.
+                    </p>
+                    <p class="card-text">
+                        <a
+                            href="#"
+                            class="stretched-link text-danger"
+                            style="position: relative"
+                            >Stretched link will not work here, because
+                            <code>position: relative</code> is added to the
+                            link</a
+                        >
+                    </p>
+                    <p class="card-text bg-light" style="transform: rotate(0)">
+                        This
+                        <a href="#" class="text-warning stretched-link"
+                            >stretched link</a
+                        >
+                        will only be spread over the <code>p</code>-tag, because
+                        a transform is applied to it.
+                    </p>
+                </div>
+            </div>
+        </section>
+        <!-- End stretched link -->
+        <!-- text truncation -->
+        <section class="container">
+            <h1>Text truncation</h1>
+            <div class="row">
+                <div class="col-2 text-truncate">I wanna leave this place right now, what you say?</div>
+            </div>
+
+            <h3>Need a text o container to hide set the class :"visually-hidden"</h3>
+        </section>
+        <!-- text truncation -->
+        <!------------------------------------------------
+                                script js 
+        -------------------------------------------------->
+        <script
+            src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+            integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+            crossorigin="anonymous"
+        ></script>
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js"
+            integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk"
+            crossorigin="anonymous"
+        ></script>
+    </body>
+</html>
