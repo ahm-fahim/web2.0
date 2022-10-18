@@ -443,6 +443,182 @@
         </section>
         <!-- End Check and Radios -->
 
+        <!-- Range  -->
+
+        <section class="container">
+            <h1>Range</h1>
+            <h5>example</h5>
+            <p class="text-secondary">Range have some attributes</p>
+            <ol>
+                <li>min=$</li>
+                <li>max=$</li>
+                <li>step=$</li>
+            </ol>
+            <label for="customRange1" class="form-label">Example Range</label>
+            <input type="range" name="" id="customRange1" class="form-range" />
+            <label for="customRange3" class="form-label">Example range</label>
+            <input
+                type="range"
+                class="form-range"
+                min="0"
+                max="5"
+                step="0.2"
+                id="customRange3"
+            />
+        </section>
+        <!-- End range  -->
+
+        <!-- input groupe -->
+
+        <section class="container">
+            <h1>Input Group</h1>
+            <div class="container">
+                <h3>Basic example</h3>
+                <div class="input-group mb-3">
+                    <span class="input-group-text" id="basic-addon1">@</span>
+                    <input
+                        type="text"
+                        class="form-control"
+                        placeholder="Username"
+                        aria-label="Username"
+                        aria-describedby="basic-addon1"
+                    />
+                </div>
+
+                <div class="input-group mb-3">
+                    <input
+                        type="text"
+                        class="form-control"
+                        placeholder="Recipient's username"
+                        aria-label="Recipient's username"
+                        aria-describedby="basic-addon2"
+                    />
+                    <span class="input-group-text" id="basic-addon2"
+                        >@example.com</span
+                    >
+                </div>
+
+                <label for="basic-url" class="form-label"
+                    >Your vanity URL</label
+                >
+                <div class="input-group mb-3">
+                    <span class="input-group-text" id="basic-addon3"
+                        >https://example.com/users/</span
+                    >
+                    <input
+                        type="text"
+                        class="form-control"
+                        id="basic-url"
+                        aria-describedby="basic-addon3"
+                    />
+                </div>
+
+                <div class="input-group mb-3">
+                    <span class="input-group-text">$</span>
+                    <input
+                        type="text"
+                        class="form-control"
+                        aria-label="Amount (to the nearest dollar)"
+                    />
+                    <span class="input-group-text">.00</span>
+                </div>
+
+                <div class="input-group mb-3">
+                    <input
+                        type="text"
+                        class="form-control"
+                        placeholder="Username"
+                        aria-label="Username"
+                    />
+                    <span class="input-group-text">@</span>
+                    <input
+                        type="text"
+                        class="form-control"
+                        placeholder="Server"
+                        aria-label="Server"
+                    />
+                </div>
+
+                <div class="input-group">
+                    <span class="input-group-text">With textarea</span>
+                    <textarea
+                        class="form-control"
+                        aria-label="With textarea"
+                    ></textarea>
+                </div>
+                <h3>Custom Select</h3>
+                <div class="input-group mb-3">
+                    <label class="input-group-text" for="inputGroupSelect01"
+                        >Options</label
+                    >
+                    <select class="form-select" id="inputGroupSelect01">
+                        <option selected>Choose...</option>
+                        <option value="1">One</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
+                    </select>
+                </div>
+            </div>
+        </section>
+        <!-- End input group  -->
+        <!-- Dropdown -->
+        <section class="container">
+            <h1>Dropdown</h1>
+            <p class="text-danger">
+                split dropdown toggel set class "dropdown-toggle-split"
+            </p>
+            <div class="dropdown-container">
+                <button
+                    class="btn btn-primary dropdown-toggle"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                >
+                    Dropdown Toggle
+                </button>
+                <ul class="dropdown-menu">
+                    <li class="dropdown-item">item-1</li>
+                    <li class="dropdown-item">item-2</li>
+                    <li class="dropdown-item">item-3</li>
+                    <li class="dropdown-item">item-4</li>
+                    <li class="dropdown-item">item-5</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- End Dropdown  -->
+
+        <section class="container">
+            <h3>Floating labels K</h3>
+            <p class="text-secondary">
+                Create beautifully simple form labels that float over your input
+                fields
+            </p>
+
+            <div class="form-floating mb-3">
+                <input
+                    type="email"
+                    name=""
+                    placeholder="name@gmail.com"
+                    id="floatingInput"
+                    class="form-control"
+                />
+                <label for="floatingInput">floatingInput</label>
+
+                <h3>Invalid Input</h3>
+                <p class="text-primary"> if invalid input set class-"is-invalid"</p>
+                <form class="form-floating">
+                    <input
+                        type="email"
+                        class="form-control is-invalid"
+                        id="floatingInputInvalid"
+                        placeholder="name@example.com"
+                        value="test@example.com"
+                    />
+                    <label for="floatingInputInvalid">Invalid input</label>
+                </form>
+            </div>
+        </section>
+
         <!------------------------------------------------
                                 script js 
         -------------------------------------------------->
