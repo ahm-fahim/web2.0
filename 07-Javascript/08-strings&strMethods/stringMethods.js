@@ -188,3 +188,65 @@ let Padding = "5";
 console.log(Padding.padStart(4, "*"));
 console.log(Padding.padEnd(4, "*"));
 
+/*/^^^^^^^^^^^^^^^^^^^^^^^^^\*\
+EXTRACTING STRING CHARACTERS
+
+*charAt(position)
+*charCodeAt(position)
+-property access[]
+\*\_________________________/*/
+
+/*/^^^^^^^^^^^^^^^^^^^\*\
+        charAt()
+ The charAt() method 
+ returns the character
+ at a specified index 
+ (position) in a string:
+
+\*\__________________ /*/
+
+let text5 = "HELLO WORLD";
+console.log(text5.charAt(3));
+
+/*/^^^^^^^^^^^^^^^^^^^\*\
+       charCodeAt()
+
+     The charCodeAt() 
+    method returns the 
+      unicode of the 
+      character at a 
+    specified index in 
+        a string:
+    
+   The method returns
+      a UTF-16 code
+   (an integer between
+      0 and 65535).
+
+\*\__________________ /*/
+
+console.log(text5.charCodeAt(1));
+
+// Property access
+
+let text6 = "javaScript";
+console.log(text6[3]);
+
+/**
+ * 
+ * Note
+Property access might be a little unpredictable:
+
+It makes strings look like arrays (but they are not)
+If no character is found, [ ] returns undefined, while charAt() returns an empty string.
+It is read only. str[0] = "A" gives no error (but does not work!)
+ */
+
+//---------------------------------------
+//Converting String to array
+//---------------------------------------
+
+//split()
+
+let pets = "Muskan, Charly ";
+console.log(pets.split(","));
