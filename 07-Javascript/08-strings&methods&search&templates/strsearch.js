@@ -42,4 +42,38 @@ console.log(str.search(/locate/));
              match()
 \*\______.______.______.______./*/
 
+console.log(str.match("loc"));
+console.log(str.match(/occu/));
+console.log(str.match(/where/g)); //global search for 'where'
 
+console.log(str.match(/where/gi)); //case-insensitive search
+
+/*/````````````````````````````\*\
+            matchAll()
+\*\______.______.______.______./*/
+
+console.log(str.matchAll("locate"));
+
+/*/````````````````````````````\*\
+            includes()
+\*\______.______.______.______./*/
+
+console.log(str.includes("Includes"));
+console.log(str.includes("locate"));
+console.log(str.includes("locate", 12));
+
+/*/````````````````````````````\*\
+          startsWith()
+\*\______.______.______.______./*/
+
+console.log(str.startsWith("P"));
+
+/*/````````````````````````````\*\
+            endsWith()
+\*\______.______.______.______./*/
+
+console.log(str.endsWith("!"));
+
+/*/````````````````````````````\*\
+
+\*\______.______.______.______./*/
