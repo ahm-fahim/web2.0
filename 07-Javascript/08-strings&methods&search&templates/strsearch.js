@@ -20,6 +20,26 @@
             indexOf()
 \*\______.______.______.______./*/
 
-let str = "Please locate where \"Locate\" occurs!"
+let str = 'Please locate where "Locate" occurs!';
 
-console.log(str.indexOf('locate'));
+console.log(str.indexOf("locate"));
+console.log(str.indexOf("locate", 15));
+
+/*/````````````````````````````\*\
+          lastIndexOf()
+\*\______.______.______.______./*/
+
+console.log(str.lastIndexOf("where"));
+
+/*/````````````````````````````\*\
+             search()
+\*\______.______.______.______./*/
+
+console.log(str.search("locate"));
+console.log(str.search(/locate/));
+
+/*/````````````````````````````\*\
+             match()
+\*\______.______.______.______./*/
+
+
