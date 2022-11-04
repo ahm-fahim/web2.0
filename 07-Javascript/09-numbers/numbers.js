@@ -28,3 +28,32 @@ console.log(num3);
 //to solve the problem above, it helps to multiply and divide
 let num4 = (0.2 * 10 + 0.1 * 10) / 10;
 console.log(num4);
+
+//adding number and string
+
+let strNum1 = "10";
+let strNum2 = "11";
+console.log(strNum1 + strNum2);
+
+let num5 = 22;
+let num6 = "22";
+console.log(num5 + num6);
+
+// confiusion
+let c = 10;
+let d = 20;
+
+let e = "The result is: " + c + d;
+console.log(e);
+
+//here also a confiusion
+
+let f = 10;
+let g = 20;
+let h = "30";
+console.log(f + g + h);
+
+// The JavaScript interpreter works from left to right.
+
+//Numeric strings
+
