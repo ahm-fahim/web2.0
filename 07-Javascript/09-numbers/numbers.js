@@ -56,4 +56,13 @@ console.log(f + g + h);
 // The JavaScript interpreter works from left to right.
 
 //Numeric strings
+//~~~~~~~~~~~~~~~~~~~~~~~~~~
+// js can have numeric content
+
+let p = 100 / "apple";
+console.log(p); //NaN
+
+
+
+
 
