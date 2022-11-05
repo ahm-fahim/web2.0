@@ -62,7 +62,16 @@ console.log(f + g + h);
 let p = 100 / "apple";
 console.log(p); //NaN
 
+let q = 100 / "banana";
+console.log(isNaN(x));
 
+console.log(typeof NaN);
 
+//Infinity
 
+let myNumber = 2;
 
+while (myNumber != Infinity) {
+    myNumber = myNumber * myNumber;
+    console.log(myNumber);
+}
