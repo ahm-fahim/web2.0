@@ -75,3 +75,60 @@ while (myNumber != Infinity) {
     myNumber = myNumber * myNumber;
     console.log(myNumber);
 }
+
+//Hexadecimal
+
+let hexa = 0xff;
+console.log(hexa);
+
+/*
+Never write a number with a leading zero (like 07).
+Some JavaScript versions interpret numbers as octal if they are written with a leading zero.
+*/
+
+/*/`````````````````````````````````````\*\
+By default, JavaScript displays numbers
+ as base 10 decimals.
+
+But you can use the toString() method
+ to output numbers from base 2 to 
+ base 36.
+
+Hexadecimal is base 16. Decimal is
+ base 10. Octal is base 8. Binary is
+  base 2.
+\*\_____________________________________/*/
+
+let myNumber2 = 32;
+console.log("Hexatrigesimal (base 36) ", myNumber2.toString(36));
+console.log("Duotrigesimal (base 32)(base 33) ", myNumber2.toString(32));
+console.log("Hexadecimal (base 16) ", myNumber2.toString(16));
+console.log("Duodecimal (base 12) ", myNumber2.toString(12));
+console.log("Decimal (base 10) ", myNumber2.toString(10));
+console.log("Octal (base 8)", myNumber2.toString(8));
+console.log("Binary (base 2)", myNumber2.toString(2));
+
+//numbers as objects
+
+let r = 123;
+console.log(123);
+let s = new Number(123);
+
+console.log(s);
+
+/*
+
+When using the == operator, x and y are equal:
+
+let x = 500;
+let y = new Number(500);
+When using the === operator, x and y are not equal.
+
+let x = 500;
+let y = new Number(500);
+*/
+
+let t = new Number(4);
+let u = new Number(4);
+console.log(t == u);
+console.log(t === u);
