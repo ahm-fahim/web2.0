@@ -33,6 +33,17 @@ console.log(`hex ${hex} \noct ${oct} \nbin ${bin}`);
 
 console.log(9007199254740992 === 9007199254740993);
 
-
 console.log("Number.MAX_SAFE_INTEGER ", Number.MAX_SAFE_INTEGER);
 console.log("Number.MIN_SAFE_INTEGER ", Number.MIN_SAFE_INTEGER);
+
+// New Number Methods
+//================================
+
+console.log("Number.isInteger(10) =", Number.isInteger(10));
+console.log("Number.isInteger(10.5) ", Number.isInteger(10.5));
+
+console.log("Number.isSafeInteger(10) : ", Number.isSafeInteger(10));
+console.log(
+    "Number.isSafeInteger(12345678901234567890) :",
+    Number.isSafeInteger(12345678901234567890)
+);
