@@ -6,7 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Arrays</title>
         <style>
-            *{
+            * {
                 font-family: Arial, Helvetica, sans-serif;
             }
             .code {
@@ -17,18 +17,20 @@
                 border-radius: 10px;
                 font-family: Arial, Helvetica, sans-serif;
                 font-size: 20px;
+                margin: 10px;
             }
-            .note{
+            .note {
                 background-color: rgba(246, 86, 0, 0.258);
                 color: black;
                 padding: 15px;
                 font-size: 18px;
+                margin: 10px;
             }
-            .hilight{
-                color:#ff0000;
+            .hilight {
+                color: #d40000;
             }
-            .discription{
-                color:gray;
+            .discription {
+                color: gray;
             }
         </style>
     </head>
@@ -65,12 +67,150 @@
             const array_name = [item1, item2, .................]
         </div>
         <p class="note">
-            It is a common practice to declare arrays with the <span class="hilight">const</span> keyword.
+            It is a common practice to declare arrays with the
+            <span class="hilight">const</span> keyword.
         </p>
 
+        <p class="discrption">
+            You can also create an array, and then provide the elements
+        </p>
 
+        <div class="code">
+            <p>const fruits = [ ];</p>
+            <p>fruits[0] = "Mango";</p>
+            <p>fruits[1] = "Banana";</p>
+            <p>fruits[2] = "Orange";</p>
 
+            <h3 class="hilight">Output</h3>
+            <p id="arrayProvide"></p>
+        </div>
 
+        <h1>Keyword new</h1>
+        <div class="code">
+            <p>const cars = new Array("Charly", "Muskan", "Joya");</p>
+            <h3 class="hilight">Output</h3>
+            <p id="newKey"></p>
+        </div>
+
+        <div class="note">
+            <p>
+                The two examples above do exactly the same. <br />
+                There is no need to use
+                <span class="hilight">new Array()</span> <br />
+                For simplicity, readability and execution speed, use the array
+                literal method.
+            </p>
+        </div>
+        <h1>Accessing Array Elements</h1>
+        <p class="discription">
+            Acces an array element by referring to the index number
+        </p>
+
+        <div class="code">
+            <p>const cars = ["Saab", "Volvo", "BMW"];</p>
+            <p>let car = cars[0];</p>
+            <h3 class="hilight">Output</h3>
+            <p id="accesArrElements"></p>
+        </div>
+
+        <div class="note">
+            <p>NOTE: Array indexes start with 0.</p>
+
+            <p>[0] is the first element. [1] is the second element.</p>
+        </div>
+
+        <h1>Changing an Array Element</h1>
+
+        <div class="code">
+            <p>const cars = ["Saab", "Volvo", "BMW"];</p>
+            <p>cars[0] = "Opel";</p>
+            <h3 class="hilight">Output</h3>
+            <p id="changeArrElement"></p>
+        </div>
+
+        <h1>Accees the full array</h1>
+
+        <p class="discription">
+            With JS, the full array can be accessed bu referring to the array
+            name
+        </p>
+
+        <div class="code">
+            <p>const cars = ["Saab", "Volvo", "BMW"];</p>
+            <p>document.getElementById("demo").innerHTML = cars;</p>
+        </div>
+
+        <h1>Array Objects</h1>
+        <div class="code">
+            <p>const person = {firstName:"John", lastName:"Doe", age:46};</p>
+
+            <p>
+                document.getElementById("arrObj").innerHTML = person.firstName;
+            </p>
+
+            <h3 class="hilight">Output</h3>
+            <p id="arrObj"></p>
+        </div>
+
+        <h1>Array Properties & Methods</h1>
+        <p class="discription">
+            The real strength of JS arrays are the built-in array properties and
+            methods
+        </p>
+
+        <div class="code">
+            <p>array.length</p>
+            <p>array.sort()</p>
+        </div>
+
+        <h3>Length Property</h3>
+        <div class="code">
+            <p>const fruits = ["Mango","Banana", "Orange"];</p>
+            <p>let length = fruits.length;</p>
+
+            <h3 class="hilight">Output</h3>
+            <p id="arrLength"></p>
+        </div>
+
+        <h1>Accessing array 1st and last elements</h1>
+        <div class="code">
+            <p>const animals = ["dog", "cat", "cow", "goat"];</p>
+            <p>
+                document.getElementById("access1stElements").innerHTML =
+                animals[0];
+            </p>
+            <p>
+                document.getElementById("accesslastElements").innerHTML =
+                animals[animals.length-1];
+            </p>
+
+            <h3 class="hilight">Output</h3>
+            <p id="access1stElements"></p>
+            <p id="accesslastElements"></p>
+        </div>
+
+        <h1>Looping Array Elements</h1>
+        <p class="discription">
+            One way to loop through an array, is using a for loop
+        </p>
+        <div class="code">
+            <p>const animals = ["dog", "cat", "cow", "goat"];</p>
+
+            <h3 class="hilight">Output</h3>
+            <p id="arrayLoop"></p>
+        </div>
+
+        <h3>Array.forEach()</h3>
+
+        <div class="code">
+            <p id="forEach"></p>
+        </div>
+
+        <h1>Adding Elements</h1>
+
+        <p class="discription">The easiest way to add a new element to an array is using the push() method</p>
+        
+        <!-- js link  -->
         <script src="./array.js"></script>
     </body>
 </html>
