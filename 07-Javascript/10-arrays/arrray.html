@@ -6,14 +6,29 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Arrays</title>
         <style>
+            *{
+                font-family: Arial, Helvetica, sans-serif;
+            }
             .code {
                 color: rgb(0, 174, 0);
                 word-spacing: 10px;
                 background-color: rgb(41, 41, 41);
-                padding: 10px;
+                padding: 15px;
                 border-radius: 10px;
                 font-family: Arial, Helvetica, sans-serif;
                 font-size: 20px;
+            }
+            .note{
+                background-color: rgba(246, 86, 0, 0.258);
+                color: black;
+                padding: 15px;
+                font-size: 18px;
+            }
+            .hilight{
+                color:#ff0000;
+            }
+            .discription{
+                color:gray;
             }
         </style>
     </head>
@@ -23,7 +38,7 @@
         <p class="code" id="carsArray"></p>
 
         <h1>why use Arrays</h1>
-        <p>
+        <p class="discription">
             If you have a list of items(a list of fruits, for example), storing
             the fruits variables could look like this
         </p>
@@ -35,12 +50,12 @@
             <p>let fruit4 = "orange";</p>
         </div>
 
-        <p>
+        <p class="discription">
             However, what if you wnat to loop through the fruits and find a
             specific one? and what if you had not 4 fruits, but 100?
         </p>
-        <p>The solution is an array!</p>
-        <p>
+        <p class="discription">The solution is an array!</p>
+        <p class="discription">
             An array can hold many values under a single name, and you can
             access the values by referring to an index number.
         </p>
@@ -49,11 +64,12 @@
         <div class="code">
             const array_name = [item1, item2, .................]
         </div>
-        <p>
-            <strong>It is a common practice to declare arrays with the const keyword.</strong >
+        <p class="note">
+            It is a common practice to declare arrays with the <span class="hilight">const</span> keyword.
         </p>
 
-        
+
+
 
         <script src="./array.js"></script>
     </body>
