@@ -210,6 +210,24 @@
 
         <p class="discription">The easiest way to add a new element to an array is using the push() method</p>
         
+        <div class="code">
+            <p>const animals = ["dog", "cat", "cow", "goat"];</p>
+            <p>animals.push("elephant");</p>
+            <h3 class="hilight">Output</h3>
+            <p id="pushItem"></p>
+        </div>
+
+        <div class="note">
+            <h4 class="hilight">WARNING!</h4>
+            <p>adding elements with high indexes can create undefined "holes" in an array</p>
+        </div>
+
+        <div class="code">
+            <p>const flowers = ["pitunia", "sunflower", "rose"];</p>
+            <p>flowers[6] = "jarbera";</p>
+            <h3 class="hilight">Output</h3>
+            <p id="addHighIndex"></p>
+        </div>
         <!-- js link  -->
         <script src="./array.js"></script>
     </body>

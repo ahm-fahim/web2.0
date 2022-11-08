@@ -64,3 +64,21 @@ document.getElementById("forEach").innerHTML = text2;
 function myFunc(animal) {
     text2 += "<li>" + animal + "</li>";
 }
+
+// push method
+animals.push("elephant");
+document.getElementById("pushItem").innerHTML = animals;
+
+// adding element by index number 
+
+const flowers = ["pitunia", "sunflower", "rose"];
+flowers[6] = "jarbera";
+let floLen = flowers.length;
+let text3 = "";
+
+for (let i = 0; i < floLen; i++){
+    text3 += flowers[i] + "<br>";
+}
+
+document.getElementById("addHighIndex").innerHTML = text3;
+
