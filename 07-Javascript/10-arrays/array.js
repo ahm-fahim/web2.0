@@ -82,3 +82,31 @@ for (let i = 0; i < floLen; i++){
 
 document.getElementById("addHighIndex").innerHTML = text3;
 
+
+// 
+const person2 = [];
+person2["firstName"] = "John";
+person2["lastName"] = "Doe";
+person2["age"] = 46;
+// console.log(person2.length);     // Will return 0
+// console.log(person2[0]);        // Will return undefined
+// console.log((person2));
+
+
+//--------
+
+const points1 = new Array(40, 100, 1, 5, 25, 10);
+const points2 = [40, 100, 1, 5, 25, 10];
+
+// console.log(points1);
+// console.log(points2);
+
+document.getElementById("newArr1").innerHTML = points1;
+document.getElementById("newArr2").innerHTML = points1;
+
+// newUnexpected;
+
+const points3 = new Array(60);
+document.getElementById("newUnexpected").innerHTML = points3;
+
+

@@ -208,8 +208,11 @@
 
         <h1>Adding Elements</h1>
 
-        <p class="discription">The easiest way to add a new element to an array is using the push() method</p>
-        
+        <p class="discription">
+            The easiest way to add a new element to an array is using the push()
+            method
+        </p>
+
         <div class="code">
             <p>const animals = ["dog", "cat", "cow", "goat"];</p>
             <p>animals.push("elephant");</p>
@@ -219,7 +222,10 @@
 
         <div class="note">
             <h4 class="hilight">WARNING!</h4>
-            <p>adding elements with high indexes can create undefined "holes" in an array</p>
+            <p>
+                adding elements with high indexes can create undefined "holes"
+                in an array
+            </p>
         </div>
 
         <div class="code">
@@ -227,6 +233,166 @@
             <p>flowers[6] = "jarbera";</p>
             <h3 class="hilight">Output</h3>
             <p id="addHighIndex"></p>
+        </div>
+
+        <h1>Associative Arrays</h1>
+
+        <p class="discription">
+            Arrays with named indexes are called associative arrays (or hashes).
+        </p>
+        <p class="note">
+            JavaScript does not support arrays with named indexes.
+        </p>
+        <p class="note">In JavaScript, arrays always use numbered indexes.</p>
+
+        <div class="code">
+            <p>const person = [];</p>
+            <p>person[0] = "John";</p>
+            <p>person[1] = "Doe";</p>
+            <p>person[2] = 46;</p>
+            <p>person.length; // Will return 3</p>
+            <p>person[0]; // Will return "John"</p>
+        </div>
+
+        <div class="note">
+            <p>
+                <span class="hilight">WARNING !! </span> <br />
+                If you use named indexes, JavaScript will redefine the array to
+                an object. After that, some array methods and properties will
+                produce incorrect results.
+            </p>
+        </div>
+        <h3>Example</h3>
+
+        <div class="code">
+            <p>const person = [];</p>
+            <p>person["firstName"] = "John";</p>
+            <p>person["lastName"] = "Doe";</p>
+            <p>person["age"] = 46;</p>
+            <p>person.length; // Will return 0</p>
+            <p>person[0]; // Will return undefined</p>
+        </div>
+
+        <h1>The difference between arrays and object</h1>
+
+        <div class="note">
+            <p>In JS, Arrays use numbered indexes.</p>
+            <p>In JS, objects use named indexes</p>
+        </div>
+        <div class="note">
+            <p>Arrays are a special kind of objects, with numbered indexes.</p>
+        </div>
+
+        <h1>When to Use Arrays. When to use Objects.</h1>
+
+        <ul>
+            <li>JS does not support assoiative arrays</li>
+            <li>
+                You should use objects when you want the element names to be
+                strings(text)
+            </li>
+            <li>
+                You should use arrays when you want the element nemes to numbers
+            </li>
+        </ul>
+
+        <h2>JS new Array()</h2>
+        <p class="discription">
+            JS has a built-in array constructor
+            <span class="hilight">new Array</span> <br />
+            But you can safely use [] instead <br />
+            These two different statements both create a new empty array named
+            points:
+        </p>
+        <div class="code">
+            <p>
+                const points1 = new Array[]; <br />
+                const points2 = [];
+            </p>
+        </div>
+        <div class="code">
+            <p>const1 points = new Array(40, 100, 1, 5, 25, 10);</p>
+            <p>const2 points = [40, 100, 1, 5, 25, 10];</p>
+        </div>
+
+        <div class="note">
+            The new keyword can produce some unexpected results:
+        </div>
+
+        <div class="code">
+            <p>// Create an array with three elements:</p>
+            <p>const points = new Array(40, 100, 1);</p>
+
+            <h3 class="hilight">Output</h3>
+            <p id="newArr1"></p>
+            <p id="newArr2"></p>
+        </div>
+        <h3>Unexpected Result</h3>
+        <div class="code">
+            <p>const points = new Array(40);</p>
+            <h3 class="hilight">Output</h3>
+            <p id="newUnexpected"></p>
+        </div>
+
+        <h1 class="hilight">A Common Error</h1>
+
+        <div class="code">
+            <p>const points = [40];</p>
+            <p>// is not the same as:</p>
+            <p class="hilight">const points = new Array(40);</p>
+        </div>
+
+        <h1>How to Recognize an Array</h1>
+        <div class="note">
+            <p>
+                A common question is: How do I know if a variable is an array?
+            </p>
+            <p>
+                The problem is that the JavaScript operator
+                <span class="hilight">typeof </span> returns
+                <span class="hilight">"object"</span> :
+            </p>
+        </div>
+
+        <div class="code">
+            <p>const fruits = ["Banana", "Orange", "Apple"];</p>
+            <p>let type = typeof fruits;</p>
+        </div>
+
+        <div class="note">
+            <p>
+                The typeof operator returns object because a JavaScript array is
+                an object
+            </p>
+        </div>
+
+        <h2>solution 1:</h2>
+        <div class="note">
+            <p>
+                To solve this problem ECMAScript 5 (JavaScript 2009) defined a
+                new method <span class="hilight">Array.isArray()</span> :
+            </p>
+        </div>
+        <div class="code">
+            <p>const fruits = ["Banana", "Orange", "Apple"];
+            <p>Array.isArray(fruits);</p>
+            <h3 class="hilight">Output</h3>
+            <p>true</p>
+        </div>
+
+        <h2>solution 2:</h2>
+        <div class="note">
+            <p>
+                The <span class="hilight">instanceof</span> operator returns
+                true if an object is created by a given constructor
+            </p>
+            
+        </div>
+        <div class="code">
+            <p>const fruits = ["Banana", "Orange", "Apple"];</p>
+            <p>fruits instanceof Array;</p>
+            <h3 class="hilight">Output</h3>
+            <p>true</p>
         </div>
         <!-- js link  -->
         <script src="./array.js"></script>
