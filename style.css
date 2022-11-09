@@ -1,0 +1,51 @@
+:root {
+    --tcolor: #50dbb4;
+    --tcolor2: #242b2e;
+}
+
+@import url("https://fonts.cdnfonts.com/css/blazed");
+@import url("https://fonts.cdnfonts.com/css/gravedigger");
+
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0;
+    margin: 0;
+}
+/* Logo  */
+header {
+    background-color: var(--tcolor);
+}
+.logo span {
+    font-size: 35px;
+    color: white;
+    font-family: "Blazed", sans-serif;
+}
+.logo {
+    color: var(--tcolor2);
+    font-weight: bold;
+    font-family: "Gravedigger", sans-serif;
+    font-size: 22px;
+}
+
+/* navigation  */
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    top:0px;
+    background-color: #50dbb458;
+    color: black;
+    width: 160px;
+    border: 1px solid gray;
+    height: 200px;
+}
+.dropdown {
+    display: inline-block;
+}
+.dorpdown-img{
+    height: 200px;
+    width: 160px;
+}
+.dropdown:hover > .dropdown-content {
+    display: block;
+}
