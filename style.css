@@ -1,5 +1,5 @@
 :root {
-    --tcolor: #50dbb4;
+    --tcolor1: #50dbb4;
     --tcolor2: #242b2e;
 }
 
@@ -13,7 +13,7 @@
 }
 /* Logo  */
 header {
-    background-color: var(--tcolor);
+    background-color: var(--tcolor1);
 }
 .logo span {
     font-size: 35px;
@@ -27,25 +27,27 @@ header {
     font-size: 22px;
 }
 
-/* navigation  */
+/* main  */
 
-.dropdown-content {
-    display: none;
-    position: absolute;
-    top:0px;
-    background-color: #50dbb458;
-    color: black;
-    width: 160px;
-    border: 1px solid gray;
-    height: 200px;
+.title img{
+    height: 50px;
 }
-.dropdown {
-    display: inline-block;
+.title span{
+    font-weight: bold;
+    font-size: 30px;
+    color: var(--tcolor2);
 }
-.dorpdown-img{
-    height: 200px;
-    width: 160px;
+.live-btn{
+    text-decoration: none;
+    color:white;
+    background-color: var(--tcolor1);
+    padding: 4px 10px;
+    border-radius: 10px;
 }
-.dropdown:hover > .dropdown-content {
-    display: block;
+.git-btn{
+    text-decoration: none;
+    color: white;
+    background-color: var(--tcolor2);
+    padding: 4px 10px;
+    border-radius: 10px;
 }
