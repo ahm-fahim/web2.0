@@ -27,35 +27,27 @@ header {
     font-size: 22px;
 }
 
-/* navigation  */
-.dorpdown-img {
-    height: 250px;
-    width: 100%;
-    padding: 10px;
+/* main  */
+
+.title img{
+    height: 50px;
 }
-.dropdown-content {
-    display: none;
-    position: absolute;
-    top: 0px;
-    background-color: #50dbb482;
-    color: black;
-    border-radius: 10px;
-    width: 100%;
-    height: 250px;
-    border: 1px solid var(--tcolor2);
-}
-.dropdown-content li a {
-    text-decoration: none;
-    font-size: 20px;
-    color: white;
-    text-shadow: 1px 2px 3px rgb(75, 75, 75);
+.title span{
     font-weight: bold;
+    font-size: 30px;
+    color: var(--tcolor2);
 }
-
-.dropdown {
-    display: inline-block;
+.live-btn{
+    text-decoration: none;
+    color:white;
+    background-color: var(--tcolor1);
+    padding: 4px 10px;
+    border-radius: 10px;
 }
-
-.dropdown:hover > .dropdown-content {
-    display: block;
+.git-btn{
+    text-decoration: none;
+    color: white;
+    background-color: var(--tcolor2);
+    padding: 4px 10px;
+    border-radius: 10px;
 }
