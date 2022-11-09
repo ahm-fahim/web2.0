@@ -1,5 +1,5 @@
 :root {
-    --tcolor: #50dbb4;
+    --tcolor1: #50dbb4;
     --tcolor2: #242b2e;
 }
 
@@ -13,7 +13,7 @@
 }
 /* Logo  */
 header {
-    background-color: var(--tcolor);
+    background-color: var(--tcolor1);
 }
 .logo span {
     font-size: 35px;
@@ -28,24 +28,34 @@ header {
 }
 
 /* navigation  */
-
+.dorpdown-img {
+    height: 250px;
+    width: 100%;
+    padding: 10px;
+}
 .dropdown-content {
     display: none;
     position: absolute;
-    top:0px;
-    background-color: #50dbb458;
+    top: 0px;
+    background-color: #50dbb482;
     color: black;
-    width: 160px;
-    border: 1px solid gray;
-    height: 200px;
+    border-radius: 10px;
+    width: 100%;
+    height: 250px;
+    border: 1px solid var(--tcolor2);
 }
+.dropdown-content li a {
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+    text-shadow: 1px 2px 3px rgb(75, 75, 75);
+    font-weight: bold;
+}
+
 .dropdown {
     display: inline-block;
 }
-.dorpdown-img{
-    height: 200px;
-    width: 160px;
-}
+
 .dropdown:hover > .dropdown-content {
     display: block;
 }
