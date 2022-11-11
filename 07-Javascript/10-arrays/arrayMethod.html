@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Array Method</title>
+        <style>
+            * {
+                font-family: Arial, Helvetica, sans-serif;
+            }
+            .code {
+                color: rgb(0, 174, 0);
+                word-spacing: 10px;
+                background-color: rgb(41, 41, 41);
+                padding: 15px;
+                border-radius: 10px;
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 20px;
+            }
+            .note {
+                background-color: rgba(246, 86, 0, 0.258);
+                color: black;
+                padding: 15px;
+                font-size: 18px;
+            }
+            .hilight {
+                color: #ff0000;
+            }
+            .discription {
+                color: gray;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>JavaSrcipt Array Methods</h1>
+
+        <h3>Converting Array to Strings</h3>
+        <p class="discription">
+            The JS method <span class="hilight">toString()</span> converts an
+            array to a string of(comma separated) array values
+        </p>
+        <div class="code">
+            <p>const fruits = ["Banana", "Orange", "Apple", "Mango"];</p>
+            <p>
+                document.getElementById("demo").innerHTML = fruits.toString();
+            </p>
+
+            <h3 class="hilight">Output</h3>
+
+            <p id="toStringMethod"></p>
+        </div>
+
+        <h3>Join() Method</h3>
+        <p class="discription">
+            The <span class="hilight">join()</span> also join all array elements
+            into a string. <br />
+            It behaves just like <span class="hilight">toString()</span>, but in
+            addintion you can secify the separator.
+        </p>
+
+        <div class="code">
+            <p>const fruits = ["Banana", "Orange", "Apple", "Mango"];</p>
+            <p>
+                document.getElementById("demo").innerHTML = fruits.join(" * ");
+            </p>
+            <h3 class="hilight">Output</h3>
+            <p id="joinMethod"></p>
+        </div>
+
+        <h3>Popping & Pushing</h3>
+        <p class="discription">
+            When you work with arrays, it is easy to remove elements and add new
+            elements <br />
+            This is what popping and pushing is: <br />
+
+            Popping items out of an array, or pushing items into an array.
+        </p>
+
+        <h3>pop() method</h3>
+        <p class="discription">The <span class="hilight">pop()</span> method removes the last element from an array:</p>
+        <div class="code">
+            <p>const fruits = ["Banana", "Orange", "Apple", "Mango"];</p>
+            <p>fruits.pop();</p>
+            <h3 class="hilight">Output</h3>
+            <p id="popMethod"></p>
+        </div>
+
+        <h3>push() Method</h3>
+        <p class="discription">The <span class="hilight">push()</span> method adds a new element to an array (at the end):</p>
+
+        <div class="code">
+            <p>const fruits = ["Banana", "Orange", "Apple", "Mango"];</p>
+            <p>fruits.push("Kiwi");</p>
+            <h3 class="hilight">Output</h3>
+            <p id="pushMethod"></p>
+        </div>
+        <h3>Shifting Elements</h3>
+        <p class="discription">Shifting is equivalent to popping, but working on the first element instead of the last.</p>
+
+        <h3>shift() Method</h3>
+        <p class="discription">The <span class="hilight">shift()</span> method removes the first array element and "shifts" all other elements to a lower index.</p>
+        <div class="code">
+            <p>const fruits = ["Banana", "Orange", "Apple", "Mango"];</p>
+            <p>fruits.shift();</p>
+
+            <h3 class="hilight">Output</h3>
+            <p id="shiftMethod"></p>
+        </div>
+        <!-- script js  -->
+        <script src="./arrayMethod.js"></script>
+    </body>
+</html>
