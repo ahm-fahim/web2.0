@@ -23,7 +23,7 @@
                 color: black;
                 padding: 15px;
                 font-size: 18px;
-                margin:15px;
+                margin: 15px;
             }
             .hilight {
                 color: #ff0000;
@@ -206,10 +206,65 @@
             <p id="mergingMethod"></p>
         </div>
 
+        <h4>Example (Merging Two Arrays)</h4>
         <div class="note">
-            <p>The concat() method does not change the existing arrays. It always returns a new array.
+            <p>
+                The <span class="hilight">concat()</span> method does not change
+                the existing arrays. It always returns a new array. The
+                <span class="hilight">concat()</span> method can take any number
+                of array arguments:
+            </p>
+        </div>
+        <h4>Example (Merging Three Arrays)</h4>
 
-The <span class="hilight">concat()</span> method can take any number of array arguments:</p>
+        <div class="code">
+            <p>const arr1 = ["Cecilie", "Lone"];</p>
+            <p>const arr2 = ["Emil", "Tobias", "Linus"];</p>
+            <p>const arr3 = ["Robin", "Morgan"];</p>
+            <p>const myNewArr = arr1.concat(arr2, arr3);</p>
+            <h3 class="hilight">Output</h3>
+            <p id="concat3Arr"></p>
+        </div>
+
+        <h3>Merging an array with values</h3>
+        <div class="code">
+            <p>const arr4 = ["Emil", "Tobias", "Linus"];</p>
+            <p>const myNewArr2= arr4.concat("Peter");</p>
+            <h3 class="hilight">Output</h3>
+            <p id="concatValues"></p>
+        </div>
+
+        <h3>Splicing and Slicing Arrays</h3>
+        <p class="discription">
+            The <span class="hilight">splice()</span> method adds new items to
+            an array.
+        </p>
+        <p class="discription">
+            The <span class="hilight">slice()</span> method slices out a piece
+            of an array.
+        </p>
+
+        <h3>splice()</h3>
+        <div class="code">
+            <p>const animals = ["dog","cat", "cow"];</p>
+            <p>animals.splice(2, 0, "goat","megpie");</p>
+            <h3 class="hilight">Output</h3>
+            <p id="spliceMethod"></p>
+        </div>
+
+        <div class="note">
+            <p>
+                The first parameter (2) defines the position where new elements
+                should be added (spliced in). <br />
+
+                The second parameter (0) defines how many elements should be
+                removed. <br />
+
+                The rest of the parameters ("goat" , "megpie") define the new
+                elements to be added. <br />
+
+                The splice() method returns an array with the deleted items:
+            </p>
         </div>
         <!-- script js  -->
         <script src="./arrayMethod.js"></script>

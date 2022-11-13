@@ -42,3 +42,24 @@ const myBoys = ["Emil", "Tobias", "Linus"];
 const myChildren = myGirls.concat(myBoys);
 
 document.getElementById("mergingMethod").innerHTML = myChildren;
+
+// concact 3 arr 
+
+const arr1 = ["Cecilie", "Lone"];
+const arr2 = ["Emil", "Tobias", "Linus"];
+const arr3 = ["Robin", "Morgan"];
+const myNewArr = arr1.concat(arr2, arr3);
+
+document.getElementById("concat3Arr").innerHTML = myNewArr;
+
+// concat array with values
+
+const arr4 = ["Emil", "Tobias", "Linus"]; const myNewArr2 = arr4.concat("Peter");
+
+document.getElementById("concatValues").innerHTML = myNewArr2;
+
+//splice
+const animals = ["dog", "cat", "cow"];
+animals.splice(2, 0,"goat","megpie");
+
+document.getElementById("spliceMethod").innerHTML = animals;
