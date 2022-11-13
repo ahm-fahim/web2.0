@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sorting Array</title>
-            <style>
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Sorting Array</title>
+        <style>
             * {
                 font-family: Arial, Helvetica, sans-serif;
             }
@@ -32,19 +32,98 @@
                 color: gray;
             }
         </style>
-</head>
-<body>
-    <h1>Sorting An Array</h1>
+    </head>
+    <body>
+        <h1>Sorting An Array</h1>
 
-    <p class="discription">The <span class="hilight">sort()</span>  method sorts an arrray alphabetically</p>
+        <p class="discription">
+            The <span class="hilight">sort()</span> method sorts an arrray
+            alphabetically
+        </p>
 
-    <div class="code">
-        <p>const fruits = ["Banana", "Orange", "Apple", "Mango"];</p>
-        <p>fruits.sort();</p>
-        <h3 class="hilight">Output</h3>
-        <p id="sort"></p>
-    </div>
+        <div class="code">
+            <p>const fruits = ["Banana", "Orange", "Apple", "Mango"];</p>
+            <p>fruits.sort();</p>
+            <h3 class="hilight">Output</h3>
+            <p id="sort"></p>
+        </div>
 
-    <script src="./sorting.js"></script>
-</body>
+        <h1>Reversing an Array</h1>
+        <p class="discription">
+            The <span class="hilight">reverse()</span> method reverses the
+            elements in an array.
+            <br />
+            You can use it to sort an array in descending order:
+        </p>
+
+        <div class="code">
+            <p>const fruits = ["Banana", "Orange", "Apple", "Mango"];</p>
+            <p>fruits.sort();</p>
+            <p>fruits.reverse();</p>
+
+            <h3 class="hilight">Output</h3>
+            <p id="reverseMethod"></p>
+        </div>
+
+        <h1>Numeric sort</h1>
+        <p class="discription">
+            By default, the <span class="hilight">sort()</span> function sorts
+            values as strings.
+            <br />
+            This works well for strings ("Apple" comes before "Banana").
+            <br />
+            However, if numbers are sorted as strings, "25" is bigger than
+            "100", because "2" is bigger than "1".
+            <br />
+            Because of this, the <span class="hilight">sort()</span> method will
+            produce incorrect result when sorting numbers. <br />
+
+            You can fix this by providing a compare function:
+        </p>
+        <div class="code">
+            <p>const points = [40, 100, 1, 5, 25, 10];</p>
+            <p>points.sort(function(a, b){return a - b});</p>
+            points.sort(function(a, b){return b - a});
+            <h3 class="hilight">Output</h3>
+            <p id="numericSort"></p>
+            <p id="numericSort2"></p>
+        </div>
+
+        <div class="note">
+            <p>
+                When the sort() function compares two values, it sends the
+                values to the compare function, and sorts the values according
+                to the returned (negative, zero, positive) value.
+            </p>
+            <p>If the result is negative, a is sorted before b.</p>
+            <p>If the result is positive, b is sorted before a.</p>
+            <p>
+                If the result is 0, no changes are done with the sort order of
+                the two values.
+            </p>
+            <h3>Example:</h3>
+            <p>
+                The compare function compares all the values in the array, two
+                values at a time (a, b).
+            </p>
+            <p>
+                When comparing 40 and 100, the sort() method calls the compare
+                function(40, 100).
+            </p>
+            <p>
+                The function calculates 40 - 100 (a - b), and since the result
+                is negative (-60), the sort function will sort 40 as a value
+                lower than 100.
+            </p>
+            <p>
+                You can use this code snippet to experiment with numerically and
+                alphabetically sorting:
+            </p>
+        </div>
+
+        <h1>Sort Calculator</h1>
+
+        <!-- js link  -->
+        <script src="./sorting.js"></script>
+    </body>
 </html>
