@@ -266,6 +266,56 @@
                 The splice() method returns an array with the deleted items:
             </p>
         </div>
+        <h3>Using splice() to remove elements</h3>
+        <p class="discription">
+            with clever parameter setting, you can use
+            <span class="hilight"> splice() </span>to remove elements without
+            leaving "holes" in the array
+        </p>
+        <div class="code">
+            <p>const animals = ["dog","cat","goat","megpie","cow"];</p>
+            <p>animals.splice(0,1);</p>
+            <h3 class="hilight">Output</h3>
+            <p id="spliceRemove"></p>
+        </div>
+        <div class="note">
+            <p>
+                The first parameter (0) defines the position where new elements
+                should be added (spliced in). <br />
+
+                The second parameter (1) defines how many elements should be
+                removed. <br />
+
+                The rest of the parameters are omitted. No new elements will be
+                added.
+            </p>
+        </div>
+
+        <h3>JS slice()</h3>
+
+        <p class="discription">
+            The <span class="hilight">slice() </span> method slices out a piece
+            of an array into a new array.
+        </p>
+
+        <div class="code">
+            <p>const animals = ["cat","goat","megpie","cow"];</p>
+            <p>const delanimels = animals.slice(1);</p>
+            <p>const delanimels2 = animals.slice(1, 2)</p>
+            <h3 class="hilight">Output</h3>
+            <p id="sliceMethod"></p>
+            <p id="sliceMethod2"></p>
+
+        </div>
+        <div class="note">
+            <p>
+                The <span class="hilight">slice()</span> method creates a new
+                array.
+                <br />
+                The <span class="hilight">slice()</span> method does not remove
+                any elements from the source array.
+            </p>
+        </div>
         <!-- script js  -->
         <script src="./arrayMethod.js"></script>
     </body>

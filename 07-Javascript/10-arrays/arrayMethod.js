@@ -63,3 +63,12 @@ const animals = ["dog", "cat", "cow"];
 animals.splice(2, 0,"goat","megpie");
 
 document.getElementById("spliceMethod").innerHTML = animals;
+animals.splice(0, 1); // remove
+document.getElementById("spliceRemove").innerHTML = animals;
+
+
+// slice method 
+const delanimels = animals.slice(1);
+document.getElementById("sliceMethod").innerHTML = delanimels;
+const delanimels2 = animals.slice(1, 2);
+document.getElementById("sliceMethod2").innerHTML = delanimels2;
