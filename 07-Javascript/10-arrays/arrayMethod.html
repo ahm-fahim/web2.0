@@ -23,6 +23,7 @@
                 color: black;
                 padding: 15px;
                 font-size: 18px;
+                margin:15px;
             }
             .hilight {
                 color: #ff0000;
@@ -78,7 +79,10 @@
         </p>
 
         <h3>pop() method</h3>
-        <p class="discription">The <span class="hilight">pop()</span> method removes the last element from an array:</p>
+        <p class="discription">
+            The <span class="hilight">pop()</span> method removes the last
+            element from an array:
+        </p>
         <div class="code">
             <p>const fruits = ["Banana", "Orange", "Apple", "Mango"];</p>
             <p>fruits.pop();</p>
@@ -87,7 +91,10 @@
         </div>
 
         <h3>push() Method</h3>
-        <p class="discription">The <span class="hilight">push()</span> method adds a new element to an array (at the end):</p>
+        <p class="discription">
+            The <span class="hilight">push()</span> method adds a new element to
+            an array (at the end):
+        </p>
 
         <div class="code">
             <p>const fruits = ["Banana", "Orange", "Apple", "Mango"];</p>
@@ -96,10 +103,16 @@
             <p id="pushMethod"></p>
         </div>
         <h3>Shifting Elements</h3>
-        <p class="discription">Shifting is equivalent to popping, but working on the first element instead of the last.</p>
+        <p class="discription">
+            Shifting is equivalent to popping, but working on the first element
+            instead of the last.
+        </p>
 
         <h3>shift() Method</h3>
-        <p class="discription">The <span class="hilight">shift()</span> method removes the first array element and "shifts" all other elements to a lower index.</p>
+        <p class="discription">
+            The <span class="hilight">shift()</span> method removes the first
+            array element and "shifts" all other elements to a lower index.
+        </p>
         <div class="code">
             <p>const fruits = ["Banana", "Orange", "Apple", "Mango"];</p>
             <p>fruits.shift();</p>
@@ -108,7 +121,96 @@
             <p id="shiftMethod"></p>
         </div>
 
-        
+        <h3>unshift() Method</h3>
+        <p class="discription">
+            The <span class="hilight">unshift()</span> method adds a new element
+            to an array (at the beginning), and "unshifts" older elements:
+        </p>
+
+        <div class="code">
+            <p>const fruits = ["Orange", "Apple", "Kiwi"];</p>
+            <p>fruits.unshift("Lemon");</p>
+
+            <h3 class="hilight">Output</h3>
+            <p id="unshiftMethod"></p>
+        </div>
+
+        <h3>Changing Elements</h3>
+        <p class="discription">
+            Array elements are accessed using their index number
+        </p>
+        <div class="note">
+            <p>
+                Array indexes start with 0:
+                <br />
+                [0] is the first array element <br />
+                [1] is the second <br />
+                [2] is the third ...
+            </p>
+        </div>
+
+        <h4>Example</h4>
+
+        <div class="code">
+            <p>const fruits = ["Lemon", "Orange", "Apple", "Kiwi"];</p>
+            <p>fruits[0] = "Passion";</p>
+            <h3 class="hilight">Output</h3>
+            <p id="changingElements"></p>
+        </div>
+
+        <h3>JS array length</h3>
+        <p class="discription">
+            The <span class="hilight">length</span> property provides an easy
+            way to append a new element to an array:
+        </p>
+
+        <div class="code">
+            <p>const fruits = ["Passion", "Orange", "Apple", "Kiwi"];</p>
+            <p>fruits[fruits.length] = "Kiwi";</p>
+            <h3 class="hilight">Output</h3>
+            <p id="lengthMethod"></p>
+        </div>
+
+        <h3>JS Arrat delete()</h3>
+        <div class="note">
+            <p>
+                <span class="hilight">Warning !</span> <br />
+                Array elements can be deleted using the JavaScript operator
+                delete. <br />
+                Using delete leaves undefined holes in the array.
+                <br />
+                Use pop() or shift() instead.
+            </p>
+        </div>
+
+        <div class="code">
+            <p>const fruits = ["Passion", "Orange", "Apple", "Kiwi","Kiwi"];</p>
+            <p>delete fruits[0];</p>
+            <h3 class="hilight">Output</h3>
+            <p id="deleteMethod"></p>
+        </div>
+
+        <h3>Merging (concatenating) Arrays</h3>
+        <p class="discription">
+            The <span class="hilight">concat()</span> method creates a new array
+            by merging (concatenating) existing array
+        </p>
+
+        <div class="code">
+            <p>const myGirls = ["Cecilie", "Lone"];</p>
+
+            <p>const myBoys = ["Emil", "Tobias", "Linus"];</p>
+
+            <p>const myChildren = myGirls.concat(myBoys);</p>
+            <h3 class="hilight">Output</h3>
+            <p id="mergingMethod"></p>
+        </div>
+
+        <div class="note">
+            <p>The concat() method does not change the existing arrays. It always returns a new array.
+
+The <span class="hilight">concat()</span> method can take any number of array arguments:</p>
+        </div>
         <!-- script js  -->
         <script src="./arrayMethod.js"></script>
     </body>
