@@ -123,13 +123,53 @@
 
         <h1>Alpabetic sort and numeric sort</h1>
 
-        <h3>Random sort</h3>
-
         <div class="code">
-            <p>const points = [40, 100, 1, 5, 25, 10];</p>
-            <p>points.sort(function(){return 0.5 - Math.random()});</p>
+            <p>const nums = [33, 44, 11, 4, 1, 23, 59, 89, 5, 8];</p>
+            <button onclick="myFunc1()">Alphabetically</button>
+            <p id="alpha"></p>
+            <button onclick="myFunc2()">Numeric</button>
+            <p id="numeric"></p>
         </div>
 
+        <h3>Random sort()</h3>
+
+        <div class="code">
+            <p>const nums = [33, 44, 11, 4, 1, 23, 59, 89, 5, 8];</p>
+            <h3 class="hilight">Output</h3>
+            <p id="randomSort"></p>
+        </div>
+
+
+        <h3>The Fisher Yates Method</h3>
+
+        <div class="code">
+            <p>const nums = [33, 44, 11, 4, 1, 23, 59, 89, 5, 8];</p>
+            <button onclick="fishFunc()">Fisher Yates</button>
+            <h3 class="hilight">Output</h3>
+            <p id="fisherYates"></p>
+        </div>
+
+        <h2>Find Highest(or lowest) Array Value</h2>
+
+        <div class="code">
+            <p>const nums = [33, 44, 11, 4, 1, 23, 59, 89, 5, 8];</p>
+            <h3 class="hilight">Output</h3>
+            <mark>Min to Max</mark>
+            <p id="maxValue"></p>
+            <mark>Max to Min</mark>
+            <p id="minValue"></p>
+
+
+        </div>
+
+        <h3>Using Math.max() on an Array</h3>
+        <p class="discription">You can use <span class="hilight">Math.max.apply</span> to find the highest number in an array</p>
+
+        <div class="code">
+            <p>const nums = [33, 44, 11, 4, 1, 23, 59, 89, 5, 8];</p>
+            <h3 class="hilight">Output</h3>
+            <p id="maxMethod"></p>
+        </div>
         <!-- js link  -->
         <script src="./sorting.js"></script>
     </body>
