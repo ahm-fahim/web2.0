@@ -83,3 +83,7 @@ header {
     height: 200px;
     overflow: scroll;
 }
+
+.border-left{
+    border-left: 4px solid var(--tcolor1);
+}
