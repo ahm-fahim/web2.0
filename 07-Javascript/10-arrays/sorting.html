@@ -139,7 +139,6 @@
             <p id="randomSort"></p>
         </div>
 
-
         <h3>The Fisher Yates Method</h3>
 
         <div class="code">
@@ -158,17 +157,46 @@
             <p id="maxValue"></p>
             <mark>Max to Min</mark>
             <p id="minValue"></p>
-
-
         </div>
 
         <h3>Using Math.max() on an Array</h3>
-        <p class="discription">You can use <span class="hilight">Math.max.apply</span> to find the highest number in an array</p>
+        <p class="discription">
+            You can use <span class="hilight">Math.max.apply</span> to find the
+            highest number in an array
+        </p>
 
         <div class="code">
             <p>const nums = [33, 44, 11, 4, 1, 23, 59, 89, 5, 8];</p>
             <h3 class="hilight">Output</h3>
+            <mark>max</mark>
             <p id="maxMethod"></p>
+            <mark>min</mark>
+            <p id="minMethod"></p>
+        </div>
+
+        <h2>Custom max/min</h2>
+
+        <div class="code">
+            <p>const nums = [33, 44, 11, 4, 1, 23, 59, 89, 5, 8];</p>
+            <h3 class="hilight">Output</h3>
+            <mark>max</mark>
+            <p id="customMax"></p>
+            <mark>min</mark>
+            <p id="customMin"></p>
+        </div>
+
+        <h1>Sorting Object Arrays</h1>
+        <div class="code">
+            <p>const cars = [</p>
+            <p>  {type:"Volvo", year:2016},</p>
+            <p>  {type:"Saab", year:2001},</p>
+            <p>  {type:"BMW", year:2010}</p>
+            <p>];</p>
+
+            <p>cars.sort(function(a, b){return a.year - b.year});</p>
+
+            <h3 class="hilight">Output</h3>
+            <p id="objectSort"></p>
         </div>
         <!-- js link  -->
         <script src="./sorting.js"></script>
