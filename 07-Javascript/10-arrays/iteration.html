@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Iteration</title>
+        <style>
+            * {
+                font-family: Arial, Helvetica, sans-serif;
+            }
+            .code {
+                color: rgb(0, 174, 0);
+                word-spacing: 10px;
+                background-color: rgb(41, 41, 41);
+                padding: 15px;
+                border-radius: 10px;
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 20px;
+                margin: 10px 2px;
+            }
+            .note {
+                background-color: rgba(246, 86, 0, 0.258);
+                color: black;
+                padding: 15px;
+                font-size: 18px;
+                margin: 15px;
+            }
+            .hilight {
+                color: #ff0000;
+            }
+            .discription {
+                color: gray;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>JS Iteration</h1>
+
+        <h2>forEach()</h2>
+        <p class="discription">
+            The <span class="hilight">forEach()</span> method calls a function
+            (a callback function) once for each array element.
+        </p>
+        <div class="code">
+            <p>const nums = [33, 44, 53, 65, 23, 64, 12];</p>
+        </div>
+        <div class="code">
+            <p id="forEach"></p>
+        </div>
+
+        <h2>map()</h2>
+        <p class="discription">
+            The <span class="hilight">map()</span> method creates a new array by
+            performing a function on each array element. <br />
+
+            The <span class="hilight">map()</span> method does not execute the
+            function for array elements without values. <br />
+
+            The <span class="hilight">map()</span> method does not change the
+            original array.
+        </p>
+        <div class="code">
+            <p id="map"></p>
+        </div>
+
+        <h2>Array filter()</h2>
+        <p class="discription">
+            The <span class="hilight">filter()</span> method creates a new array
+            with array elements that pass a test.
+        </p>
+        <div class="code">
+            <p id="filter"></p>
+        </div>
+
+        <h2>Array reduce()</h2>
+        <p class="discription">
+            The <span class="hilight">reduce()</span> method runs a function on
+            each array element to produce (reduce it to) a single value. <br />
+
+            The <span class="hilight">reduce()</span> method works from
+            left-to-right in the array. See also
+            <span class="hilight">reduceRight()</span>.
+        </p>
+        <div class="code">
+            <p id="reduce"></p>
+        </div>
+        <p class="discription">
+            The reduce() method can accept an initial value
+        </p>
+        <div class="code">
+            <p id="initialReduce"></p>
+        </div>
+
+        <h3>reduceRight()</h3>
+        <p class="discription">
+            The reduceRight() method runs a function on each array element to
+            produce (reduce it to) a single value.
+            <br />
+            The reduceRight() works from right-to-left in the array. See also
+            reduce().
+        </p>
+
+        <div class="code">
+            <p id="reduceRight"></p>
+        </div>
+
+        <h2>Array every()</h2>
+        <p class="discription">The every() method checks if all array values pass a test.</p>
+        <div class="code">
+            <p id="every"></p>
+        </div>
+        <!-- script js  -->
+        <script src="./arrayIteration.js"></script>
+    </body>
+</html>
