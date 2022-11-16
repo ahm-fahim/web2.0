@@ -87,3 +87,19 @@ header {
 .border-left{
     border-left: 4px solid var(--tcolor1);
 }
+
+/* HTML SECTION style */
+.html-section{
+    background-image: url("./assets/images/svg/banner.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+}
+
+/* js section  */
+.js-section{
+    background-image: url("./assets/images/svg/banner.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+}
