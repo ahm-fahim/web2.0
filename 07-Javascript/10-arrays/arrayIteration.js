@@ -60,3 +60,17 @@ document.getElementById("every").innerHTML = allOver18;
 function everyFunc(value, index, array) {
     return value > 18;
 }
+
+//some()
+let someOver18 = nums.some(someFunc);
+document.getElementById("some").innerHTML = someOver18;
+function someFunc(value) {
+    return value > 18;
+}
+
+//indexOf
+
+const fruits = ["apple", "banana", "mango"];
+let position = fruits.indexOf("mango") + 1;
+document.getElementById("indexOf").innerHTML = position;
+
