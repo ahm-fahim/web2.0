@@ -54,7 +54,7 @@ header {
 .card {
     border: none;
     box-shadow: 2px 3px 10px rgb(210, 210, 210);
-    padding: 10px 5px;
+    padding: 15px 5px 5px 5px;
 }
 
 /* width */
