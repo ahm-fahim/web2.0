@@ -14,7 +14,13 @@
 }
 /* Logo  */
 header {
-    background-color: var(--tcolor1);
+    background-image: linear-gradient(45deg, #00b79292, #00f5c466),
+        url("./assets/images/background/5291450.jpg");
+    width: 100%;
+    background-size: cover;
+    background-repeat: none;
+    height: 50px;
+    margin-bottom: 0px;
 }
 .logo span {
     font-size: 35px;
@@ -64,26 +70,25 @@ header {
     transition: 1s;
 }
 .card:hover {
-     background-image:
-    linear-gradient(45deg,#02b28f59, #00f5c459 ),
-    url('./assets/images/background/5291450.jpg');
+    background-image: linear-gradient(45deg, #02b28f59, #00f5c459),
+        url("./assets/images/background/5291450.jpg");
     width: 100%;
     background-size: cover;
     background-repeat: none;
 }
-.card:hover .card-title{
-    color:white;
+.card:hover .card-title {
+    color: white;
 }
-.card:hover .live-btn{
+.card:hover .live-btn {
     background-color: var(--tcolor2);
-    color:white;
+    color: white;
 }
-iframe{
+iframe {
     border-radius: 10px;
     transition: 2s;
     padding: 10px;
 }
-.card:hover iframe{
+.card:hover iframe {
     background-color: white;
 }
 /* width */
@@ -129,7 +134,6 @@ iframe{
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
-    margin-top: -20px;
 }
 
 /* js section  */
