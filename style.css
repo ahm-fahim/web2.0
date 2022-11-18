@@ -1,6 +1,7 @@
 :root {
-    --tcolor1: #02B290;
+    --tcolor1: #02b290;
     --tcolor2: #242b2e;
+    --tcolor3: #02b28fa7;
 }
 
 @import url("https://fonts.cdnfonts.com/css/blazed");
@@ -43,6 +44,7 @@ header {
     background-color: var(--tcolor1);
     padding: 4px 10px;
     border-radius: 10px;
+    transition: 1s;
 }
 .git-btn {
     text-decoration: none;
@@ -55,8 +57,35 @@ header {
     border: none;
     box-shadow: 2px 3px 10px rgb(210, 210, 210);
     padding: 15px 5px 5px 5px;
+    transition: 2s;
 }
-
+.card-title {
+    color: var(--tcolor1);
+    transition: 1s;
+}
+.card:hover {
+     background-image:
+    linear-gradient(45deg,#02b28f59, #00f5c459 ),
+    url('./assets/images/background/5291450.jpg');
+    width: 100%;
+    background-size: cover;
+    background-repeat: none;
+}
+.card:hover .card-title{
+    color:white;
+}
+.card:hover .live-btn{
+    background-color: var(--tcolor2);
+    color:white;
+}
+iframe{
+    border-radius: 10px;
+    transition: 2s;
+    padding: 10px;
+}
+.card:hover iframe{
+    background-color: white;
+}
 /* width */
 ::-webkit-scrollbar {
     width: 0px;
@@ -84,21 +113,28 @@ header {
     overflow: scroll;
 }
 
-.border-left{
-    border-left: 4px solid var(--tcolor1);
+.border-left {
+    background-image: url("./assets/images/background/5291450.jpg");
+    background-size: cover;
+    width: 100%;
+    background-repeat: none;
 }
-
+/* Main Section  */
+.main-section {
+    margin: 0;
+}
 /* HTML SECTION style */
-.html-section{
-    background-image: url("./assets/images/svg/banner.svg");
+.html-section {
+    background-image: url("./assets/images/background/SL-011719-17920-65.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
+    margin-top: -20px;
 }
 
 /* js section  */
-.js-section{
-    background-image: url("./assets/images/svg/banner.svg");
+.js-section {
+    background-image: url("./assets/images/background/5291450.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
