@@ -113,7 +113,7 @@ iframe{
     overflow: scroll;
 }
 
-.border-left {
+.card-bg {
     background-image: url("./assets/images/background/5291450.jpg");
     background-size: cover;
     width: 100%;
