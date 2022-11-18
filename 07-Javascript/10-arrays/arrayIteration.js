@@ -1,4 +1,4 @@
-const nums = [33, 44, 53, 65, 23, 64, 12];
+const nums = [12, 33, 44, 53, 65, 23, 64, 12];
 
 let emty = "";
 
@@ -16,7 +16,6 @@ document.getElementById("map").innerHTML = numsMap;
 function mapFunc(value, index, array) {
     return value * 2;
 }
-
 
 //filter()
 
@@ -48,7 +47,7 @@ function initialReduceFunc(total, value) {
 let reduceRight = nums.reduceRight(reduceRightFunc);
 document.getElementById("reduceRight").innerHTML = reduceRight;
 
-function reduceRightFunc(total, value){
+function reduceRightFunc(total, value) {
     return total + value;
 }
 
@@ -74,3 +73,54 @@ const fruits = ["apple", "banana", "mango"];
 let position = fruits.indexOf("mango") + 1;
 document.getElementById("indexOf").innerHTML = position;
 
+// lastIndexOf()
+
+let lastPosition = fruits.lastIndexOf("apple") + 1;
+document.getElementById("lastIndexOf").innerHTML = lastPosition;
+
+//find()
+
+let findNums = nums.find(findFunc);
+document.getElementById("find").innerHTML = findNums;
+
+function findFunc(value) {
+    return value > 18;
+}
+
+//findIndex
+
+let findIndex = nums.findIndex(findIndexFunc);
+
+document.getElementById("findIndex").innerHTML = findIndex;
+
+function findIndexFunc(value) {
+    return value > 18;
+}
+
+//form()
+
+const newArr = Array.from("ABCDEFG");
+document.getElementById("arrForm").innerHTML = newArr;
+
+//keys()
+
+const keys = fruits.keys();
+
+let emtyValue = "";
+for (let i of keys) {
+    emtyValue += i + ", ";
+}
+document.getElementById("keys").innerHTML = emtyValue;
+
+//entries()
+const fruits2 = ["Banana", "Orange", "Apple", "Mango"];
+
+const entriesValue = fruits2.entries();
+
+for (let x of entriesValue) {
+    document.getElementById("entries").innerHTML += x + " ";
+}
+
+//includes
+
+document.getElementById("includes").innerHTML = fruits2.includes("Apple");
