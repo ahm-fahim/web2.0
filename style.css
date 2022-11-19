@@ -59,6 +59,25 @@ header {
     padding: 4px 10px;
     border-radius: 10px;
 }
+
+/* git card  */
+.git-card a {
+    text-decoration: none;
+    color: var(--tcolor2);
+    font-weight: 900;
+    font-size: 20px;
+}
+.git-card {
+    background-image: url("./assets/images/background/SL-011719-17920-65.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+    padding: 15px 0px;
+    border-radius: 10px;
+    box-shadow: 2px 3px 10px rgb(210, 210, 210);
+    margin: 5px;
+}
+/* all cards */
 .card {
     border: none;
     box-shadow: 2px 3px 10px rgb(210, 210, 210);
