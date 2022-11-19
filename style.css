@@ -15,7 +15,7 @@
 /* Logo  */
 header {
     background-image: linear-gradient(45deg, #00b79292, #00f5c466),
-        url("./assets/images/background/5291450.jpg");
+        url("./assets/images/background/bg4.jpg");
     width: 100%;
     background-size: cover;
     background-repeat: none;
@@ -68,7 +68,7 @@ header {
     font-size: 20px;
 }
 .git-card {
-    background-image: url("./assets/images/background/SL-011719-17920-65.jpg");
+    background-image:url("./assets/images/background/bg4.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     text-align: center;
@@ -90,7 +90,7 @@ header {
 }
 .card:hover {
     background-image: linear-gradient(45deg, #02b28f59, #00f5c459),
-        url("./assets/images/background/5291450.jpg");
+        url("./assets/images/background/bg4.jpg");
     width: 100%;
     background-size: cover;
     background-repeat: none;
@@ -138,7 +138,7 @@ iframe {
 }
 
 .card-bg {
-    background-image: url("./assets/images/background/5291450.jpg");
+    background-image: url("./assets/images/background/bg3.jpg");
     background-size: cover;
     width: 100%;
     background-repeat: none;
@@ -149,7 +149,7 @@ iframe {
 }
 /* HTML SECTION style */
 .html-section {
-    background-image: url("./assets/images/background/SL-011719-17920-65.jpg");
+    background-image: url("./assets/images/background/bg2.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
@@ -157,7 +157,7 @@ iframe {
 
 /* js section  */
 .js-section {
-    background-image: url("./assets/images/background/5291450.jpg");
+    background-image: url("./assets/images/background/bg3.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
