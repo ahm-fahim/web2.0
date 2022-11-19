@@ -49,3 +49,53 @@ console.log(date.getDate());
 //getHours()
 
 console.log(currentyear.getHours());
+console.log(currentyear.getMinutes());
+console.log(currentyear.getSeconds());
+console.log(currentyear.getMilliseconds());
+console.log(currentyear.getTime());
+
+const days = [
+    "Sunday",
+    "Monday",
+    "Tuesday",
+    "Wednesday",
+    "Thursday",
+    "Friday",
+    "Saturday",
+];
+
+console.log("Today", days[currentyear.getDay()]);
+
+//Date.now();
+
+console.log("Date.now = ", Date.now());
+
+// Calculate the number of years since 1970/01/01
+console.log("Calculate the number of years since 1970/01/01");
+
+const minute = 1000 * 60;
+const hour = minute * 60;
+const day = hour * 24;
+const year = day * 365;
+
+let years = Math.round(Date.now() / year);
+console.log(years);
+
+/*
+UTC Date Get Methods
+
+Method	                Same As	            Description
+
+getUTCDate()	        getDate()	        Returns the UTC date
+getUTCFullYear()	    getFullYear()	    Returns the UTC year
+getUTCMonth()	        getMonth()	        Returns the UTC month
+getUTCDay()	            getDay()	        Returns the UTC day
+getUTCHours()	        getHours()	        Returns the UTC hour
+getUTCMinutes()	        getMinutes()	    Returns the UTC minutes
+getUTCSeconds()	        getSeconds()	    Returns the UTC seconds
+getUTCMilliseconds()	getMilliseconds()	Returns the UTC milliseconds
+*/
+
+//The getTimezoneOffset() Method
+
+console.log("The getTimezoneOffset() Method", date.getTimezoneOffset());
