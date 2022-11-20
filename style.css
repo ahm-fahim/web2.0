@@ -66,11 +66,11 @@ header {
     color: var(--tcolor2);
     font-weight: 900;
     font-size: 20px;
-    text-shadow: -2px -2px 4px white;
+    
 
 }
 .git-card {
-    background-image:url("./assets/images/background/bg4.jpg");
+    background-image:linear-gradient(#ffffff88 ,#ffffff88 ), url("./assets/images/background/bg4.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     text-align: center;
