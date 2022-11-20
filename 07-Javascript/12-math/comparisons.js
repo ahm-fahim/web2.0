@@ -54,11 +54,11 @@ variablename = (condition) ? value1:value2
 
 // The Nullish Coalescing Opearator(??)
 
-// let name = null;
-// let text = "missing";
-// let result = name ?? text;
+let name = null;
+let text = "missing";
+let result = name ?? text;
 
-// console.log(result);
+console.log(result);
 
 const car = { type: "Fiat", model: "500", color: "white" };
 let carName = car?.carName;
