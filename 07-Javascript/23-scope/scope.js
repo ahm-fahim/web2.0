@@ -9,24 +9,23 @@ These two keywords provide Block Scope in JavaScript.
 Variables declared inside a { } block cannot be accessed from outside the block:
 */
 {
-  var a = 2;
+    var a = 2;
 }
 // a CAN be used here
 
 {
-  let x = 2;
+    let x = 2;
 }
 // x can NOT be used here
 
 // code here can NOT use carName
 
 function myFunction() {
-  let carName = "Volvo";
-  // code here CAN use carName
+    let carName = "Volvo";
+    // code here CAN use carName
 }
 
 // code here can NOT use carName
-
 
 // Function Scope
 // JavaScript has function scope: Each function creates a new scope.
@@ -38,13 +37,13 @@ function myFunction() {
 // They all have Function Scope:
 
 function myFunction() {
-  var carName = "Volvo";   // Function Scope
+    var carName = "Volvo"; // Function Scope
 }
 function myFunction() {
-  let carName = "Volvo";   // Function Scope
+    let carName = "Volvo"; // Function Scope
 }
 function myFunction() {
-  const carName = "Volvo";   // Function Scope
+    const carName = "Volvo"; // Function Scope
 }
 
 // Global JavaScript Variables
@@ -55,7 +54,7 @@ let carName = "Volvo";
 // code here can use carName
 
 function myFunction() {
-// code here can also use carName
+    // code here can also use carName
 }
 
 // Automatically Global
@@ -69,5 +68,5 @@ myFunction();
 // code here can use carName
 
 function myFunction() {
-  carName = "Volvo";
+    carName = "Volvo";
 }
