@@ -141,5 +141,129 @@ console.log(b);
 
 //JSON.parse()
 
+//The JavaScript function JSON.parse() is used to convert the text into a JavaScript object:
+
 var obj = JSON.parse('{"name":"John", "age":30, "city":"New York"}');
 console.log(obj);
+
+//JSON.stringify()
+
+//Use the JavaScript function JSON.stringify() to convert it into a string.
+
+console.log(JSON.stringify(obj));
+
+//Date.now()
+// Date.now() returns the number of milliseconds since zero date (January 1. 1970 00:00:00 UTC).
+var timeInMSs = Date.now();
+console.log(timeInMSs);
+
+//Date toISOString()
+// The toISOString() method converts a Date object to a string, using the ISO standard format:
+
+const d = new Date();
+console.log(d.toISOString());
+
+//Date toJSON()
+
+console.log(d.toJSON());
+
+//Property Getters and Setters
+
+// Create an object:
+var person = {
+    firstName: "John",
+    lastName: "Doe",
+    get fullName() {
+        return this.firstName + " " + this.lastName;
+    },
+};
+
+console.log(person.fullName);
+
+var person2 = {
+    firstName: "Fahim",
+    lastName: "Morshed",
+    language: "NO",
+    get lang() {
+        return this.language;
+    },
+    set lang(value) {
+        this.language = value;
+    },
+};
+
+// Set an object property using a setter:
+person2.lang = "bn";
+
+console.log(person2.lang);
+
+//Object.defineProperty()
+
+var car = {
+    name: "Volvo",
+    year: 2011,
+    language: "NO",
+};
+
+//Changge Object property
+
+Object.defineProperty(car, "language", {
+    value: "BN",
+    writable: true,
+    enumerable: true,
+    configurable: true,
+});
+
+//Enumerate Proverties
+
+for (var x in car) {
+    console.log(car[x]);
+}
+
+// E5 object method 
+
+
+// Managing Objects
+// ------------------------------
+// Create object with an existing object as prototype
+Object.create(parent, donor)
+
+// Adding or changing an object property
+Object.defineProperty(object, property, descriptor)
+
+// Adding or changing object properties
+Object.defineProperties(object, descriptors)
+
+// Accessing Properties
+Object.getOwnPropertyDescriptor(object, property)
+
+// Returns all properties as an array
+Object.getOwnPropertyNames(object)
+
+// Accessing the prototype
+Object.getPrototypeOf(object)
+
+// Returns enumerable properties as an array
+Object.keys(object)
+
+//Protecting Objects
+// -----------------------------
+// Prevents adding properties to an object
+Object.preventExtensions(object)
+
+// Returns true if properties can be added to an object
+Object.isExtensible(object)
+
+// Prevents changes of object properties (not values)
+Object.seal(object)
+
+// Returns true if object is sealed
+Object.isSealed(object)
+
+// Prevents any changes to an object
+Object.freeze(object)
+
+// Returns true if object is frozen
+Object.isFrozen(object)
+
+
