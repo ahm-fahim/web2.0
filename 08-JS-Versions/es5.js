@@ -220,50 +220,64 @@ for (var x in car) {
     console.log(car[x]);
 }
 
-// E5 object method 
-
+// E5 object method
 
 // Managing Objects
 // ------------------------------
 // Create object with an existing object as prototype
-Object.create(parent, donor)
+// Object.create(parent, donor);
 
-// Adding or changing an object property
-Object.defineProperty(object, property, descriptor)
+// // Adding or changing an object property
+// Object.defineProperty(object, property, descriptor);
 
-// Adding or changing object properties
-Object.defineProperties(object, descriptors)
+// // Adding or changing object properties
+// Object.defineProperties(object, descriptors);
 
-// Accessing Properties
-Object.getOwnPropertyDescriptor(object, property)
+// // Accessing Properties
+// Object.getOwnPropertyDescriptor(object, property);
 
-// Returns all properties as an array
-Object.getOwnPropertyNames(object)
+// // Returns all properties as an array
+// Object.getOwnPropertyNames(object);
 
-// Accessing the prototype
-Object.getPrototypeOf(object)
+// // Accessing the prototype
+// Object.getPrototypeOf(object);
 
-// Returns enumerable properties as an array
-Object.keys(object)
+// // Returns enumerable properties as an array
+// Object.keys(object);
 
-//Protecting Objects
-// -----------------------------
-// Prevents adding properties to an object
-Object.preventExtensions(object)
+// //Protecting Objects
+// // -----------------------------
+// // Prevents adding properties to an object
+// Object.preventExtensions(object);
 
-// Returns true if properties can be added to an object
-Object.isExtensible(object)
+// // Returns true if properties can be added to an object
+// Object.isExtensible(object);
 
-// Prevents changes of object properties (not values)
-Object.seal(object)
+// // Prevents changes of object properties (not values)
+// Object.seal(object);
 
-// Returns true if object is sealed
-Object.isSealed(object)
+// // Returns true if object is sealed
+// Object.isSealed(object);
 
-// Prevents any changes to an object
-Object.freeze(object)
+// // Prevents any changes to an object
+// Object.freeze(object);
 
-// Returns true if object is frozen
-Object.isFrozen(object)
+// // Returns true if object is frozen
+// Object.isFrozen(object);
 
+// function bind()
 
+const garden = {
+    firstName: "Fahim",
+    lastName: "Garden",
+    fullName: function () {
+        return this.firstName + " " + this.lastName;
+    },
+};
+
+const correctName = {
+    firstName: "Fahim's",
+    lastName: "Garden",
+};
+let fullName = garden.fullName.bind(correctName);
+console.log(fullName());
