@@ -202,5 +202,123 @@ function findFunc(a) {
     return a > 18;
 }
 
-
 //Array findIndex()
+let fIndex = nums.findIndex(findFunc);
+console.log(fIndex);
+
+/*
+New Math Methods
+ES6 added the following methods to the Math object:
+
+Math.trunc()
+Math.sign()
+Math.cbrt()
+Math.log2()
+Math.log10()
+*/
+
+// The Math.trunc() Method
+// Math.trunc(x) returns the integer part of x:
+
+// Example
+Math.trunc(4.9); // returns 4
+Math.trunc(4.7); // returns 4
+Math.trunc(4.4); // returns 4
+Math.trunc(4.2); // returns 4
+Math.trunc(-4.2); // returns -4
+
+// The Math.sign() Method
+// Math.sign(x) returns if x is negative, null or positive:
+
+// Example
+Math.sign(-4); // returns -1
+Math.sign(0); // returns 0
+Math.sign(4); // returns 1
+
+// The Math.cbrt() Method
+// Math.cbrt(x) returns the cube root of x:
+
+// Example
+Math.cbrt(8); // returns 2
+Math.cbrt(64); // returns 4
+Math.cbrt(125); // returns 5
+
+// The Math.log2() Method
+// Math.log2(x) returns the base 2 logarithm of x:
+
+// Example
+Math.log2(2);
+
+// The Math.log10() Method
+// Math.log10(x) returns the base 10 logarithm of x:
+
+// Example
+Math.log10(10); // returns 1
+
+// New Number Properties
+// ES6 added the following properties to the Number object:
+
+// EPSILON
+// MIN_SAFE_INTEGER
+// MAX_SAFE_INTEGER
+
+let epsilon = Number.EPSILON;
+console.log(epsilon);
+
+console.log(Number.MAX_SAFE_INTEGER);
+console.log(Number.MIN_SAFE_INTEGER);
+
+// New Number Methods
+// ES6 added 2 new methods to the Number object:
+
+Number.isInteger();
+Number.isSafeInteger();
+
+console.log(Number.isInteger(10));
+console.log(Number.isInteger(10.2));
+
+// The Number.isSafeInteger() Method
+// A safe integer is an integer that can be exactly represented as a double precision number.
+
+// The Number.isSafeInteger() method returns true if the argument is a safe integer.
+
+// Example
+Number.isSafeInteger(10); // returns true
+Number.isSafeInteger(12345678901234567890); // returns false
+
+/*
+New Global Methods
+ES6 added 2 new global number methods:
+
+isFinite()
+isNaN()
+
+*/
+// The global isFinite() method returns false if the argument is Infinity or NaN
+// otherwise returns true
+
+console.log(isFinite(10 / 0));
+console.log(isFinite(10 / 1));
+
+// The isNaN() Method
+// The global isNaN() method returns true if the argument is NaN. Otherwise it returns false:
+
+// Example
+isNaN("Hello"); // returns true
+
+//entries()
+const f = fruits.entries();
+
+for (let x of f) {
+    console.log(x);
+}
+
+/*
+Modules
+Modules are imported in two differen ways:
+
+Import from named exports
+Import named exports from the file person.js:
+
+import { name, age } from "./person.js";
+*/
