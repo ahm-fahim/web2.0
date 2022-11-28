@@ -1,4 +1,4 @@
-const btn = document.getElementsByTagName('button');
+const btn = document.getElementsByTagName("button");
 
 function dark() {
     document.body.style.backgroundColor = "black";
@@ -17,13 +17,38 @@ grayBtn.onclick = function () {
     document.body.style.color = "white";
 };
 
-
 // addeventlistener
 
-const goldBtn = document.getElementById('gold');
+const goldBtn = document.getElementById("gold");
 
-goldBtn.addEventListener('click', () => {
+goldBtn.addEventListener("click", () => {
     document.body.style.backgroundColor = "gold";
     document.body.style.color = "black";
+});
 
-})
+// artical
+
+// const article = document.getElementById("article");
+
+// function addArticle() {
+//     article.innerHTML = "Document Object Model Event Handler";
+// }
+
+// short
+
+document.getElementById("addarticle").addEventListener("click", () => {
+    document.getElementById("article").innerHTML =
+        "Document Object Model Event Handler";
+});
+
+//add name
+
+document.getElementById("addName").addEventListener("click", () => {
+    const inputValue = document.getElementById("nameField");
+    
+    const li = document.createElement('li');
+    li.innerHTML = inputValue.value;
+
+    document.getElementById("nameList").appendChild(li);
+    inputValue.value = '';
+});

@@ -1,18 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Events</title>
-</head>
-<body>
-    <h1>JS & HTML Event Handler</h1>
-    <button onclick="dark()">Dark Mode</button>
-    <button onclick="light()">Light Mode</button>
-    <button id="gray">Gray Mode</button>
-    <button id="gold">Gold Mode</button>
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Events</title>
+        <style>
+            .todoApp {
+                background-color: aliceblue;
+                padding: 20px;
+                margin: 20px;
+                border: 1px solid gray;
+                border-radius: 10px;
+                width: 300px;
+                height: 400px;
+            }
+            #nameList {
+                height: 300px;
+                width: 100%;
+                overflow-y: scroll;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>JS & HTML Event Handler</h1>
+        <p id="article"></p>
+        <button onclick="dark()">Dark Mode</button>
+        <button onclick="light()">Light Mode</button>
+        <button id="gray">Gray Mode</button>
+        <button id="gold">Gold Mode</button>
+        <br /><br />
 
-    <script src="./events.js"></script>
-</body>
+        <button id="addarticle" onclick="addArticle()">Add Artical</button>
+        <br />
+        <br />
+        <div class="todoApp">
+            <h3>TODO LIST</h3>
+            <input type="text" id="nameField" />
+            <button id="addName">Add Name</button>
+            <ol id="nameList">
+                <li>Add What to do?</li>
+            </ol>
+        </div>
+        <script src="./events.js"></script>
+    </body>
 </html>
