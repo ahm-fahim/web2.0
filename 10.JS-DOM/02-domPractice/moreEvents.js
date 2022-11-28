@@ -1,6 +1,7 @@
 const delBtn = document.getElementById("del-btn");
 const delConfirm = document.getElementById('del-confirm');
 const itemList = document.getElementById('item-list'); 
+const item = document.getElementById('item');
 
 delConfirm.addEventListener("keyup", () => {
     if (delConfirm.value == "delete") {
@@ -14,8 +15,7 @@ delConfirm.addEventListener("keyup", () => {
 })
 
 delBtn.addEventListener("click", () => {
-    console.log(itemList.innerHTML);
-    itemList.style.display = "none";
+    itemList.removeChild(item);
     delConfirm.value = " ";
 })
 
