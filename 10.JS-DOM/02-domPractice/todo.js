@@ -4,6 +4,8 @@ const listContainer = document.getElementById("list-container");
 const items = document.getElementsByClassName('item');
 
 //---------------------------------------
+//This is not a right way
+//-----------------------------------------------------
 // delete items 
 // for (const item of items) {
 //     item.addEventListener('click', (e) => {
