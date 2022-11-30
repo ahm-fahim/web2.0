@@ -15,11 +15,15 @@ const updateValue = (value, id) => {
     getId.innerText = amountTotal; // set display data
 };
 // update balance
-const updateBalance = (id, value) => {
+const updateBalance = (id, value,sum) => {
     const balanceId = document.getElementById(id);
     const balanceValue = balanceId.innerText;
     const balanceAmount = parseFloat(balanceValue);
-    balanceId.innerText = balanceAmount + value;
+    if (sum == true) {
+        balanceId.innerText = balanceAmount + value;
+    } else {
+        balanceId.innerText = balanceAmount - value;
+    }
 };
 
 document.getElementById("deposit-btn").addEventListener("click", () => {
@@ -28,7 +32,7 @@ document.getElementById("deposit-btn").addEventListener("click", () => {
     // update amount
     updateValue(depoInput, "deposit-amount");
     //update balance
-    updateBalance("balance-amount", depoInput);
+    updateBalance("balance-amount", depoInput, true);
 });
 
 // withdraw
@@ -40,5 +44,5 @@ document.getElementById("withdraw-btn").addEventListener("click", () => {
     updateValue(withdrawInput, "withdraw-amount");
 
     //update balace
-    updateBalance("balance-amount", -withdrawInput);
+    updateBalance("balance-amount", withdrawInput, false);
 });
