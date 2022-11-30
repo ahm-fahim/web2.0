@@ -52,13 +52,11 @@ document.getElementById("withdraw-btn").addEventListener("click", () => {
     const balanceId = document.getElementById("balance-amount");
     const balanceText = balanceId.innerText;
     const prevBalanceAmount = parseFloat(balanceText);
-
+    
     // update balance 
     const newBalance = prevBalanceAmount - withdrawInput;
 
     balanceId.innerText = newBalance;
-
-
     //clear withdraw input
     withdrawInputId.value = "";
 });

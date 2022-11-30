@@ -13,7 +13,6 @@ const updateValue = (value, id) => {
     const getPrevAmount = parseFloat(getData);
     const amountTotal = getPrevAmount + value;
     getId.innerText = amountTotal; // set display data
-    return amountTotal;
 };
 // update balance
 const updateBalance = (id, value) => {
@@ -37,16 +36,9 @@ document.getElementById("deposit-btn").addEventListener("click", () => {
 document.getElementById("withdraw-btn").addEventListener("click", () => {
     // get Input
     const withdrawInput = getInputValue("withdraw-input");
+    //update withdraw amount
+    updateValue(withdrawInput, "withdraw-amount");
 
-    const newWithdrawAmount = updateValue(withdrawInput, "withdraw-amount");
-
-    //get balance id
-    const balanceId = document.getElementById("balance-amount");
-    const balanceText = balanceId.innerText;
-    const prevBalanceAmount = parseFloat(balanceText);
-
-    // update balance
-    const newBalance = prevBalanceAmount - withdrawInput;
-
-    balanceId.innerText = newBalance;
+    //update balace
+    updateBalance("balance-amount", -withdrawInput);
 });
