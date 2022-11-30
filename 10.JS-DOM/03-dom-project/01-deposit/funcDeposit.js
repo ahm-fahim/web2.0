@@ -1,55 +1,41 @@
 // get Input value
-
 const getInputValue = (id) => {
     const getId = document.getElementById(id);
     const getData = getId.value;
-    const value = parseFloat(getData);
-
-    // clear input value 
-    getId.value = '';
-
-    return value;
-}
-
+    const getValue = parseFloat(getData);
+    getId.value = ""; //clear input value
+    return getValue;
+};
+// update data
 const updateValue = (value, id) => {
     const getId = document.getElementById(id);
     const getData = getId.innerText;
-    // convert str to nums
     const getPrevAmount = parseFloat(getData);
-
-    // update amount
     const amountTotal = getPrevAmount + value;
-
-    //display amount
-    getId.innerText = amountTotal;
-
+    getId.innerText = amountTotal; // set display data
     return amountTotal;
-}
-
+};
+// update balance
+const updateBalance = (id, value) => {
+    const balanceId = document.getElementById(id);
+    const balanceValue = balanceId.innerText;
+    const balanceAmount = parseFloat(balanceValue);
+    balanceId.innerText = balanceAmount + value;
+};
 
 document.getElementById("deposit-btn").addEventListener("click", () => {
-    
-    // get input 
+    // get input
     const depoInput = getInputValue("deposit-input");
-
     // update amount
-    const newDepoAmount = updateValue(depoInput, "deposit-amount");
-
-    //get balance id
-    const balanceId = document.getElementById("balance-amount");
-    const balanceText = balanceId.innerText;
-    const balanceAmount = parseFloat(balanceText);
-
-    // set Balance amount
-    balanceId.innerText = newDepoAmount;
-
+    updateValue(depoInput, "deposit-amount");
+    //update balance
+    updateBalance("balance-amount", depoInput);
 });
 
 // withdraw
 
 document.getElementById("withdraw-btn").addEventListener("click", () => {
-
-    // get Input 
+    // get Input
     const withdrawInput = getInputValue("withdraw-input");
 
     const newWithdrawAmount = updateValue(withdrawInput, "withdraw-amount");
@@ -63,5 +49,4 @@ document.getElementById("withdraw-btn").addEventListener("click", () => {
     const newBalance = prevBalanceAmount - withdrawInput;
 
     balanceId.innerText = newBalance;
-
 });
