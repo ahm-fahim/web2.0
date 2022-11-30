@@ -6,46 +6,150 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Deposit</title>
         <script src="https://cdn.tailwindcss.com"></script>
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+            integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
         <style>
-            body{
+            body {
                 background-image: url("../../../assets/images/background/bg2.jpg");
                 background-repeat: no-repeat;
                 background-size: cover;
                 width: 100%;
+                height: 100vh;
             }
         </style>
     </head>
 
     <body>
         <header>
+            <!-- navigation  -->
             <nav class="bg-fuchsia-600 w-100 h-10 flex justify-around pt-1">
                 <h1 class="font-bold text-xl text-white">Secure Deposit</h1>
-                <a href="./login.html" class="font-bold text-lg text-white">logout 💇🏻‍♂️</a>
-
+                <a href="./login.html" class="text-lg text-white"
+                    >Logout <i class="fa-sharp fa-solid fa-user"></i
+                ></a>
             </nav>
-            <h1 class="mt-5 text-6xl font-bold flex justify-center">Welcome to <span class="text-fuchsia-600 mx-2"> Secure Deposit</span> </h1>
+            <!-- deposite title  -->
+            <h1 class="mt-5 text-6xl font-bold flex justify-center">
+                Welcome to
+                <span class="text-fuchsia-600 mx-2"> Secure Deposit</span>
+            </h1>
         </header>
-        <main>
+        <!-- main deposit Withdraw and balance area  -->
+        <main class="w-3/4 mx-auto">
             <section class="mt-10">
-                <div class="grid grid-cols-3 gap-4 w-3/4 m-auto">
-                    <div class="bg-fuchsia-600 p-5 rounded-lg shadow-gray-300 shadow-2xl">
+                <div class="grid grid-cols-3 gap-4">
+                    <!-- deposit  -->
+                    <div
+                        class="bg-fuchsia-600 p-5 rounded-lg shadow-gray-300 shadow-2xl"
+                    >
                         <h3 class="text-xl font-bold text-white">Deposit</h3>
                         <h1 class="text-7xl text-white font-bold">$000</h1>
                     </div>
-                    <div class="bg-fuchsia-600 p-5 rounded-lg shadow-gray-300 shadow-2xl">
+                    <!-- Withdraw  -->
+                    <div
+                        class="bg-purple-600 p-5 rounded-lg shadow-gray-300 shadow-2xl"
+                    >
                         <h3 class="text-xl font-bold text-white">Withdraw</h3>
                         <h1 class="text-7xl text-white font-bold">$000</h1>
                     </div>
-                    <div class="bg-fuchsia-600 p-5 rounded-lg shadow-gray-300 shadow-2xl">
+                    <!-- balance  -->
+                    <div
+                        class="bg-fuchsia-600 p-5 rounded-lg shadow-gray-300 shadow-2xl"
+                    >
                         <h3 class="text-xl font-bold text-white">Balance</h3>
                         <h1 class="text-7xl text-white font-bold">$000</h1>
-                    </div>  
-                  
+                    </div>
                 </div>
             </section>
+            <!-- deposit and withdraw section  -->
+            <section class="mt-10">
+                <div class="grid grid-cols-2 gap-4">
+                    <!-- deposit amount  -->
+                    <div
+                        class="bg-fuchsia-200 p-5 rounded-lg shadeow-gray-300 shadow-2xl"
+                    >
+                        <input
+                            id="deposit-amount"
+                            type="number"
+                            class="block mt-5 shadow-inner p-3 w-4/4 rounded-md shadow-gray-300"
+                            placeholder="$ Deposit Amount"
+                        />
+                        <button
+                            id="deposit-btn"
+                            class="p-2 px-4 bg-white rounded mt-4"
+                        >
+                            Deposit
+                        </button>
+                    </div>
+                    <!-- withdraw amount  -->
+                    <div
+                        class="bg-purple-200 p-5 rounded-lg shadeow-gray-300 shadow-2xl"
+                    >
+                        <input
+                            id="withdraw-amount"
+                            type="number"
+                            class="block mt-5 shadow-inner p-3 w-4/4 rounded-md shadow-gray-300"
+                            placeholder="$ Withdraw Amount"
+                        />
+                        <button
+                            id="withdraw-btn"
+                            class="p-2 px-4 bg-white rounded mt-4"
+                        >
+                            Withdraw
+                        </button>
+                    </div>
+                </div>
+            </section>
+            <!-- footer section  -->
+            <footer>
+                <section class="mt-10">
+                    <div class="grid grid-cols-1 gap-4">
+                        <div
+                            class="bg-purple-300 p-5 rounded-lg shadeow-gray-300 shadow-2xl"
+                        >
+                            <div class="grid grid-cols-3 gap-10">
+                                <div>
+                                    <h2 class="text-xl font-bold">
+                                        Privacy Policey
+                                    </h2>
+                                    <p class="text-md">Terms & Conditions</p>
+                                    <p class="text-md">Accecibility</p>
+                                </div>
+                                <div>
+                                    <h2 class="text-xl font-bold">
+                                        <i
+                                            class="fa-sharp fa-solid fa-gear"
+                                        ></i>
+                                        Account Settings
+                                    </h2>
+                                    <p class="text-md">Profile Settings</p>
+                                </div>
+                                <div>
+                                    <h2 class="text-xl font-bold mb-3">
+                                        Our Social Network
+                                    </h2>
+                                    <a
+                                        class="p-2 px-4 bg-blue-800 text-white pt-1 rounded mt-5"
+                                    >
+                                        Facebook
+                                    </a>
+                                    <a
+                                        class="p-2 m-2 px-4 bg-blue-400 text-white pt-1 rounded mt-5"
+                                    >
+                                        Twiter
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </footer>
         </main>
-
-
 
         <script src="./deposit.js"></script>
     </body>
