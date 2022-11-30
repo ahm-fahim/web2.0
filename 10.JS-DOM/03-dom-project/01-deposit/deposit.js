@@ -23,7 +23,7 @@ document.getElementById("deposit-btn").addEventListener("click", () => {
     const balanceAmount = parseFloat(balanceText);
 
     // set Balance amount
-    balanceId.innerText = newDepoAmount;
+    balanceId.innerText = balanceAmount + depoInput;
 
     //clear deposit input value
     getdepoInputId.value = " ";
