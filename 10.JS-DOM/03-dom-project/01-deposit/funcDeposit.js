@@ -57,7 +57,7 @@ document.getElementById("withdraw-btn").addEventListener("click", () => {
         updateBalance("balance-amount", withdrawInput, false); //update balace
     } else if (withdrawInput > totalBalance) {
         let emtyBalance = document.createElement('p');
-        emtyBalance = "amount too low!";
+        emtyBalance = "amounts too low!";
         document.getElementById("emtyBalance").innerText = emtyBalance;
     } else {
         warning("wWarning");
