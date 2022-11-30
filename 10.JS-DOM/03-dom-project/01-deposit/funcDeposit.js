@@ -11,22 +11,29 @@ const getInputValue = (id) => {
     return value;
 }
 
+const updateValue = (value, id) => {
+    const getId = document.getElementById(id);
+    const getData = getId.innerText;
+    // convert str to nums
+    const getPrevAmount = parseFloat(getData);
+
+    // update amount
+    const amountTotal = getPrevAmount + value;
+
+    //display amount
+    getId.innerText = amountTotal;
+
+    return amountTotal;
+}
+
 
 document.getElementById("deposit-btn").addEventListener("click", () => {
- 
+    
+    // get input 
     const depoInput = getInputValue("deposit-input");
 
-    // get deposit display id
-    const depoAmountId = document.getElementById("deposit-amount");
-    const depoAmountText = depoAmountId.innerText;
-    // convert str to nums
-    const prevDepoAmount = parseFloat(depoAmountText);
-
-    // update (+) new deposit amount
-    const newDepoAmount = prevDepoAmount + depoInput;
-
-    //set deposit amount on display id
-    depoAmountId.innerText = newDepoAmount;
+    // update amount
+    const newDepoAmount = updateValue(depoInput, "deposit-amount");
 
     //get balance id
     const balanceId = document.getElementById("balance-amount");
@@ -42,18 +49,10 @@ document.getElementById("deposit-btn").addEventListener("click", () => {
 
 document.getElementById("withdraw-btn").addEventListener("click", () => {
 
+    // get Input 
     const withdrawInput = getInputValue("withdraw-input");
 
-    //get withdraw amount id
-    const withdrawAmountId = document.getElementById("withdraw-amount");
-    const withdrawAmountIdValue = withdrawAmountId.innerText;
-    const prevWithdrawAmount = parseFloat(withdrawAmountIdValue);
-
-    // update (+) withdraw amount
-    const newWithdrawAmount = prevWithdrawAmount + withdrawInput;
-
-    // set withdraw amount
-    withdrawAmountId.innerText = newWithdrawAmount;
+    const newWithdrawAmount = updateValue(withdrawInput, "withdraw-amount");
 
     //get balance id
     const balanceId = document.getElementById("balance-amount");
