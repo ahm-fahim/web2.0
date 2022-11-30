@@ -48,21 +48,27 @@
                         class="bg-fuchsia-600 p-5 rounded-lg shadow-gray-300 shadow-2xl"
                     >
                         <h3 class="text-xl font-bold text-white">Deposit</h3>
-                        <h1 class="text-7xl text-white font-bold">$000</h1>
+                        <h1 class="text-4xl text-white font-bold">
+                            $<span id="deposit-amount">000</span>
+                        </h1>
                     </div>
                     <!-- Withdraw  -->
                     <div
                         class="bg-purple-600 p-5 rounded-lg shadow-gray-300 shadow-2xl"
                     >
                         <h3 class="text-xl font-bold text-white">Withdraw</h3>
-                        <h1 class="text-7xl text-white font-bold">$000</h1>
+                        <h1 class="text-4xl text-white font-bold">
+                            $<span id="withdraw-amount">000</span>
+                        </h1>
                     </div>
                     <!-- balance  -->
                     <div
                         class="bg-fuchsia-600 p-5 rounded-lg shadow-gray-300 shadow-2xl"
                     >
                         <h3 class="text-xl font-bold text-white">Balance</h3>
-                        <h1 class="text-7xl text-white font-bold">$000</h1>
+                        <h1 class="text-4xl text-white font-bold">
+                            $<span id="balance-amount">000</span>
+                        </h1>
                     </div>
                 </div>
             </section>
@@ -74,7 +80,7 @@
                         class="bg-fuchsia-200 p-5 rounded-lg shadeow-gray-300 shadow-2xl"
                     >
                         <input
-                            id="deposit-amount"
+                            id="deposit-input"
                             type="number"
                             class="block mt-5 shadow-inner p-3 w-4/4 rounded-md shadow-gray-300"
                             placeholder="$ Deposit Amount"
@@ -91,7 +97,7 @@
                         class="bg-purple-200 p-5 rounded-lg shadeow-gray-300 shadow-2xl"
                     >
                         <input
-                            id="withdraw-amount"
+                            id="withdraw-input"
                             type="number"
                             class="block mt-5 shadow-inner p-3 w-4/4 rounded-md shadow-gray-300"
                             placeholder="$ Withdraw Amount"
