@@ -1,5 +1,6 @@
+
 //__________________________________________________________________________
-                             // Reaction section \\
+// Reaction section \\
 //__________________________________________________________________________
 //reaction counting function
 const reactionCount = (id) => {
@@ -15,14 +16,9 @@ const reaction = (id, count) => {
         reactionCount(count);
     });
 };
-//love reaction
-reaction("love1", "loveCount1");
-
-//star reaction
-reaction("star1", "starCount1");
 
 //__________________________________________________________________________
-                             // Quantity section \\
+// Quantity section \\
 //__________________________________________________________________________
 //add items function
 const addItems = (id) => {
@@ -59,28 +55,57 @@ const countItems = (btn, count, add) => {
     });
 };
 
-//count add Items
-countItems("addItems1", "countItems1", true);
-
-// count sub items
-countItems("subItems1", "countItems1", false);
 
 //__________________________________________________________________________
-                             // Add To Cart section \\
+// Add To Cart section \\
 //__________________________________________________________________________
 
-document.getElementById("addCart1").addEventListener('click', () => {
-    const priceId = document.getElementById("price1");
+// items price function
+const itemPrice = (id) => {
+    const priceId = document.getElementById(id);
     const priceValue = priceId.innerText;
     const toInt = parseFloat(priceValue);
+    return toInt;
+};
 
-    console.log(toInt);
-    const cartId = document.getElementById('cartAmount');
+//get cart amount function
+const cartAmount = (id, price, quantity) => {
+    const cartId = document.getElementById(id);
     const cartValue = cartId.innerText;
     const cartAmount = parseFloat(cartValue);
 
-    const quantityId = document.getElementById("countItems1");
-    const quantity = quantityId.value;
+    cartId.innerText =cartAmount+ price * quantity;
+};
 
-    cartId.innerText = toInt * quantity;
-});
+//get quantity
+const getQuantity = (id) => {
+    const quantityId = document.getElementById(id);
+    const quantity = quantityId.value;
+    return quantity;
+};
+
+//SET TOTAL AMOUNT FUNCTION
+const totalAmount = (cartBtn, priceId, quantityId) => {
+    document.getElementById(cartBtn).addEventListener("click", () => {
+        const price = itemPrice(priceId);
+        const quantity = getQuantity(quantityId);
+        cartAmount("cartAmount", price, quantity);
+    });
+}
+
+/*/^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\*\
+                            DATABASE
+\*\_______________________________________________________/*/
+
+//ITEM - 1
+countItems("addItems1", "countItems1", true);//count add Items
+countItems("subItems1", "countItems1", false);// count sub items
+totalAmount("addCart1", "price1", "countItems1");//set amount on cart
+reaction("love1", "loveCount1");//love reaction
+reaction("star1", "starCount1");//star reaction
+//ITEM - 2
+countItems("addItems2", "countItems2", true);//count add Items
+countItems("subItems2", "countItems2", false);// count sub items
+totalAmount("addCart2", "price2", "countItems2");//set amount on cart
+reaction("love2", "loveCount2");//love reaction
+reaction("star2", "starCount2");//star reaction
