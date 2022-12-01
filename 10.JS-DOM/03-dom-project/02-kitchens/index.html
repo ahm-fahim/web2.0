@@ -21,6 +21,13 @@
                 height: 115px;
                 width: 110px;
             }
+            .coverBG {
+                background: url("../../../assets/images/background/bg10.png");
+                background-size: cover;
+                background-repeat: no-repeat;
+                height: 100%;
+                width: 100%;
+            }
         </style>
     </head>
     <body class="bg-green-50">
@@ -56,9 +63,34 @@
                 </div>
             </div>
         </section>
+        <!-- cover section  -->
+        <section>
+            <div
+                class="grid lg:grid-cols-2 gap-6 flex justify-center items-center p-10"
+            >
+                <div
+                    class="coverBG border-b-4 border-green-500 flex justify-center items-center"
+                >
+                    <h1 class="lg:text-7xl md:text-3xl font-bold " style="text-shadow:2px 3px 10px rgba(128, 128, 128, 0.496);">
+                        <span class="text-green-500">I will eat well </span>and
+                        stay healthy
+                    </h1>
+                </div>
+                <div class="flex justify-center">
+                    <img
+                        class="max-h-96 border-b-4 border-green-500"
+                        src="../../../assets/images/food/eat1.png"
+                        alt=""
+                    />
+                </div>
+            </div>
+        </section>
 
+        <!-- main section  -->
         <main>
-            <div class="grid lg:grid-cols-4 md:grid-cols-2 gap-6 mt-10 mx-10">
+            <div
+                class="grid lg:grid-cols-4 md:grid-cols-2 gap-6 mt-10 mx-10 mb-10"
+            >
                 <!-- cols 1 -->
                 <div class="bg-white shadow-2xl shadow-gray-400 rounded-md">
                     <img
