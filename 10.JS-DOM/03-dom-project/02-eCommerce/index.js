@@ -33,6 +33,7 @@ const addItems = (id) => {
     if (toInt >= 0) {
         getId.value = total;
     }
+    return total;
 };
 //sub items function
 const subItems = (id) => {
@@ -43,6 +44,7 @@ const subItems = (id) => {
     if (toInt > 0) {
         getId.value = sub;
     }
+    return sub;
 };
 
 //count items function
@@ -72,5 +74,13 @@ document.getElementById("addCart1").addEventListener('click', () => {
     const priceValue = priceId.innerText;
     const toInt = parseFloat(priceValue);
 
-    document.getElementById("cartAmount").innerText = toInt;
+    console.log(toInt);
+    const cartId = document.getElementById('cartAmount');
+    const cartValue = cartId.innerText;
+    const cartAmount = parseFloat(cartValue);
+
+    const quantityId = document.getElementById("countItems1");
+    const quantity = quantityId.value;
+
+    cartId.innerText = toInt * quantity;
 });
