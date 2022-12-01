@@ -109,9 +109,16 @@ countItems("subItems2", "countItems2", false);// count sub items
 totalAmount("addCart2", "price2", "countItems2");//set amount on cart
 reaction("love2", "loveCount2");//love reaction
 reaction("star2", "starCount2");//star reaction
-//ITEM - 2
+//ITEM - 3
 countItems("addItems3", "countItems3", true);//count add Items
 countItems("subItems3", "countItems3", false);// count sub items
 totalAmount("addCart3", "price3", "countItems3");//set amount on cart
 reaction("love3", "loveCount3");//love reaction
 reaction("star3", "starCount3");//star reaction
+//ITEM - 4
+countItems("addItems4", "countItems4", true);//count add Items
+countItems("subItems4", "countItems4", false);// count sub items
+totalAmount("addCart4", "price4", "countItems4");//set amount on cart
+reaction("love4", "loveCount4");//love reaction
+reaction("star4", "starCount4");//star reaction
+
