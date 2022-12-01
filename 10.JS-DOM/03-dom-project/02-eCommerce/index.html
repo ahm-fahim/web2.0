@@ -18,7 +18,7 @@
         <header
             class="bg-green-500 h-20 flex justify-between items-center px-10"
         >
-            <h1 class="md:text-3xl text-white font-bold">E-Commerce</h1>
+            <h1 class="md:text-3xl text-white font-bold">Kitchens</h1>
             <nav class="">
                 <a href="" class="text-lg mx-5 text-white">Home</a>
                 <a href="" class="text-lg mx-5 text-white">Shop</a>
@@ -33,46 +33,34 @@
         </header>
 
         <main>
-            <div class="grid lg:grid-cols-4 md:grid-cols-2 gap-4 mt-10 mx-5">
-                <div
-                    class="bg-white flex justify-center rounded-md shadow-2xl shadow-gray-300"
-                >
-                    <div>
-                        <img
-                            src="../../../assets/images/food/burger2.png"
-                            class="h-min place-self-center"
-                            alt=""
-                        />
-                        <div class="mx-4">
-                            <h2 class="text-2xl">
-                                Price -$<span class="font-bold" id="price"
-                                    >124</span
-                                >
-                            </h2>
-                        </div>
-                        <div class="flex justify-between mx-4 mt-5 mb-4">
-                            <button
-                                id="addToCart-btn"
-                                class="bg-green-500 text-white rounded-md text-lg px-3"
-                            >
-                                Add To Cart
+            <div class="grid lg:grid-cols-4 md:grid-cols-2 gap-6 mt-10 mx-10">
+                <!-- cols 1 -->
+                <div class="bg-white shadow-2xl shadow-gray-600 rounded-md">
+                    <img src="../../../assets/images/food/burger4.png" alt="" class="w-3/4 mx-auto mt-4">
+                    <h1 class="text-xl text-gray-600 mx-6">Price -$<span class="text-3xl font-bold  text-black-600">124</span></h1>
+                    <div class="mx-6 flex justify-center grid grid-cols-4">
+                        <span class="text-gray-400 text-md">Quantity</span>
+                        <button id="subItems" class="hover:bg-gray-200">
+                            <i class="fa-solid fa-minus"></i>
+                        </button>
+                        <input id="countItems" value="1"class="text-center">
+                        <button id="addItems" class="hover:bg-gray-200">
+                            <i class="fa-solid fa-plus"></i>
+                        </button>
+                    </div>
+                    <div class="flex justify-between m-6">
+                        <button id="addCart" class="px-10 bg-green-500 text-white pt-2 pb-2">
+                            <i class="fa-solid fa-cart-plus"></i>
+                        </button>
+                        <div class="flex mt-2">
+                            <button id="react">
+                                <i class="fa-solid fa-heart text-red-600 text-2xl"></i>
                             </button>
-                            <p class="border rounded-md px-2">
-                                <span class="text-3xl mx-2" id="sub">-</span>
-                                <span class="text-2xl mx-2" id="countItems"
-                                    >0</span
-                                >
-                                <span class="text-3xl mx-2" id="add">+</span>
-                            </p>
-                            <div class="text-2xl mt-1 w-16 flex justify-end">
-                                <button id="react">
-                                    <i class="fa-solid fa-heart text-red-600 "></i>
-                                </button>
-                                <span id="react-count" class="-mt-2 text-black-600 ">0</span>
-                            </div>
+                            <input class="w-10 -mt-5 text-lg" value = "1" id="reactCount">
                         </div>
                     </div>
                 </div>
+                <!-- cols 2 -->
             </div>
         </main>
 
