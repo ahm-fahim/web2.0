@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>E-Commerce</title>
+        <script src="https://cdn.tailwindcss.com"></script>
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+            integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+    </head>
+    <body>
+        <header
+            class="bg-green-500 h-20 flex justify-between items-center px-10"
+        >
+            <h1 class="md:text-3xl text-white font-bold">E-Commerce</h1>
+            <nav class="">
+                <a href="" class="text-lg mx-5 text-white">Home</a>
+                <a href="" class="text-lg mx-5 text-white">Shop</a>
+                <a href="" class="text-lg mx-5 text-white">About</a>
+                <a href="" class="text-lg mx-5 text-white"
+                    ><i class="fa-solid fa-cart-shopping"></i
+                ></a>
+                <a href="" class="text-lg mx-5 text-white"
+                    ><i class="fa-solid fa-user"></i
+                ></a>
+            </nav>
+        </header>
+
+        <main>
+            <div class="grid lg:grid-cols-4 md:grid-cols-2 gap-4 mt-10 mx-5">
+                <div
+                    class="bg-white flex justify-center rounded-md shadow-2xl shadow-gray-300"
+                >
+                    <div>
+                        <img
+                            src="../../../assets/images/food/burger2.png"
+                            class="h-min place-self-center"
+                            alt=""
+                        />
+                        <div class="mx-4">
+                            <h2 class="text-2xl">
+                                Price -$<span class="font-bold" id="price"
+                                    >124</span
+                                >
+                            </h2>
+                        </div>
+                        <div class="flex justify-between mx-4 mt-5 mb-4">
+                            <button
+                                id="addToCart-btn"
+                                class="bg-green-500 text-white rounded-md text-lg px-3"
+                            >
+                                Add To Cart
+                            </button>
+                            <p class="border rounded-md px-2">
+                                <span class="text-3xl mx-2" id="sub">-</span>
+                                <span class="text-2xl mx-2" id="countItems"
+                                    >0</span
+                                >
+                                <span class="text-3xl mx-2" id="add">+</span>
+                            </p>
+                            <div class="text-2xl mt-1 w-16 flex justify-end">
+                                <button id="react">
+                                    <i class="fa-solid fa-heart text-red-600 "></i>
+                                </button>
+                                <span id="react-count" class="-mt-2 text-black-600 ">0</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <!-- javascript  -->
+        <script src="./index.js"></script>
+    </body>
+</html>
