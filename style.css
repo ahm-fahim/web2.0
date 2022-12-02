@@ -46,6 +46,12 @@ header {
     font-size: 30px;
     color: var(--tcolor3);
 }
+.projectBG{
+    background-image: url("./assets/images/background/bg12.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+}
 .title img {
     height: 50px;
 }
@@ -157,5 +163,12 @@ iframe {
     margin: 0;
 }
 
+
+.jsBG{
+    background-image: url("./assets/images/background/bg12.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 100%;
+}
 
 
