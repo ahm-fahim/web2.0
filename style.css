@@ -41,7 +41,11 @@ header {
 
 }
 /* main  */
-
+.project-title{
+    font-weight: bold;
+    font-size: 30px;
+    color: var(--tcolor3);
+}
 .title img {
     height: 50px;
 }
