@@ -15,7 +15,7 @@
 }
 /* Logo  */
 header {
-    background-image: var(--tcolor1);
+    background-color: var(--tcolor1);
     border-bottom: 1px solid rgba(128, 128, 128, 0.23);
     width: 100%;
     background-size: cover;
@@ -32,7 +32,14 @@ header {
     font-family: "Gravedigger", sans-serif;
     font-size: 22px;
 }
+/* cover  */
+.coverBG{
+    background-image: url("./assets/images/logo/lg3.png");
+    height: 550px;
+    background-size: cover;
+    background-repeat: no-repeat;
 
+}
 /* main  */
 
 .title img {
@@ -147,8 +154,4 @@ iframe {
 }
 
 
-/* card 2  */
 
-.card-2{
-    
-}
