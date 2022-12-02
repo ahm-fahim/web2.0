@@ -1,10 +1,11 @@
 :root {
     --tcolor1: #ffff;
     --tcolor2: #242b2e;
-    --tcolor3: #7dd3fc;
+    --tcolor3: #3b82f6;
+    --tcolor4: #eff6ff;
+    --tcolor5: #dbeafe;
 }
 
-@import url("https://fonts.cdnfonts.com/css/blazed");
 @import url("https://fonts.cdnfonts.com/css/gravedigger");
 
 * {
@@ -44,18 +45,20 @@ header {
 }
 .live-btn {
     text-decoration: none;
-    color: white;
-    background-color: var(--tcolor1);
-    padding: 4px 10px;
+    color: var(--tcolor2);
+    background-color: var(--tcolor4);
+    padding: 6px 10px;
     border-radius: 10px;
     transition: 1s;
+    box-shadow: 2px 2px 6px rgba(128, 128, 128, 0.485);
 }
 .git-btn {
     text-decoration: none;
     color: white;
     background-color: var(--tcolor2);
-    padding: 4px 10px;
+    padding: 6px 10px;
     border-radius: 10px;
+    box-shadow: 2px 2px 6px rgba(128, 128, 128, 0.485);
 }
 
 /* git card  */
@@ -64,11 +67,9 @@ header {
     color: var(--tcolor2);
     font-weight: 900;
     font-size: 20px;
-    
-
 }
 .git-card {
-    background-image:linear-gradient(#ffffff88 ,#ffffff88 ), url("./assets/images/background/bg4.jpg");
+    background-image:linear-gradient(#ffffff88 ,#ffffff88 );
     background-size: cover;
     background-repeat: no-repeat;
     text-align: center;
@@ -85,12 +86,11 @@ header {
     transition: 2s;
 }
 .card-title {
-    color: var(--tcolor1);
+    color: var(--tcolor3);
     transition: 1s;
 }
 .card:hover {
-    background-image: linear-gradient(45deg, var(--tcolor3), var(--tcolor1)),
-        url("./assets/images/background/bg4.jpg");
+    background-image: linear-gradient(45deg, var(--tcolor5), var(--tcolor5));
     width: 100%;
     background-size: cover;
     background-repeat: none;
@@ -147,18 +147,4 @@ iframe {
 .main-section {
     margin: 0;
 }
-/* HTML SECTION style */
-.html-section {
-    background-image: url("./assets/images/background/bg2.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 100%;
-}
 
-/* js section  */
-.js-section {
-    background-image: url("./assets/images/background/bg3.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 100%;
-}
