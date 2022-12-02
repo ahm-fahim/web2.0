@@ -1,7 +1,7 @@
 :root {
     --tcolor1: #ffff;
     --tcolor2: #242b2e;
-    --tcolor3: #3b82f6;
+    --tcolor3: #0D6EFD;
     --tcolor4: #eff6ff;
     --tcolor5: #dbeafe;
 }
@@ -103,6 +103,7 @@ header {
 .card-title {
     color: var(--tcolor3);
     transition: 1s;
+    font-weight: 800;
 }
 .card:hover {
     background-image: linear-gradient(45deg, var(--tcolor4), var(--tcolor4));
@@ -110,9 +111,7 @@ header {
     background-size: cover;
     background-repeat: none;
 }
-.card:hover .card-title {
-    color: white;
-}
+
 .card:hover .live-btn {
     background-color: var(--tcolor2);
     color: white;
