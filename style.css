@@ -1,7 +1,7 @@
 :root {
-    --tcolor1: #02b290;
+    --tcolor1: #ffff;
     --tcolor2: #242b2e;
-    --tcolor3: #02b28fa7;
+    --tcolor3: #7dd3fc;
 }
 
 @import url("https://fonts.cdnfonts.com/css/blazed");
@@ -14,8 +14,8 @@
 }
 /* Logo  */
 header {
-    background-image: linear-gradient(45deg, #00b79292, #00f5c466),
-        url("./assets/images/background/bg4.jpg");
+    background-image: var(--tcolor1);
+    border-bottom: 1px solid rgba(128, 128, 128, 0.23);
     width: 100%;
     background-size: cover;
     background-repeat: none;
@@ -91,7 +91,7 @@ header {
     transition: 1s;
 }
 .card:hover {
-    background-image: linear-gradient(45deg, #02b28f59, #00f5c459),
+    background-image: linear-gradient(45deg, var(--tcolor3), var(--tcolor1)),
         url("./assets/images/background/bg4.jpg");
     width: 100%;
     background-size: cover;
