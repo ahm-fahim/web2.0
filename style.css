@@ -19,15 +19,13 @@ header {
     width: 100%;
     background-size: cover;
     background-repeat: none;
-    height: 50px;
+    height: 60px;
     margin-bottom: 0px;
 }
-.logo span {
-    font-size: 35px;
-    color: white;
-    font-family: "Blazed", sans-serif;
+.logo img {
+    height: 40px;
 }
-.logo {
+.logo span{
     color: var(--tcolor2);
     font-weight: bold;
     font-family: "Gravedigger", sans-serif;
