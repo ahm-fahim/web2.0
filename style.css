@@ -84,7 +84,7 @@ header {
     top:20px;
     text-align: center;
 }
-.project-link a{
+.project-link {
     text-decoration: none;
     color:var(--tcolor1);
     font-weight: bold;
@@ -95,12 +95,15 @@ header {
     position:absolute;
     top:50%;
     left: 26%;
+    display: none;
 }
 
 .project-item:hover .project-item-img{
-    opacity: 50%;
+    opacity: 40%;
 }
-
+.project-item:hover .project-link {
+    display: block;
+}
 /* project end  */
 
 .title img {
