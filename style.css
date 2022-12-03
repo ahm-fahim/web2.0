@@ -70,9 +70,11 @@ header {
 }
 .project-item-img2{
     height: 300px;
+    width: 50%;
     border-radius: 10px;
     position: relative;
-    left: 0px;
+    right: 0;
+    left: 30%;
     box-shadow: 3px 3px 10px #8080806b;
 }
 .project-item-title{
@@ -96,6 +98,9 @@ header {
     top:50%;
     left: 26%;
     display: none;
+}
+.project-link:hover{
+    color: var(--tcolor1);
 }
 
 .project-item:hover .project-item-img{
