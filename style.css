@@ -1,7 +1,7 @@
 :root {
     --tcolor1: #ffff;
     --tcolor2: #242b2e;
-    --tcolor3: #0D6EFD;
+    --tcolor3: #0d6efd;
     --tcolor4: #eff6ff;
     --tcolor5: #dbeafe;
 }
@@ -26,87 +26,102 @@ header {
 .logo img {
     height: 40px;
 }
-.logo span{
+.logo span {
     color: var(--tcolor2);
     font-weight: bold;
     font-family: "Gravedigger", sans-serif;
     font-size: 22px;
 }
 /* cover  */
-.coverBG{
+.coverBG {
     background-image: url("./assets/images/logo/lg3.png");
     height: 550px;
     background-size: cover;
     background-repeat: no-repeat;
-
 }
 /* main  */
 /* project  */
-.project-title{
+.project-title {
     font-weight: bold;
     font-size: 30px;
     color: var(--tcolor3);
 }
-.projectBG{
+.projectBG {
     background-image: url("./assets/images/background/bg12.png");
     background-size: cover;
     background-repeat: no-repeat;
     height: 100%;
 }
-.project-item{
+.project-item {
     position: relative;
     width: 100%;
 }
-.project-item-img{
+.project-item-img {
     transition: 1s;
 }
-.project-item-img1{
+.project-item-img1 {
     height: 200px;
     border-radius: 10px;
     position: absolute;
-    bottom:45px;
-    width: 90%;
+    bottom: 45px;
+    width: 100%;
+    padding: 10px;
     box-shadow: 3px 3px 10px #8080806b;
 }
-.project-item-img2{
+.project-item-img2 {
     height: 300px;
     width: 50%;
     border-radius: 10px;
     position: relative;
     right: 0;
-    left: 30%;
+    left: 40%;
+    padding: 10px;
     box-shadow: 3px 3px 10px #8080806b;
 }
-.project-item-title{
+.project-item-title {
     font-size: 25px;
     font-weight: 400;
     position: relative;
     font-family: Arial, Helvetica, sans-serif;
     letter-spacing: 8px;
-    top:20px;
+    top: 20px;
     text-align: center;
 }
+
 .project-link {
     text-decoration: none;
-    color:var(--tcolor1);
+    color: var(--tcolor1);
     font-weight: bold;
     background-color: var(--tcolor3);
     padding: 5px 10px;
     border-radius: 10px;
     box-shadow: 3px 3px 10px #8080806b;
-    position:absolute;
-    top:50%;
-    left: 26%;
+    position: absolute;
+    top: 50%;
+    left: 32.5%;
     display: none;
 }
-.project-link:hover{
+.project-technology {
+    text-align: center;
+    font-weight: 900;
+    color: var(--tcolor2);
+    position: absolute;
+    top: 40%;
+    width: 100%;
+    display: none;
+    letter-spacing: 3px;
+}
+.project-link:hover {
     color: var(--tcolor1);
 }
 
-.project-item:hover .project-item-img{
+.project-item:hover .project-item-img {
     opacity: 40%;
 }
-.project-item:hover .project-link {
+.project-item:hover .project-link{
+    display: block;
+}
+.project-item:hover .project-technology{
     display: block;
 }
 /* project end  */
@@ -145,7 +160,7 @@ header {
     font-size: 20px;
 }
 .git-card {
-    background-image:linear-gradient(#ffffff88 ,#ffffff88 );
+    background-image: linear-gradient(#ffffff88, #ffffff88);
     text-align: center;
     padding: 15px 0px;
     border-radius: 10px;
@@ -221,12 +236,9 @@ iframe {
     margin: 0;
 }
 
-
-.jsBG{
+.jsBG {
     background-image: url("./assets/images/background/bg12.png");
     background-size: contain;
     background-repeat: no-repeat;
     height: 100%;
 }
-
-
