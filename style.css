@@ -41,6 +41,7 @@ header {
 
 }
 /* main  */
+/* project  */
 .project-title{
     font-weight: bold;
     font-size: 30px;
@@ -52,6 +53,56 @@ header {
     background-repeat: no-repeat;
     height: 100%;
 }
+.project-item{
+    position: relative;
+    width: 100%;
+}
+.project-item-img{
+    transition: 1s;
+}
+.project-item-img1{
+    height: 200px;
+    border-radius: 10px;
+    position: absolute;
+    bottom:45px;
+    width: 90%;
+    box-shadow: 3px 3px 10px #8080806b;
+}
+.project-item-img2{
+    height: 300px;
+    border-radius: 10px;
+    position: relative;
+    left: 0px;
+    box-shadow: 3px 3px 10px #8080806b;
+}
+.project-item-title{
+    font-size: 25px;
+    font-weight: 400;
+    position: relative;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 8px;
+    top:20px;
+    text-align: center;
+}
+.project-link a{
+    text-decoration: none;
+    color:var(--tcolor1);
+    font-weight: bold;
+    background-color: var(--tcolor3);
+    padding: 5px 10px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 10px #8080806b;
+    position:absolute;
+    top:50%;
+    left: 26%;
+}
+
+.project-item:hover .project-item-img{
+    opacity: 50%;
+}
+
+/* project end  */
+
 .title img {
     height: 50px;
 }
