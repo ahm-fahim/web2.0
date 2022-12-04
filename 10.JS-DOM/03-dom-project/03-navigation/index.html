@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <style>
+            #nav-wrapper {
+                display: flex;
+                align-items: center;
+                justify-content: space-around;
+                position: relative;
+                background-color: whitesmoke;
+                height: 60px;
+            }
+            .nav-link {
+                list-style: none;
+            }
+            #nav-list {
+                display: grid;
+                grid-template-columns: repeat(4, 1fr);
+                grid-gap: 0.5em;
+            }
+            #nav-toggle-btn {
+                display: none;
+            }
+            @media only screen and (max-width: 968px) {
+                #nav-list {
+                    display: none;
+                }
+                #nav-toggle-btn {
+                    display: block;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <nav id="nav-wrapper">
+            <h1 class="nav-logo">Logo</h1>
+            <ul id="nav-list">
+                <li class="nav-link">Home</li>
+                <li class="nav-link">About</li>
+                <li class="nav-link">Blog</li>
+                <li class="nav-link">Contact</li>
+            </ul>
+            <button id="nav-toggle-btn">SHOW</button>
+        </nav>
+
+        <script>
+            const toggleBtn = document.getElementById("nav-toggle-btn");
+            toggleBtn.addEventListener("click", () => {
+                const navList = document.getElementById("nav-list");
+                if (navList.style.display === "none") {
+                    navList.style.display = "block";
+                    navList.style.display = "grid";
+                    navList.style.gridTemplateColumns = "repeat(1,1fr)";
+                    navList.style.position = "absolute";
+                    navList.style.top = "25px";
+                    toggleBtn.innerText="HIDE";
+                } else {
+                    navList.style.display = "none";
+                    toggleBtn.innerText="SHOW";
+
+                }
+            });
+        </script>
+    </body>
+</html>
