@@ -1,0 +1,2 @@
+merge specific file from another branch- 
+"git checkout [branch-name] [file-path]"
