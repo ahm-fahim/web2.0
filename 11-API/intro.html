@@ -8,7 +8,11 @@
         <style>
             .img{
                 height: 100px;
-                width: 120px;
+                width: 200px;
+            }
+            #album{
+                list-style: none;
+                text-align: center;
             }
         </style>
     </head>
@@ -26,10 +30,13 @@
                 for(const item of data){
                     const img = document.createElement("img");
                     img.className="img";
-                    console.log(item);
-                    img.src = item.thumbnailUrl;
+                    img.src = item.url;
+
+                    const h1= document.createElement('h1');
+                    h1.innerText=item.title;
                     const li = document.createElement("li");
-                    li.innerHTML=`${img}\n ${item.title}`;
+                    li.appendChild(img);
+                    li.appendChild(h1);
                     album.appendChild(li);
                 }
             };
