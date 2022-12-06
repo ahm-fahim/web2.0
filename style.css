@@ -141,79 +141,6 @@ header {
     display: block;
 }
 /* project end  */
-
-.title img {
-    height: 50px;
-}
-.title span {
-    font-weight: bold;
-    font-size: 30px;
-    color: var(--tcolor2);
-}
-.live-btn {
-    text-decoration: none;
-    color: var(--tcolor2);
-    background-color: var(--tcolor4);
-    padding: 6px 10px;
-    border-radius: 10px;
-    transition: 1s;
-    box-shadow: 2px 2px 6px rgba(128, 128, 128, 0.485);
-}
-.git-btn {
-    text-decoration: none;
-    color: white;
-    background-color: var(--tcolor2);
-    padding: 6px 10px;
-    border-radius: 10px;
-    box-shadow: 2px 2px 6px rgba(128, 128, 128, 0.485);
-}
-
-/* git card  */
-.git-card a {
-    text-decoration: none;
-    color: var(--tcolor2);
-    font-weight: 900;
-    font-size: 20px;
-}
-.git-card {
-    background-image: linear-gradient(#ffffff88, #ffffff88);
-    text-align: center;
-    padding: 15px 0px;
-    border-radius: 10px;
-    box-shadow: 2px 3px 10px rgb(210, 210, 210);
-    margin: 5px;
-}
-/* all cards */
-.card {
-    border: none;
-    box-shadow: 2px 3px 10px rgb(210, 210, 210);
-    padding: 15px 5px 5px 5px;
-    transition: 2s;
-}
-.card-title {
-    color: var(--tcolor3);
-    transition: 1s;
-    font-weight: 800;
-}
-.card:hover {
-    background-image: linear-gradient(45deg, var(--tcolor4), var(--tcolor4));
-    width: 100%;
-    background-size: cover;
-    background-repeat: none;
-}
-
-.card:hover .live-btn {
-    background-color: var(--tcolor2);
-    color: white;
-}
-iframe {
-    border-radius: 10px;
-    transition: 2s;
-    padding: 10px;
-}
-.card:hover iframe {
-    background-color: white;
-}
 /* width */
 ::-webkit-scrollbar {
     width: 0px;
@@ -234,27 +161,4 @@ iframe {
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
     background: #b30000;
-}
-
-.live {
-    height: 200px;
-    overflow: scroll;
-}
-
-.card-bg {
-    background-image: url("./assets/images/background/bg3.jpg");
-    background-size: cover;
-    width: 100%;
-    background-repeat: none;
-}
-/* Main Section  */
-.main-section {
-    margin: 0;
-}
-
-.jsBG {
-    background-image: url("./assets/images/background/bg12.png");
-    background-size: contain;
-    background-repeat: no-repeat;
-    height: 100%;
 }
