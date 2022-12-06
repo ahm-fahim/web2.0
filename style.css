@@ -4,6 +4,7 @@
     --tcolor3: #0d6efd;
     --tcolor4: #eff6ff;
     --tcolor5: #dbeafe;
+    --tcolor6: #16242e;
 }
 
 @import url("https://fonts.cdnfonts.com/css/gravedigger");
@@ -12,6 +13,21 @@
     font-family: Arial, Helvetica, sans-serif;
     padding: 0;
     margin: 0;
+}
+
+body {
+    background-color: white;
+    color: var(--tcolor2);
+}
+.dark-mode {
+    background-color: var(--tcolor6);
+    color: white;
+}
+.themeBtn {
+    width: 60px;
+    border: none;
+    box-shadow: 3px 3px 10px #8080806b;
+    border-radius: 10px;
 }
 /* Logo  */
 header {
@@ -27,15 +43,15 @@ header {
     height: 40px;
 }
 .logo span {
-    color: var(--tcolor2);
     font-weight: bold;
     font-family: "Gravedigger", sans-serif;
     font-size: 22px;
 }
+
 /* cover  */
 .coverBG {
-    background-image: url("./assets/images/logo/lg3.png");
-    height: 550px;
+    background-image: url('./assets/images/background/bg8.png');
+    height: 90vh;
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -118,10 +134,10 @@ header {
 .project-item:hover .project-item-img {
     opacity: 40%;
 }
-.project-item:hover .project-link{
+.project-item:hover .project-link {
     display: block;
 }
-.project-item:hover .project-technology{
+.project-item:hover .project-technology {
     display: block;
 }
 /* project end  */

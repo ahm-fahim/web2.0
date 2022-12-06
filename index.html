@@ -27,13 +27,20 @@
         />
     </head>
     <body>
-        <header class="fixed-top logo container d-flex align-items-center">
-            <img src="./assets/images/logo/lg1.png" alt="" />
-            <span>2.0</span>
+        <header id="headerBG"
+            class="fixed-top logo container d-flex align-items-center justify-content-between"
+        >
+            <div>
+                <img src="./assets/images/logo/lg1.png" alt="" />
+                <span id="logo">2.0</span>
+            </div>
+            <div >
+                <button class="themeBtn" onclick="myFunction()"><i class="fa-solid fa-moon"></i></button>
+            </div>
         </header>
 
         <!-- cover section  -->
-        <section class="container-fluid coverBG">
+        <section id="coverBG" class="container-fluid coverBG">
             <div class="row d-flex-justify-content-center align-items-center">
                 <div class="col-12 d-flex justify-content-center mt-5 pt-5">
                     <h1 class="display-1 fw-bold">
@@ -64,7 +71,9 @@
                 <!-- project row  -->
                 <div class="row">
                     <!-- col-1  -->
-                    <div class="col-lg-4 col-md-6 col-sm-12 mt-5 d-flex justify-content-center">
+                    <div
+                        class="col-lg-4 col-md-6 col-sm-12 mt-5 d-flex justify-content-center"
+                    >
                         <div class="project-item">
                             <div class="project-item-img">
                                 <img
@@ -87,12 +96,16 @@
                                     >Live Preview
                                     <i class="fa-solid fa-eye ps-2"></i>
                                 </a>
-                                <p class="project-technology">HTML5, Tailwind, JS</p>
+                                <p class="project-technology">
+                                    HTML5, Tailwind, JS
+                                </p>
                             </div>
                         </div>
                     </div>
                     <!-- col-2 -->
-                    <div class="col-lg-4 col-md-6 col-sm-12 mt-5 d-flex justify-content-center">
+                    <div
+                        class="col-lg-4 col-md-6 col-sm-12 mt-5 d-flex justify-content-center"
+                    >
                         <div class="project-item">
                             <div class="project-item-img">
                                 <img
@@ -117,13 +130,16 @@
                                     >Live Preview
                                     <i class="fa-solid fa-eye ps-2"></i>
                                 </a>
-                                <p class="project-technology">HTML5, Tailwind, JS</p>
-
+                                <p class="project-technology">
+                                    HTML5, Tailwind, JS
+                                </p>
                             </div>
                         </div>
                     </div>
                     <!-- col-3 -->
-                    <div class="col-lg-4 col-md-6 col-sm-12 mt-5 d-flex justify-content-center">
+                    <div
+                        class="col-lg-4 col-md-6 col-sm-12 mt-5 d-flex justify-content-center"
+                    >
                         <div class="project-item">
                             <div class="project-item-img">
                                 <img
@@ -882,5 +898,6 @@
             integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
             crossorigin="anonymous"
         ></script>
+        <script src="./index.js"></script>
     </body>
 </html>
