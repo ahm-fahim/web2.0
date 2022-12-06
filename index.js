@@ -4,3 +4,8 @@ function myFunction() {
     element.classList.toggle("dark-mode");
     header.classList.toggle("dark-mode");
 }
+
+//google translate
+function loadGoogleTranslate() {
+    new google.translate.TranslateElement("google_translate");
+}
