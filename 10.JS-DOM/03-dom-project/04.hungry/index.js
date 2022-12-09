@@ -17,7 +17,7 @@ const searchMealResult = (meals) => {
 
         console.log(meal);
         div.innerHTML = `
-            <div class="card">
+            <div onclick="mealDetails(${meal.idMeal})" class="card">
                 <img src="${meal.strMealThumb}" class="card-img-top" alt="...">
                 <div class="card-body">
                     <h5 class="card-title">${meal.strMeal}</h5>
@@ -27,3 +27,9 @@ const searchMealResult = (meals) => {
         displayMeals.appendChild(div);
     });
 };
+
+
+// meal details
+const mealDetails = (idMeal) => {
+    console.log(idMeal);
+}
