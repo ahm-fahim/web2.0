@@ -15,21 +15,45 @@ const searchMealResult = (meals) => {
         const div = document.createElement("div");
         div.classList.add("col");
 
-        console.log(meal);
+        // console.log(meal);
         div.innerHTML = `
             <div onclick="mealDetails(${meal.idMeal})" class="card">
                 <img src="${meal.strMealThumb}" class="card-img-top" alt="...">
                 <div class="card-body">
                     <h5 class="card-title">${meal.strMeal}</h5>
                 </div>
+                <button
+                type="button"
+                class="btn btn-primary"
+                data-bs-toggle="modal"
+                data-bs-target="#exampleModal"
+            >
+                Launch demo modal
+            </button>
             </div>
         `;
         displayMeals.appendChild(div);
     });
 };
 
-
 // meal details
 const mealDetails = (idMeal) => {
     console.log(idMeal);
-}
+    const url = `https://www.themealdb.com/api/json/v1/1/lookup.php?i=${idMeal}`;
+    fetch(url)
+        .then((res) => res.json())
+        .then((data) => getMealDeatils(data.meals[0]));
+};
+
+const getMealDeatils = (details) => {
+    console.log(details.strMeal);
+    const showDetails = document.getElementById("showDetails");
+    const div = document.createElement("div");
+
+    div.innerHTML = `
+        <p>${details.strMeal}</p>        
+    `;
+
+    showDetails.appendChild(div);
+    // showDetails.innerText= '';
+};
