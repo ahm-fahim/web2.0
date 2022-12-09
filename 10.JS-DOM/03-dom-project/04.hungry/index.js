@@ -46,14 +46,22 @@ const mealDetails = (idMeal) => {
 };
 
 const getMealDeatils = (details) => {
-    console.log(details.strMeal);
+    console.log(details);
     const showDetails = document.getElementById("showDetails");
     const div = document.createElement("div");
 
     div.innerHTML = `
-        <p>${details.strMeal}</p>        
+        <h2>${details.strMeal}</h2> 
+        <h4>Instruction:</h4>
+        <p class="text-secondary">${details.strInstructions}</p>
+        <button class="btn btn-danger"> <a href="${details.strYoutube}>YOUTUBE</a></button>       
     `;
 
     showDetails.appendChild(div);
     // showDetails.innerText= '';
 };
+
+document.getElementById("closeModal").addEventListener("click", () => {
+    const showDetails = document.getElementById("showDetails");
+    showDetails.innerHTML = "";
+});
