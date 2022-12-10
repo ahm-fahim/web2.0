@@ -58,8 +58,9 @@ const getMealDeatils = (details) => {
     `;
 
     showDetails.appendChild(div);
-    // showDetails.innerText= '';
 };
+
+// clean modal 
 
 document.getElementById("closeModal").addEventListener("click", () => {
     const showDetails = document.getElementById("showDetails");
