@@ -11,7 +11,10 @@ const searchMeal = () => {
 
 const searchMealResult = (meals) => {
     const displayMeals = document.getElementById("display-search-meal");
-    displayMeals.textContent = '';
+    const searchTitle = document.getElementById("searchTitle");
+    searchTitle.innerText = "এগুলোই খুঁজে পেলাম";
+    searchTitle.classList.add("fw-bold");
+    displayMeals.textContent = "";
     meals.forEach((meal) => {
         const div = document.createElement("div");
         div.classList.add("col");
@@ -67,9 +70,39 @@ const getMealDeatils = (details) => {
     showDetails.appendChild(div);
 };
 
-// clean modal 
+// clean modal
 
 document.getElementById("closeModal").addEventListener("click", () => {
     const showDetails = document.getElementById("showDetails");
     showDetails.innerHTML = "";
 });
+
+fetch("https://www.themealdb.com/api/json/v1/1/random.php")
+    .then((res) => res.json())
+    .then((data) => mealForToday(data.meals[0]));
+
+const mealForToday = (meal) => {
+    console.log(meal);
+    const todayMeal = document.getElementById("mealToday");
+
+    const div = document.createElement("div");
+    div.classList.add("col");
+
+    div.innerHTML = `
+            <div onclick="mealDetails(${meal.idMeal})" class="card">
+                <img src="${meal.strMealThumb}" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">${meal.strMeal}</h5>
+                </div>
+                <button
+                type="button"
+                class="btn btn-warning m-3"
+                data-bs-toggle="modal"
+                data-bs-target="#exampleModal"
+            >
+                More Details
+            </button>
+            </div>
+        `;
+    todayMeal.appendChild(div);
+};

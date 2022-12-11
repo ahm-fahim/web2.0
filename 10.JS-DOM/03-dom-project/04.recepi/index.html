@@ -10,6 +10,14 @@
             integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
             crossorigin="anonymous"
         />
+        <style>
+            .coverBG{
+                background-image: linear-gradient(90deg, #ffd9000b ,#ffd90030 , #ff63473f, #ffd90011),url("../../../assets/images/food/eat1.png");
+                background-size: cover;
+                background-repeat: no-repeat;
+                height: 80vh;
+            }
+        </style>
     </head>
     <body>
         <!-- header navigation  -->
@@ -63,9 +71,19 @@
             </div>
         </nav>
         <!-- end header navigation  -->
+        <!-- cover section  -->
+        <section class="coverBG d-flex justify-content-center align-items-center">
+            <div class="mx-5 my-5">
+            <h1 class="display-1 fw-bold">ভালো খাবো <span class="text-danger">ভালো থাকবো</span> !</h1>
+                <h3 class="text-secondary fw-bold">ঘরের রান্নার সাধই আলাদা , খেতেও স্বস্থ্যকর। তাই বাইরের খাবার বর্জন করি নিজের রান্না নিজেই করি!</h3>
+            </div>
+        </section>
+        <!--end cover section  -->
 
         <!-- search result  -->
-        <section class="container mt-5">
+        <section class="container mt-5 mb-5">
+            <h1 id="searchTitle"></h1>
+
             <div
                 id="display-search-meal"
                 class="row row-cols-1 row-cols-md-4 g-4"
@@ -87,7 +105,6 @@
                 <div class="modal-dialog modal-dialog-scrollable">
                     <div class="modal-content">
                         <div class="modal-header">
-                            
                             <button
                                 type="button"
                                 class="btn-close"
@@ -95,9 +112,7 @@
                                 aria-label="Close"
                             ></button>
                         </div>
-                        <div id="showDetails" class="modal-body">
-
-                        </div>
+                        <div id="showDetails" class="modal-body"></div>
                         <div class="modal-footer">
                             <button
                                 type="button"
@@ -105,7 +120,7 @@
                                 class="btn btn-danger"
                                 data-bs-dismiss="modal"
                             >
-                                বাদ দেও 
+                                বাদ দেও
                             </button>
                         </div>
                     </div>
@@ -113,6 +128,30 @@
             </div>
         </section>
         <!-- end meal details -->
+
+        <!-- meal today  -->
+        <section class="container mb-5">
+            <h1 class="fw-bold">আজকের <span class="text-danger">রান্না</span></h1>
+            <div id="mealToday" class="row row-cols-1 row-cols-md-3 g-4">
+                <div class=" d-flex align-items-center ">
+                    <h2 class="fw-bold display-5 text-secondary">রান্নার হাত ভালো যার প্রশংসা কুরায় সে মুখে সবার !</h2>
+                </div>
+                <div class="col d-flex align-items-center">
+                    <div>
+                        <p>রাধক কতে হলে অবশ্যই রান্নার খারাপ মন্তব্য শুনেও স্থির থাকার মনোভাব থাকতে হবে।</p>
+                        <p>রান্না হলো শিল্পের মতো, শিল্পী হতে হলে অবশ্যই পরিশ্রম করতে হবে।</p>
+                        <p>রান্না যদি ভালো হয় তাহলে তার প্রশংসা দশ বছর পরেও হয়ে থাকে।</p>
+                        <p>সুন্দর রান্না করতে অনেক সময় ও কষ্ট হয়, কিন্তু তা খাওয়ার সময় যে শান্তি পাওয়া যায় তা বলে বোঝানোর মতো নয়।</p>
+                        <p>যে রাঁধে সে নাকি চুলও বাঁধে- এইটা আমার কাছে একদমই অমূলক কথা।</p>
+                        <p>রান্না করতে কার না ভালো লাগে? যদি সে রান্নার প্রশংসা সবাই করে।</p>
+                        <p>রান্না পৃথিবির সবচেয়ে ধৈর্য্যশীল কাজ গুলোর মধ্যে অন্যতম।</p>
+
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <!-- end meal today  -->
         <!-- script link  -->
         <script
             src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
