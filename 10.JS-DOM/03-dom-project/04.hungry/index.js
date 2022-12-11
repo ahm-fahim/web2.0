@@ -11,6 +11,7 @@ const searchMeal = () => {
 
 const searchMealResult = (meals) => {
     const displayMeals = document.getElementById("display-search-meal");
+    displayMeals.textContent = '';
     meals.forEach((meal) => {
         const div = document.createElement("div");
         div.classList.add("col");
