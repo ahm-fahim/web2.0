@@ -24,11 +24,11 @@ const searchMealResult = (meals) => {
                 </div>
                 <button
                 type="button"
-                class="btn btn-primary"
+                class="btn btn-warning m-3"
                 data-bs-toggle="modal"
                 data-bs-target="#exampleModal"
             >
-                Launch demo modal
+                More Details
             </button>
             </div>
         `;
@@ -50,11 +50,17 @@ const getMealDeatils = (details) => {
     const showDetails = document.getElementById("showDetails");
     const div = document.createElement("div");
 
+    console.log(details.strYoutube);
+
     div.innerHTML = `
         <h2>${details.strMeal}</h2> 
         <h4>Instruction:</h4>
         <p class="text-secondary">${details.strInstructions}</p>
-        <button class="btn btn-danger"> <a href="${details.strYoutube}>YOUTUBE</a></button>       
+        <a href="${details.strYoutube}">
+            <button type="button" class="btn btn-danger" target="_blank">
+                Youtube
+            </button>
+        </a>       
     `;
 
     showDetails.appendChild(div);
