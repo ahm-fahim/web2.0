@@ -14,7 +14,7 @@ const myFunc = new Function("a", "b", "return a * b");
 let constructor = myFunc(4, 3);
 console.log(constructor);
 
-// self invoking 
+// self invoking
 (function () {
     let invoke = "Hello !";
     console.log(invoke);
@@ -29,6 +29,6 @@ function funcObj(a, b) {
 console.log(funcObj(3, 5));
 
 //arrow functions
-
 // ES6
 const arrow = (a, b) => a + b;
+console.log(arrow(2,3));
