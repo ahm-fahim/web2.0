@@ -31,13 +31,13 @@ body {
     box-shadow: 3px 3px 10px #8080806b;
     border-radius: 10px;
 }
-#google_translate{
+#google_translate {
     height: 30px;
     overflow: hidden;
     border: none;
     box-shadow: 3px 3px 10px #8080806b;
     border-radius: 10px;
-    margin:0 4px;
+    margin: 0 4px;
 }
 /* Logo  */
 header {
@@ -60,10 +60,11 @@ header {
 
 /* cover  */
 .coverBG {
-    background-image: url('./assets/images/background/bg8.png');
-    height: 90vh;
-    background-size: cover;
+    background-image: url("./assets/images/background/galaxy.jpg");
+    height: 100%;
+    background-position: center;
     background-repeat: no-repeat;
+    background-size: cover;
 }
 /* main  */
 /* project  */

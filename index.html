@@ -25,6 +25,23 @@
             href="https://fonts.cdnfonts.com/css/gravedigger"
             rel="stylesheet"
         />
+
+        <style>
+            html,
+            body {
+                margin: 0;
+                padding: 0;
+                height: 100%;
+            }
+
+            .background {
+                position: absolute;
+                display: block;
+                top: 0;
+                left: 0;
+                z-index: 0;
+            }
+        </style>
     </head>
     <body>
         <header
@@ -43,7 +60,6 @@
                 </button>
             </div>
         </header>
-
         <!-- cover section  -->
         <section id="coverBG" class="container-fluid coverBG">
             <div class="row d-flex-justify-content-center align-items-center">
@@ -57,7 +73,7 @@
                 <div class="col-6 col-sm-12"></div>
             </div>
         </section>
-
+        <canvas class="background"></canvas>
         <main class="main-section mt-2">
             <!-- project section  -->
             <section class="container pb-5 projectBG">
@@ -80,7 +96,7 @@
                 <!-- project row  -->
                 <div class="row">
                     <!-- col-5  -->
-                     <div
+                    <div
                         class="col-lg-4 col-md-6 col-sm-12 mt-5 d-flex justify-content-center"
                     >
                         <div class="project-item">
@@ -239,7 +255,7 @@
                             </div>
                         </div>
                     </div>
-                    
+
                     <!-- col-1  -->
                 </div>
             </section>
@@ -252,5 +268,20 @@
         ></script>
         <script src="./index.js"></script>
         <script src="https://translate.google.com/translate_a/element.js?cb=loadGoogleTranslate"></script>
+        <!-- animation -->
+        <script src="./assets/animation/particles-2/dist/particles.min.js"></script>
+        <script>
+            window.onload = function () {
+                Particles.init({
+                    selector: ".background",
+                    color: "#c8cdcf",
+                    sizeVariations: 10,
+                    connectParticles: true,
+                    maxParticles: 50,
+                    minParticles: 10,
+
+                });
+            };
+        </script>
     </body>
 </html>
