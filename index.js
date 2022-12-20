@@ -15,9 +15,9 @@ window.onload = function () {
     Particles.init({
         selector: ".background",
         color: "#c8cdcf",
-        sizeVariations: 3,
+        sizeVariations: 5,
         connectParticles: true,
-        maxParticles: 50,
+        maxParticles: 60,
         minParticles: 10,
     });
 };
