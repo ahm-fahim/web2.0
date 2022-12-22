@@ -41,6 +41,7 @@
                 left: 0;
                 z-index: 0;
             }
+
         </style>
     </head>
     <body>
@@ -56,8 +57,9 @@
                     <span id="logo">2.0</span>
                 </div>
                 <div class="d-flex justify-content-between">
+                    <a href="#lessonsSection" class="navLink">Lessons</a>
+                    <a href="#projectSection" class="navLink">Project</a>
                     <button id="google_translate"></button>
-
                     <button class="themeBtn" onclick="myFunction()">
                         <i class="fa-solid fa-moon"></i>
                     </button>
@@ -66,53 +68,41 @@
         </header>
         <!-- cover section  -->
         <section id="coverBG" class="container-fluid coverBG">
-            <div
-                class="row coverText d-flex-justify-content-center align-items-center"
-            >
-                <div class="col-12 d-flex justify-content-center mt-5 pt-5 p-5">
+            <div class="coverText">
+                <div>
                     <h1 class="display-4 coverTitle text-light">
                         Way to learn thats I follow
                     </h1>
-                </div>
-                <div class="col-12 col-sm-12 d-flex justify-content-center px-5 pb-5">
-                    <h4 class=" coverTitle2">
-                        Here are some samples of work I practiced when I was a learner!
-
+                    <h4 class="coverTitle2">
+                        Here are some samples of work I practiced when I was a
+                        learner!
                     </h4>
-                </div>
-
-                <div class="col-12 col-sm-12 d-flex justify-content-center">
-                    <a
-                        class="gitBTN d-flex align-items-center"
-                        href="https://github.com/ahm-fahim"
-                        target="_blank"
-                    >
-                        <i class="fa-brands fa-github"></i>
-                        <span>
-                            <p class="gitbtnText1">VIEW ON</p>
-                            <p class="gitbtnText2">Github</p>
-                        </span>
-                    </a>
+                    <div class="gitBtn-wrapper">
+                        <a
+                            class="gitBTN d-flex align-items-center"
+                            href="https://github.com/ahm-fahim"
+                            target="_blank"
+                        >
+                            <i class="fa-brands fa-github"></i>
+                            <span>
+                                <p class="gitbtnText1">VIEW ON</p>
+                                <p class="gitbtnText2">Github</p>
+                            </span>
+                        </a>
+                    </div>
                 </div>
             </div>
         </section>
         <canvas class="background"></canvas>
         <main class="main-section mt-2">
             <!-- project section  -->
-            <section class="container pb-5 projectBG">
+            <section id="projectSection" class="container pb-5 projectBG">
                 <div class="d-flex justify-content-center">
                     <div>
-                        <img
-                            src="./assets/gif/g1.gif"
-                            alt=""
-                            width="100"
-                            height="100"
-                        />
-
-                        <h3 class="fw-bold">
-                            Here are some samples of
-                            <span class="project-title">work</span> I practiced
-                            when I was a learner!
+                        <h1 class="project-title1">Projects</h1>
+                        <h3 class="project-title2">
+                            Here are some samples of work I practiced when I was
+                            a learner!
                         </h3>
                     </div>
                 </div>
@@ -280,6 +270,80 @@
                     </div>
 
                     <!-- col-1  -->
+                </div>
+            </section>
+
+            <!-- lessons section  -->
+            <hr />
+            <section id="lessonsSection" class="container pb-5">
+                <div class="pt-5 mt-3">
+                    <h1 class="lessonsTitle1">Lessons</h1>
+                    <h4 class="lessonsTitle2">
+                        Documentation of some code and notes thats I wrote when
+                        I was learning languages.
+                    </h4>
+                </div>
+                <div class="lessons row">
+                    <!-- lessons 1 -->
+                    <div class="col-lg-4 col-md-6 col-sm-12">
+                        <div class="lessons1">
+                            <h1 class="lessonsName">
+                                Javascript
+                                <img
+                                    src="./assets/images/lessons/js.png"
+                                    alt=""
+                                    width="50"
+                                    height="50"
+                                />
+                            </h1>
+                            <div>
+                                <a href="./07-Javascript/00-introduction/index.html" target="_blank" class="lessonsChapter">00-Introduction</a>
+                                <a href="./07-Javascript/01-statementsSyntaxComments/statement.js" target="_blank" class="lessonsChapter">01-Statement</a>
+                                <a href="./07-Javascript/01-statementsSyntaxComments/syntax.js" target="_blank" class="lessonsChapter">02-Syntax</a>
+                                <a href="./07-Javascript/01-statementsSyntaxComments/operator.js" target="_blank" class="lessonsChapter">03-Operator</a>
+                                <a href="./07-Javascript/01-statementsSyntaxComments/literals.js" target="_blank" class="lessonsChapter">04-Literals</a>
+                                <a href="./07-Javascript/02-varLetConst/var.js" target="_blank" class="lessonsChapter">05-Var</a>
+                                <a href="./07-Javascript/02-varLetConst/let.js" target="_blank" class="lessonsChapter">06-Let</a>
+                                <a href="./07-Javascript/02-varLetConst/const.js" target="_blank" class="lessonsChapter">07-const</a>
+                                <a href="./07-Javascript/03-operators/operators.js" target="_blank" class="lessonsChapter">08-Operators Details</a>
+                                <a href="./07-Javascript/03-operators/arithmetic.js" target="_blank" class="lessonsChapter">09-Arithmetic Operator</a>
+                                <a href="./07-Javascript/03-operators/assignment.js" target="_blank" class="lessonsChapter">10-Assignment Operator</a>
+                                <a href="./07-Javascript/04-dataTypes/datatype.js" target="_blank" class="lessonsChapter">10-Datatypes</a>
+
+
+
+                            </div>
+                        </div>
+                    </div>
+                    <!-- lessons 2 -->
+                    <div class=" col-lg-4 col-md-6 col-sm-12">
+                        <div class="lessons2">
+                            <h1 class="lessonsName">
+                            comming soon
+                            <img
+                                src="./assets/images/lessons/html.png"
+                                alt="html"
+                                width="50"
+                                height="50"
+                            />
+                            
+                        </h1>
+                        </div>
+                    </div>
+                    <!-- lessons 3 -->
+                    <div class=" col-lg-4 col-md-6 col-sm-12">
+                        <div class="lessons3">
+                            <h1 class="lessonsName">
+                            comming soon
+                            <img
+                                src="./assets/images/lessons/css.png"
+                                alt="css"
+                                width="50"
+                                height="50"
+                            />
+                        </h1>
+                        </div>
+                    </div>
                 </div>
             </section>
         </main>

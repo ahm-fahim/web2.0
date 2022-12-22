@@ -5,6 +5,12 @@
     --tcolor4: #eff6ff;
     --tcolor5: #dbeafe;
     --tcolor6: #16242e;
+    --tcolor7: #a2e7a2;
+    --tcolor8: #fcfa8c;
+}
+html,
+body {
+    scroll-behavior: smooth;
 }
 
 @import url("https://fonts.cdnfonts.com/css/gravedigger");
@@ -24,12 +30,12 @@ body {
     color: white;
 }
 .themeBtn {
-    width: 60px;
+    width: 30px;
     height: 30px;
     font-size: 22px;
     border: none;
     box-shadow: 3px 3px 10px #8080806b;
-    border-radius: 10px;
+    border-radius: 100%;
 }
 #google_translate {
     height: 30px;
@@ -50,6 +56,7 @@ header {
     height: 60px;
     margin-bottom: 0px;
 }
+
 .logo img {
     height: 40px;
 }
@@ -57,6 +64,17 @@ header {
     font-weight: bold;
     font-family: "Gravedigger", sans-serif;
     font-size: 22px;
+}
+.navLink {
+    text-decoration: none;
+    transition: 1s;
+    letter-spacing: 5px;
+    color: white;
+    padding-right: 5px;
+}
+.navLink:hover {
+    color: gray;
+    text-decoration: underline transparent;
 }
 
 /* cover  */
@@ -68,48 +86,6 @@ header {
     background-repeat: no-repeat;
     background-size: cover;
 }
-.coverBG {
-    position: relative;
-    text-align: center;
-}
-.coverBG:after {
-    content: "";
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    width: 100px;
-    border-bottom: 100px solid white;
-    border-left: 1000px solid transparent;
-    border-right: 500px solid transparent;
-}
-
-/* @media only screen and (max-width: 688px) {
-    .coverBG:after {
-        content: "";
-        position: absolute;
-        left: 0;
-        bottom: 0;
-        right: 0;
-        width: 100px;
-        border-bottom: 100px solid white;
-        border-left: 300px solid transparent;
-        border-right: 150px solid transparent;
-    }
-} */
-@media only screen and (max-width: 1198px) {
-    .coverBG:after {
-        content: "";
-        position: absolute;
-        left: 0;
-        bottom: 0;
-        right: 0;
-        width: 100px;
-        border-bottom: 100px solid white;
-        border-left: 300px solid transparent;
-        border-right: 200px solid transparent;
-    }
-}
 .coverTitle {
     letter-spacing: 20px;
 }
@@ -120,6 +96,17 @@ header {
 .coverText {
     position: relative;
     z-index: 999;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+.gitBtn-wrapper {
+    display: flex;
+    text-align: center;
+    justify-content: center;
 }
 .gitBTN {
     height: 70px;
@@ -129,6 +116,7 @@ header {
     padding: 10px;
     color: white;
     text-decoration: none;
+    width: 150px;
 }
 .gitBTN:hover {
     color: white;
@@ -150,16 +138,21 @@ header {
 }
 /* main  */
 /* project  */
-.project-title {
-    font-weight: bold;
-    font-size: 30px;
-    color: var(--tcolor3);
+.project-title1 {
+    letter-spacing: 10px;
+    font-size: 25px;
+}
+.project-title2 {
+    font-size: 20px;
+    color: gray;
+    letter-spacing: 10px;
 }
 .projectBG {
     background-image: url("./assets/images/background/bg12.png");
     background-size: cover;
     background-repeat: no-repeat;
     height: 100%;
+    padding-top: 100px;
 }
 .project-item {
     position: relative;
@@ -175,7 +168,7 @@ header {
     bottom: 45px;
     width: 100%;
     padding: 10px;
-    box-shadow: 3px 3px 10px #8080806b;
+    box-shadow: 3px 3px 10px #5656566b;
 }
 .project-item-img2 {
     height: 300px;
@@ -185,7 +178,7 @@ header {
     right: 0;
     left: 40%;
     padding: 10px;
-    box-shadow: 3px 3px 10px #8080806b;
+    box-shadow: 3px 3px 10px #5656566b;
 }
 .project-item-title {
     font-size: 25px;
@@ -254,4 +247,73 @@ header {
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
     background: #b30000;
+}
+
+/* lessons title  */
+
+.lessonsTitle1 {
+    font-size: 25px;
+    letter-spacing: 10px;
+}
+.lessonsTitle2 {
+    color: gray;
+    letter-spacing: 10px;
+    font-size: 20px;
+}
+
+
+.lessons1,
+.lessons2,
+.lessons3 {
+    height: 580px;
+    overflow-y: scroll;
+    border-radius: 20px;
+    box-shadow: 3px 3px 10px #5656566b;
+    padding: 10px;
+    transition: .5s;
+    text-align: center;
+    margin-top: 10px;
+    position: relative;
+}
+.lessonsName{
+    position: sticky;
+    top:0;
+    background-color: white;
+    color:var(--tcolor2);
+    border-radius: 10px;
+    padding: 5px;
+    letter-spacing: 10px;
+}
+
+.lessons1,.lessons2,.lessons3 {
+    background-image: url("./assets/images/background/galaxy.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.lessons1:hover{
+    height: 610px;
+}
+.lessons2:hover{
+    height: 610px;
+}
+.lessons3:hover{
+    height: 610px;
+}
+.lessonsChapter{
+    background-color: white;
+    color:var(--tcolor2);
+    display: inline-block;
+    width: 100%;
+    padding: 10px 0;
+    font-size: 18px;
+    text-decoration: none;
+    margin:5px 0;
+    letter-spacing: 5px;
+    transition: 1s;
+}
+.lessonsChapter:hover{
+    font-size: 20px;
+    padding: 15px 0;
 }
