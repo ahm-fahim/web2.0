@@ -5,12 +5,16 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>WEB2.0</title>
+
+        <!-- bootstrap cdn  -->
         <link
             href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
             rel="stylesheet"
             integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
             crossorigin="anonymous"
         />
+
+        <!-- font awesome cdn  -->
         <link
             rel="stylesheet"
             href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
@@ -18,55 +22,73 @@
             crossorigin="anonymous"
             referrerpolicy="no-referrer"
         />
-        <link rel="stylesheet" href="./style.css" />
 
-        <!-- TEXT FONT LINK  -->
+        <!-- google font for logo -->
         <link
             href="https://fonts.cdnfonts.com/css/gravedigger"
             rel="stylesheet"
         />
+        <!-- scrollbar hiding css file  -->
+        <link rel="stylesheet" href="./0-Docs/scrollbar.css" />
 
-        <style>
-            html,
-            body {
-                margin: 0;
-                padding: 0;
-                height: 100%;
-            }
-
-            .background {
-                position: absolute;
-                display: block;
-                top: 0;
-                left: 0;
-                z-index: 0;
-            }
-
-        </style>
+        <!-- default css file  -->
+        <link rel="stylesheet" href="./style.css" />
     </head>
     <body>
-        <header
-            id="headerBG"
-            class="fixed-top container-fluid d-flex align-items-center"
-        >
-            <div
-                class="container logo d-flex align-items-center justify-content-between"
-            >
-                <div>
-                    <img src="./assets/images/logo/lg1.png" alt="" />
-                    <span id="logo">2.0</span>
-                </div>
-                <div class="d-flex justify-content-between">
-                    <a href="#lessonsSection" class="navLink">Lessons</a>
-                    <a href="#projectSection" class="navLink">Project</a>
-                    <button id="google_translate"></button>
-                    <button class="themeBtn" onclick="myFunction()">
-                        <i class="fa-solid fa-moon"></i>
-                    </button>
+        <!-- NAVIGATION SECTION  -->
+        <nav class="navbar navbar-expand-lg header fixed-top">
+            <div class="container logo">
+                <a class="navbar-brand fw-bold text-white fs-3" href="#">
+                    <div>
+                        <img
+                            src="./assets/images/logo/lg1.png"
+                            alt=""
+                            class="logoImg"
+                        />
+                         <span class="text-warning fw-bold">WEB</span><span id="logo" class="logoText">2.0</span>
+                    </div>
+                </a>
+                <button
+                    class="navbar-toggler"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation"
+                >
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div
+                    class="collapse navbar-collapse"
+                    id="navbarSupportedContent"
+                >
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a href="#lessonsSection" class="navLink nav-link"
+                                >Lessons</a
+                            >
+                        </li>
+                        <li class="nav-item">
+                            <a href="#projectSection" class="navLink nav-link"
+                                >Project</a
+                            >
+                        </li>
+                        <li class="nav-item">
+                            <button id="google_translate"></button>
+                        </li>
+                        <li class="nav-item">
+                            <button class="themeBtn" onclick="myFunction()">
+                                <i class="fa-solid fa-moon"></i>
+                            </button>
+                        </li>
+                    </ul>
                 </div>
             </div>
-        </header>
-        <!-- cover section  -->
+        </nav>
+        <!-- END NAVIGATION SECTION  -->
+
+        <!-- COVER SECTION  -->
         <section id="coverBG" class="container-fluid coverBG">
             <div class="coverText">
                 <div>
@@ -93,7 +115,12 @@
                 </div>
             </div>
         </section>
+
+        <!-- particles canvas  -->
         <canvas class="background"></canvas>
+        <!-- END COVER SECTION -->
+
+        <!-- MAIN SECTION  -->
         <main class="main-section mt-2">
             <!-- project section  -->
             <section id="projectSection" class="container pb-5 projectBG">
@@ -107,40 +134,10 @@
                     </div>
                 </div>
                 <!-- project row  -->
+
+                <!-- TOP PROJECT  -->
                 <div class="row">
-                    <!-- col-5  -->
-                    <div
-                        class="col-lg-4 col-md-6 col-sm-12 mt-5 d-flex justify-content-center"
-                    >
-                        <div class="project-item">
-                            <div class="project-item-img">
-                                <img
-                                    class="project-item-img1"
-                                    src="./assets/project-ss/jokes-1.png"
-                                    alt=""
-                                />
-                                <img
-                                    class="project-item-img2"
-                                    src="./assets/project-ss/jokes-2.png"
-                                    alt=""
-                                />
-                                <h1 class="project-item-title">Jokes</h1>
-                            </div>
-                            <div class="project-link-wrapper">
-                                <a
-                                    class="project-link"
-                                    target="_blank"
-                                    href="./10.JS-DOM/03-dom-project/05-jokes/index.html"
-                                    >Live Preview
-                                    <i class="fa-solid fa-eye ps-2"></i>
-                                </a>
-                                <p class="project-technology">
-                                    HTML5, Bootstrap, JS
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- col-4  -->
+                    <!-- project 1  -->
                     <div
                         class="col-lg-4 col-md-6 col-sm-12 mt-5 d-flex justify-content-center"
                     >
@@ -172,7 +169,7 @@
                             </div>
                         </div>
                     </div>
-                    <!-- col-3  -->
+                    <!-- project 2 -->
                     <div
                         class="col-lg-4 col-md-6 col-sm-12 mt-5 d-flex justify-content-center"
                     >
@@ -204,7 +201,7 @@
                             </div>
                         </div>
                     </div>
-                    <!-- col-2 -->
+                    <!-- project 3  -->
                     <div
                         class="col-lg-4 col-md-6 col-sm-12 mt-5 d-flex justify-content-center"
                     >
@@ -238,7 +235,12 @@
                             </div>
                         </div>
                     </div>
-                    <!-- col-1 -->
+                </div>
+                <!-- End TOP PROJECT  -->
+
+                <!-- MORE PROJECT ROW  -->
+                <div id="moreProectRow" class="row">
+                    <!-- col-3  -->
                     <div
                         class="col-lg-4 col-md-6 col-sm-12 mt-5 d-flex justify-content-center"
                     >
@@ -268,10 +270,48 @@
                             </div>
                         </div>
                     </div>
-
+                    <!-- col-2 -->
+                    <div
+                        class="col-lg-4 col-md-6 col-sm-12 mt-5 d-flex justify-content-center"
+                    >
+                        <div class="project-item">
+                            <div class="project-item-img">
+                                <img
+                                    class="project-item-img1"
+                                    src="./assets/project-ss/jokes-1.png"
+                                    alt=""
+                                />
+                                <img
+                                    class="project-item-img2"
+                                    src="./assets/project-ss/jokes-2.png"
+                                    alt=""
+                                />
+                                <h1 class="project-item-title">Jokes</h1>
+                            </div>
+                            <div class="project-link-wrapper">
+                                <a
+                                    class="project-link"
+                                    target="_blank"
+                                    href="./10.JS-DOM/03-dom-project/05-jokes/index.html"
+                                    >Live Preview
+                                    <i class="fa-solid fa-eye ps-2"></i>
+                                </a>
+                                <p class="project-technology">
+                                    HTML5, Bootstrap, JS
+                                </p>
+                            </div>
+                        </div>
+                    </div>
                     <!-- col-1  -->
                 </div>
+                <!--End  MORE PROJECT ROW  -->
+                <div class="container mt-5 d-flex justify-content-end">
+                    <button id="showProjectBtn" class="btn btn-warning">
+                        More Project
+                    </button>
+                </div>
             </section>
+            <!--end project section  -->
 
             <!-- lessons section  -->
             <hr />
@@ -283,79 +323,177 @@
                         I was learning languages.
                     </h4>
                 </div>
-                <div class="lessons row">
+                <div class="lessons row mt-5">
                     <!-- lessons 1 -->
                     <div class="col-lg-4 col-md-6 col-sm-12">
-                        <div class="lessons1">
-                            <h1 class="lessonsName">
-                                Javascript
+                        <div class="fullLessons">
+                            <div
+                                class="lessonsCover d-flex justify-content-center align-items-center"
+                            >
                                 <img
                                     src="./assets/images/lessons/js.png"
                                     alt=""
-                                    width="50"
-                                    height="50"
                                 />
-                            </h1>
-                            <div>
-                                <a href="./07-Javascript/00-introduction/index.html" target="_blank" class="lessonsChapter">00-Introduction</a>
-                                <a href="./07-Javascript/01-statementsSyntaxComments/statement.js" target="_blank" class="lessonsChapter">01-Statement</a>
-                                <a href="./07-Javascript/01-statementsSyntaxComments/syntax.js" target="_blank" class="lessonsChapter">02-Syntax</a>
-                                <a href="./07-Javascript/01-statementsSyntaxComments/operator.js" target="_blank" class="lessonsChapter">03-Operator</a>
-                                <a href="./07-Javascript/01-statementsSyntaxComments/literals.js" target="_blank" class="lessonsChapter">04-Literals</a>
-                                <a href="./07-Javascript/02-varLetConst/var.js" target="_blank" class="lessonsChapter">05-Var</a>
-                                <a href="./07-Javascript/02-varLetConst/let.js" target="_blank" class="lessonsChapter">06-Let</a>
-                                <a href="./07-Javascript/02-varLetConst/const.js" target="_blank" class="lessonsChapter">07-const</a>
-                                <a href="./07-Javascript/03-operators/operators.js" target="_blank" class="lessonsChapter">08-Operators Details</a>
-                                <a href="./07-Javascript/03-operators/arithmetic.js" target="_blank" class="lessonsChapter">09-Arithmetic Operator</a>
-                                <a href="./07-Javascript/03-operators/assignment.js" target="_blank" class="lessonsChapter">10-Assignment Operator</a>
-                                <a href="./07-Javascript/04-dataTypes/datatype.js" target="_blank" class="lessonsChapter">10-Datatypes</a>
-
-
-
+                            </div>
+                            <div class="lessonsBody">
+                                <h1 class="lessonsName">
+                                    Javascript
+                                    <img
+                                        src="./assets/images/lessons/js.png"
+                                        alt=""
+                                        width="50"
+                                        height="50"
+                                    />
+                                </h1>
+                                <div>
+                                    <a
+                                        href="./07-Javascript/00-introduction/index.html"
+                                        target="_blank"
+                                        class="lessonsChapter"
+                                        >00-Introduction</a
+                                    >
+                                    <a
+                                        href="./07-Javascript/01-statementsSyntaxComments/statement.js"
+                                        target="_blank"
+                                        class="lessonsChapter"
+                                        >01-Statement</a
+                                    >
+                                    <a
+                                        href="./07-Javascript/01-statementsSyntaxComments/syntax.js"
+                                        target="_blank"
+                                        class="lessonsChapter"
+                                        >02-Syntax</a
+                                    >
+                                    <a
+                                        href="./07-Javascript/01-statementsSyntaxComments/operator.js"
+                                        target="_blank"
+                                        class="lessonsChapter"
+                                        >03-Operator</a
+                                    >
+                                    <a
+                                        href="./07-Javascript/01-statementsSyntaxComments/literals.js"
+                                        target="_blank"
+                                        class="lessonsChapter"
+                                        >04-Literals</a
+                                    >
+                                    <a
+                                        href="./07-Javascript/02-varLetConst/var.js"
+                                        target="_blank"
+                                        class="lessonsChapter"
+                                        >05-Var</a
+                                    >
+                                    <a
+                                        href="./07-Javascript/02-varLetConst/let.js"
+                                        target="_blank"
+                                        class="lessonsChapter"
+                                        >06-Let</a
+                                    >
+                                    <a
+                                        href="./07-Javascript/02-varLetConst/const.js"
+                                        target="_blank"
+                                        class="lessonsChapter"
+                                        >07-const</a
+                                    >
+                                    <a
+                                        href="./07-Javascript/03-operators/operators.js"
+                                        target="_blank"
+                                        class="lessonsChapter"
+                                        >08-Operators Details</a
+                                    >
+                                    <a
+                                        href="./07-Javascript/03-operators/arithmetic.js"
+                                        target="_blank"
+                                        class="lessonsChapter"
+                                        >09-Arithmetic Operator</a
+                                    >
+                                    <a
+                                        href="./07-Javascript/03-operators/assignment.js"
+                                        target="_blank"
+                                        class="lessonsChapter"
+                                        >10-Assignment Operator</a
+                                    >
+                                    <a
+                                        href="./07-Javascript/04-dataTypes/datatype.js"
+                                        target="_blank"
+                                        class="lessonsChapter"
+                                        >10-Datatypes</a
+                                    >
+                                </div>
                             </div>
                         </div>
                     </div>
                     <!-- lessons 2 -->
-                    <div class=" col-lg-4 col-md-6 col-sm-12">
-                        <div class="lessons2">
-                            <h1 class="lessonsName">
-                            comming soon
-                            <img
-                                src="./assets/images/lessons/html.png"
-                                alt="html"
-                                width="50"
-                                height="50"
-                            />
-                            
-                        </h1>
+                    <div class="col-lg-4 col-md-6 col-sm-12">
+                        <div class="fullLessons">
+                            <div
+                                class="lessonsCover d-flex justify-content-center align-items-center"
+                            >
+                                <img
+                                    src="./assets/images/lessons/html.png"
+                                    alt=""
+                                />
+                            </div>
+                            <div class="lessonsBody">
+                                <h1 class="lessonsName">
+                                    comming soon
+                                    <img
+                                        src="./assets/images/lessons/html.png"
+                                        alt="html"
+                                        width="50"
+                                        height="50"
+                                    />
+                                </h1>
+                            </div>
                         </div>
                     </div>
                     <!-- lessons 3 -->
-                    <div class=" col-lg-4 col-md-6 col-sm-12">
-                        <div class="lessons3">
-                            <h1 class="lessonsName">
-                            comming soon
-                            <img
-                                src="./assets/images/lessons/css.png"
-                                alt="css"
-                                width="50"
-                                height="50"
-                            />
-                        </h1>
+                    <div class="col-lg-4 col-md-6 col-sm-12">
+                        <div class="fullLessons">
+                            <div
+                                class="lessonsCover d-flex justify-content-center align-items-center"
+                            >
+                                <img
+                                    src="./assets/images/lessons/css.png"
+                                    alt=""
+                                />
+                            </div>
+                            <div class="lessonsBody">
+                                <h1 class="lessonsName">
+                                    comming soon
+                                    <img
+                                        src="./assets/images/lessons/css.png"
+                                        alt="html"
+                                        width="50"
+                                        height="50"
+                                    />
+                                </h1>
+                            </div>
                         </div>
                     </div>
                 </div>
             </section>
+            <!-- end lessons section  -->
+
         </main>
-        <!-- script file  -->
+        <!--END MAIN SECTION  -->
+
+        <!--`````````````````-->
+        <!-- SCRIPT SECTION  -->
+
+        <!-- default JS file  -->
+        <script src="./index.js"></script>
+
+        <!-- bootstrap -->
         <script
             src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
             integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
             crossorigin="anonymous"
         ></script>
-        <script src="./index.js"></script>
+
+        <!-- google translate  -->
         <script src="https://translate.google.com/translate_a/element.js?cb=loadGoogleTranslate"></script>
-        <!-- animation -->
+
+        <!-- particles -->
         <script src="./assets/animation/particles-2/dist/particles.min.js"></script>
     </body>
 </html>

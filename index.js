@@ -1,6 +1,6 @@
 function myFunction() {
     const element = document.body;
-    const header = document.getElementById('headerBG');
+    const header = document.getElementById("headerBG");
     element.classList.toggle("dark-mode");
     header.classList.toggle("dark-mode");
 }
@@ -21,3 +21,11 @@ window.onload = function () {
         minParticles: 10,
     });
 };
+
+//project show hide
+const showBtn = document.getElementById("showProjectBtn");
+
+showBtn.addEventListener("click", () => {
+    const projectRow = document.getElementById("moreProectRow");
+    projectRow.style.display = "block";
+});

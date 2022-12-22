@@ -1,18 +1,3 @@
-:root {
-    --tcolor1: #ffff;
-    --tcolor2: #242b2e;
-    --tcolor3: #0d6efd;
-    --tcolor4: #eff6ff;
-    --tcolor5: #dbeafe;
-    --tcolor6: #16242e;
-    --tcolor7: #a2e7a2;
-    --tcolor8: #fcfa8c;
-}
-html,
-body {
-    scroll-behavior: smooth;
-}
-
 @import url("https://fonts.cdnfonts.com/css/gravedigger");
 
 * {
@@ -20,47 +5,71 @@ body {
     padding: 0;
     margin: 0;
 }
+:root {
+    --primaryColor: #ffff;
+    --secondaryColor: #242b2e;
+    --hilightColor: #FFC107;
+    --themeColor: #16242e;
+    --shadowColor: #8080806b;
+    --glassColor:#242b2e94;
+    --offWhiteColor:#dcdcdc;
+}
 
+html,
 body {
-    background-color: white;
-    color: var(--tcolor2);
+    scroll-behavior: smooth;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+body {
+    background-color: var(--themeColor);
+    color: var(--primaryColor);
 }
 .dark-mode {
-    background-color: var(--tcolor6);
-    color: white;
+    background-color: var(--primaryColor);
+    color: var(--themeColor);
 }
+/* for particels  */
+.background {
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0;
+    z-index: 0;
+}
+
 .themeBtn {
     width: 30px;
     height: 30px;
     font-size: 22px;
     border: none;
-    box-shadow: 3px 3px 10px #8080806b;
+    box-shadow: 3px 3px 10px var(--shadowColor);
     border-radius: 100%;
 }
 #google_translate {
     height: 30px;
     overflow: hidden;
     border: none;
-    box-shadow: 3px 3px 10px #8080806b;
+    box-shadow: 3px 3px 10px var(--shadowColor);
     border-radius: 10px;
     margin: 0 4px;
 }
 /* Logo  */
-header {
-    background-color: #242b2e94;
-    border-bottom: 1px solid rgba(128, 128, 128, 0.23);
+.header {
+    background-color: var(--glassColor);
     width: 100%;
-    color: white;
+    color: var(--primaryColor);
     background-size: cover;
     background-repeat: none;
     height: 60px;
     margin-bottom: 0px;
 }
 
-.logo img {
+.logoImg{
     height: 40px;
 }
-.logo span {
+.logoText {
     font-weight: bold;
     font-family: "Gravedigger", sans-serif;
     font-size: 22px;
@@ -69,11 +78,11 @@ header {
     text-decoration: none;
     transition: 1s;
     letter-spacing: 5px;
-    color: white;
+    color: var(--primaryColor);
     padding-right: 5px;
 }
 .navLink:hover {
-    color: gray;
+    color: var(--hilightColor);
     text-decoration: underline transparent;
 }
 
@@ -87,11 +96,12 @@ header {
     background-size: cover;
 }
 .coverTitle {
-    letter-spacing: 20px;
+    letter-spacing: 10px;
+    font-family: "Gravedigger", sans-serif;
 }
 .coverTitle2 {
     letter-spacing: 10px;
-    color: rgb(183, 183, 183);
+    color: var(--offWhiteColor);
 }
 .coverText {
     position: relative;
@@ -110,16 +120,16 @@ header {
 }
 .gitBTN {
     height: 70px;
-    background-color: var(--tcolor2);
+    background-color: var(--secondaryColor);
     border-radius: 10px;
     border: none;
     padding: 10px;
-    color: white;
+    color: var(--primaryColor);
     text-decoration: none;
     width: 150px;
 }
 .gitBTN:hover {
-    color: white;
+    color: var(--primaryColor);
 }
 
 .gitBTN i {
@@ -141,10 +151,11 @@ header {
 .project-title1 {
     letter-spacing: 10px;
     font-size: 25px;
+    color:var(--hilightColor);
 }
 .project-title2 {
     font-size: 20px;
-    color: gray;
+    color: var(--offWhiteColor);
     letter-spacing: 10px;
 }
 .projectBG {
@@ -168,7 +179,7 @@ header {
     bottom: 45px;
     width: 100%;
     padding: 10px;
-    box-shadow: 3px 3px 10px #5656566b;
+    box-shadow: 3px 3px 10px var(--shadowColor);
 }
 .project-item-img2 {
     height: 300px;
@@ -178,7 +189,7 @@ header {
     right: 0;
     left: 40%;
     padding: 10px;
-    box-shadow: 3px 3px 10px #5656566b;
+    box-shadow: 3px 3px 10px var(--shadowColor);
 }
 .project-item-title {
     font-size: 25px;
@@ -192,12 +203,12 @@ header {
 
 .project-link {
     text-decoration: none;
-    color: var(--tcolor1);
+    color: var(--primaryColor);
     font-weight: bold;
-    background-color: var(--tcolor3);
+    background-color: var(--hilightColor);
     padding: 5px 10px;
     border-radius: 10px;
-    box-shadow: 3px 3px 10px #8080806b;
+    box-shadow: 3px 3px 10px var(--shadowColor);
     position: absolute;
     top: 50%;
     left: 32.5%;
@@ -206,7 +217,7 @@ header {
 .project-technology {
     text-align: center;
     font-weight: 900;
-    color: var(--tcolor2);
+    color: var(--secondaryColor);
     position: absolute;
     top: 40%;
     width: 100%;
@@ -214,7 +225,7 @@ header {
     letter-spacing: 3px;
 }
 .project-link:hover {
-    color: var(--tcolor1);
+    color: var(--primaryColor);
 }
 
 .project-item:hover .project-item-img {
@@ -226,94 +237,90 @@ header {
 .project-item:hover .project-technology {
     display: block;
 }
+#moreProectRow {
+    display: none;
+}
+#showProjectBtn {
+    letter-spacing: 5px;
+}
 /* project end  */
-/* width */
-::-webkit-scrollbar {
-    width: 0px;
-}
-
-/* Track */
-::-webkit-scrollbar-track {
-    box-shadow: inset 0 0 5px grey;
-    border-radius: 10px;
-}
-
-/* Handle */
-::-webkit-scrollbar-thumb {
-    background: gray;
-    border-radius: 10px;
-}
-
-/* Handle on hover */
-::-webkit-scrollbar-thumb:hover {
-    background: #b30000;
-}
 
 /* lessons title  */
 
 .lessonsTitle1 {
     font-size: 25px;
     letter-spacing: 10px;
+    color:var(--hilightColor);
 }
 .lessonsTitle2 {
-    color: gray;
+    color: var(--offWhiteColor);
     letter-spacing: 10px;
     font-size: 20px;
 }
-
-
-.lessons1,
-.lessons2,
-.lessons3 {
-    height: 580px;
-    overflow-y: scroll;
-    border-radius: 20px;
-    box-shadow: 3px 3px 10px #5656566b;
-    padding: 10px;
-    transition: .5s;
-    text-align: center;
-    margin-top: 10px;
+.fullLessons {
+    width: 100%;
+    height: 300px;
+    float: left;
+    margin: 1%;
+    margin-left: 2%;
     position: relative;
-}
-.lessonsName{
-    position: sticky;
-    top:0;
-    background-color: white;
-    color:var(--tcolor2);
+    overflow: hidden;
     border-radius: 10px;
+    border: 1px solid var(--offWhiteColor);
+}
+
+.lessonsCover {
+    height: 300px;
+    width: 100%;
+    padding: 10px;
+    font-size: 60px;
+}
+.lessonsCover img {
+    height: 200px;
+}
+
+.lessonsBody {
+    position: absolute;
+    background: var(--glassColor);
+    height: 100%;
+    width: 100%;
+    top: -100%;
+    left: 0;
+    color: var(--primaryColor);
+    text-align: center;
+    box-sizing: border-box;
+    transition: all 0.5s;
+    overflow-y: scroll;
+}
+
+.fullLessons:hover .lessonsBody {
+    top: 0;
+}
+
+.lessonsName {
+    position: sticky;
+    top: 0;
+    background-color: var(--primaryColor);
+    color: var(--secondaryColor);
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
     padding: 5px;
     letter-spacing: 10px;
 }
 
-.lessons1,.lessons2,.lessons3 {
-    background-image: url("./assets/images/background/galaxy.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-.lessons1:hover{
-    height: 610px;
-}
-.lessons2:hover{
-    height: 610px;
-}
-.lessons3:hover{
-    height: 610px;
-}
-.lessonsChapter{
-    background-color: white;
-    color:var(--tcolor2);
+.lessonsChapter {
+    background-color: var(--primaryColor);
+    color: var(--secondaryColor);
     display: inline-block;
     width: 100%;
     padding: 10px 0;
     font-size: 18px;
     text-decoration: none;
-    margin:5px 0;
+    margin: 5px 0;
     letter-spacing: 5px;
     transition: 1s;
 }
-.lessonsChapter:hover{
+.lessonsChapter:hover {
     font-size: 20px;
     padding: 15px 0;
 }
