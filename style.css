@@ -47,6 +47,11 @@ body {
     box-shadow: 3px 3px 10px var(--shadowColor);
     border-radius: 100%;
 }
+
+.toggleBTN{
+    border:none;
+}
+
 #google_translate {
     height: 30px;
     overflow: hidden;
@@ -62,7 +67,6 @@ body {
     color: var(--primaryColor);
     background-size: cover;
     background-repeat: none;
-    height: 60px;
     margin-bottom: 0px;
 }
 
