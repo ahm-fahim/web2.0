@@ -28,4 +28,5 @@ const showBtn = document.getElementById("showProjectBtn");
 showBtn.addEventListener("click", () => {
     const projectRow = document.getElementById("moreProectRow");
     projectRow.style.display = "block";
+    projectRow.style.display = "flex";
 });
