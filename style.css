@@ -40,9 +40,14 @@ body {
 }
 
 .themeBtn {
-    width: 30px;
-    height: 30px;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content:center ;
     font-size: 22px;
+    color: var(--hilightColor);
+    background-color: var(--glassColor);
     border: none;
     box-shadow: 3px 3px 10px var(--shadowColor);
     border-radius: 100%;
@@ -160,7 +165,7 @@ body {
 .project-title2 {
     font-size: 20px;
     color: var(--offWhiteColor);
-    letter-spacing: 10px;
+    letter-spacing: 5px;
 }
 .projectBG {
     background-image: url("./assets/images/background/bg12.png");
@@ -168,6 +173,7 @@ body {
     background-repeat: no-repeat;
     height: 100%;
     padding-top: 100px;
+    background-attachment: fixed;
 }
 .project-item {
     position: relative;
@@ -250,7 +256,9 @@ body {
 /* project end  */
 
 /* lessons title  */
-
+#lessonsSection{
+    position: relative;
+}
 .lessonsTitle1 {
     font-size: 25px;
     letter-spacing: 10px;
@@ -258,7 +266,7 @@ body {
 }
 .lessonsTitle2 {
     color: var(--offWhiteColor);
-    letter-spacing: 10px;
+    letter-spacing: 5px;
     font-size: 20px;
 }
 .fullLessons {

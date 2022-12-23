@@ -31,6 +31,8 @@
         <!-- scrollbar hiding css file  -->
         <link rel="stylesheet" href="./0-Docs/scrollbar.css" />
 
+        <link rel="stylesheet" href="./0-Docs/moveBG/movebg.css" />
+
         <!-- default css file  -->
         <link rel="stylesheet" href="./style.css" />
     </head>
@@ -49,17 +51,23 @@
                         ><span id="logo" class="logoText">2.0</span>
                     </div>
                 </a>
-                <button
-                    class="navbar-toggler toggleBTN "
-                    type="button"
-                    data-bs-toggle="offcanvas"
-                    data-bs-target="#offcanvasDarkNavbar"
-                    aria-controls="offcanvasDarkNavbar"
-                >
-                    <span class="navbar-toggler-icon"></span>
-                </button>
+                <div class="d-flex">
+                    <button onclick="themeFunc()" class="themeBtn mx-2">
+                        <i class="fa-solid fa-cloud-sun"></i>
+                    </button>
+                    <button
+                        class="navbar-toggler toggleBTN"
+                        type="button"
+                        data-bs-toggle="offcanvas"
+                        data-bs-target="#offcanvasDarkNavbar"
+                        aria-controls="offcanvasDarkNavbar"
+                    >
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    
+                </div>
                 <div
-                    class="offcanvas offcanvas-end header"
+                    class="offcanvas offcanvas-end text-bg-dark"
                     tabindex="-1"
                     id="offcanvasDarkNavbar"
                     aria-labelledby="offcanvasDarkNavbarLabel"
@@ -85,20 +93,22 @@
                         >
                             <li class="nav-item">
                                 <a
-                                    class="nav-link active"
+                                    class="nav-link navLink"
                                     aria-current="page"
                                     href="#"
                                     >Home</a
                                 >
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#projectSection"
+                                <a
+                                    class="nav-link navLink"
+                                    href="#projectSection"
                                     >Projects</a
                                 >
                             </li>
                             <li class="nav-item dropdown">
                                 <a
-                                    class="nav-link dropdown-toggle"
+                                    class="nav-link dropdown-toggle navLink"
                                     href="#lessonsSection"
                                     role="button"
                                     data-bs-toggle="dropdown"
@@ -108,21 +118,24 @@
                                 </a>
                                 <ul class="dropdown-menu dropdown-menu-dark">
                                     <li>
-                                        <a class="dropdown-item" href="#"
-                                            >Action</a
+                                        <a
+                                            class="dropdown-item navLink"
+                                            href="#js"
+                                            >Javascript</a
                                         >
                                     </li>
                                     <li>
-                                        <a class="dropdown-item" href="#"
-                                            >Another action</a
+                                        <a
+                                            class="dropdown-item navLink"
+                                            href="#html"
+                                            >HTML5</a
                                         >
                                     </li>
                                     <li>
-                                        <hr class="dropdown-divider" />
-                                    </li>
-                                    <li>
-                                        <a class="dropdown-item" href="#"
-                                            >Something else here</a
+                                        <a
+                                            class="dropdown-item navLink"
+                                            href="#css"
+                                            >CSS3</a
                                         >
                                     </li>
                                 </ul>
@@ -170,7 +183,7 @@
         <main class="main-section mt-2">
             <!-- project section  -->
             <section id="projectSection" class="container pb-5 projectBG">
-                <div class="d-flex justify-content-center">
+                <div class="">
                     <div>
                         <h1 class="project-title1">Projects</h1>
                         <h3 class="project-title2">
@@ -362,162 +375,171 @@
             <!-- lessons section  -->
             <hr />
             <section id="lessonsSection" class="container pb-5">
-                <div class="pt-5 mt-3">
-                    <h1 class="lessonsTitle1">Lessons</h1>
-                    <h4 class="lessonsTitle2">
-                        Documentation of some code and notes thats I wrote when
-                        I was learning languages.
-                    </h4>
-                </div>
-                <div class="lessons row mt-5">
-                    <!-- lessons 1 -->
-                    <div class="col-lg-4 col-md-6 col-sm-12">
-                        <div class="fullLessons">
-                            <div
-                                class="lessonsCover d-flex justify-content-center align-items-center"
+                <div class="context">
+                    <div class="pt-5 mt-3">
+                        <h1 class="lessonsTitle1">Lessons</h1>
+                        <h4 class="lessonsTitle2">
+                            Documentation of some code and notes thats I wrote
+                            when I was learning languages.
+                            <span class="text-warning"
+                                >Hover and Scrool down bottom carts.</span
                             >
-                                <img
-                                    src="./assets/images/lessons/js.png"
-                                    alt=""
-                                />
-                            </div>
-                            <div class="lessonsBody">
-                                <h1 class="lessonsName">
-                                    Javascript
+                        </h4>
+                    </div>
+                    <div class="lessons row mt-5">
+                        <!-- lessons 1 -->
+                        <div id="js" class="col-lg-4 col-md-6 col-sm-12">
+                            <div class="fullLessons">
+                                <div
+                                    class="lessonsCover d-flex justify-content-center align-items-center"
+                                >
                                     <img
                                         src="./assets/images/lessons/js.png"
                                         alt=""
-                                        width="50"
-                                        height="50"
                                     />
-                                </h1>
-                                <div>
-                                    <a
-                                        href="./07-Javascript/00-introduction/index.html"
-                                        target="_blank"
-                                        class="lessonsChapter"
-                                        >00-Introduction</a
-                                    >
-                                    <a
-                                        href="./07-Javascript/01-statementsSyntaxComments/statement.js"
-                                        target="_blank"
-                                        class="lessonsChapter"
-                                        >01-Statement</a
-                                    >
-                                    <a
-                                        href="./07-Javascript/01-statementsSyntaxComments/syntax.js"
-                                        target="_blank"
-                                        class="lessonsChapter"
-                                        >02-Syntax</a
-                                    >
-                                    <a
-                                        href="./07-Javascript/01-statementsSyntaxComments/operator.js"
-                                        target="_blank"
-                                        class="lessonsChapter"
-                                        >03-Operator</a
-                                    >
-                                    <a
-                                        href="./07-Javascript/01-statementsSyntaxComments/literals.js"
-                                        target="_blank"
-                                        class="lessonsChapter"
-                                        >04-Literals</a
-                                    >
-                                    <a
-                                        href="./07-Javascript/02-varLetConst/var.js"
-                                        target="_blank"
-                                        class="lessonsChapter"
-                                        >05-Var</a
-                                    >
-                                    <a
-                                        href="./07-Javascript/02-varLetConst/let.js"
-                                        target="_blank"
-                                        class="lessonsChapter"
-                                        >06-Let</a
-                                    >
-                                    <a
-                                        href="./07-Javascript/02-varLetConst/const.js"
-                                        target="_blank"
-                                        class="lessonsChapter"
-                                        >07-const</a
-                                    >
-                                    <a
-                                        href="./07-Javascript/03-operators/operators.js"
-                                        target="_blank"
-                                        class="lessonsChapter"
-                                        >08-Operators Details</a
-                                    >
-                                    <a
-                                        href="./07-Javascript/03-operators/arithmetic.js"
-                                        target="_blank"
-                                        class="lessonsChapter"
-                                        >09-Arithmetic Operator</a
-                                    >
-                                    <a
-                                        href="./07-Javascript/03-operators/assignment.js"
-                                        target="_blank"
-                                        class="lessonsChapter"
-                                        >10-Assignment Operator</a
-                                    >
-                                    <a
-                                        href="./07-Javascript/04-dataTypes/datatype.js"
-                                        target="_blank"
-                                        class="lessonsChapter"
-                                        >10-Datatypes</a
-                                    >
+                                </div>
+                                <div class="lessonsBody">
+                                    <h1 class="lessonsName">
+                                        Javascript
+                                        <img
+                                            src="./assets/images/lessons/js.png"
+                                            alt=""
+                                            width="50"
+                                            height="50"
+                                        />
+                                    </h1>
+                                    <div>
+                                        <a
+                                            href="./07-Javascript/00-introduction/index.html"
+                                            target="_blank"
+                                            class="lessonsChapter"
+                                            >00-Introduction</a
+                                        >
+                                        <a
+                                            href="./07-Javascript/01-statementsSyntaxComments/statement.js"
+                                            target="_blank"
+                                            class="lessonsChapter"
+                                            >01-Statement</a
+                                        >
+                                        <a
+                                            href="./07-Javascript/01-statementsSyntaxComments/syntax.js"
+                                            target="_blank"
+                                            class="lessonsChapter"
+                                            >02-Syntax</a
+                                        >
+                                        <a
+                                            href="./07-Javascript/01-statementsSyntaxComments/operator.js"
+                                            target="_blank"
+                                            class="lessonsChapter"
+                                            >03-Operator</a
+                                        >
+                                        <a
+                                            href="./07-Javascript/01-statementsSyntaxComments/literals.js"
+                                            target="_blank"
+                                            class="lessonsChapter"
+                                            >04-Literals</a
+                                        >
+                                        <a
+                                            href="./07-Javascript/02-varLetConst/var.js"
+                                            target="_blank"
+                                            class="lessonsChapter"
+                                            >05-Var</a
+                                        >
+                                        <a
+                                            href="./07-Javascript/02-varLetConst/let.js"
+                                            target="_blank"
+                                            class="lessonsChapter"
+                                            >06-Let</a
+                                        >
+                                        <a
+                                            href="./07-Javascript/02-varLetConst/const.js"
+                                            target="_blank"
+                                            class="lessonsChapter"
+                                            >07-const</a
+                                        >
+                                        <a
+                                            href="./07-Javascript/03-operators/operators.js"
+                                            target="_blank"
+                                            class="lessonsChapter"
+                                            >08-Operators Details</a
+                                        >
+                                        <a
+                                            href="./07-Javascript/03-operators/arithmetic.js"
+                                            target="_blank"
+                                            class="lessonsChapter"
+                                            >09-Arithmetic Operator</a
+                                        >
+                                        <a
+                                            href="./07-Javascript/03-operators/assignment.js"
+                                            target="_blank"
+                                            class="lessonsChapter"
+                                            >10-Assignment Operator</a
+                                        >
+                                        <a
+                                            href="./07-Javascript/04-dataTypes/datatype.js"
+                                            target="_blank"
+                                            class="lessonsChapter"
+                                            >10-Datatypes</a
+                                        >
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- lessons 2 -->
+                        <div id="html" class="col-lg-4 col-md-6 col-sm-12">
+                            <div class="fullLessons">
+                                <div
+                                    class="lessonsCover d-flex justify-content-center align-items-center"
+                                >
+                                    <img
+                                        src="./assets/images/lessons/html.png"
+                                        alt=""
+                                    />
+                                </div>
+                                <div class="lessonsBody">
+                                    <h1 class="lessonsName">
+                                        comming soon
+                                        <img
+                                            src="./assets/images/lessons/html.png"
+                                            alt="html"
+                                            width="50"
+                                            height="50"
+                                        />
+                                    </h1>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- lessons 3 -->
+                        <div id="css" class="col-lg-4 col-md-6 col-sm-12">
+                            <div class="fullLessons">
+                                <div
+                                    class="lessonsCover d-flex justify-content-center align-items-center"
+                                >
+                                    <img
+                                        src="./assets/images/lessons/css.png"
+                                        alt=""
+                                    />
+                                </div>
+                                <div class="lessonsBody">
+                                    <h1 class="lessonsName">
+                                        comming soon
+                                        <img
+                                            src="./assets/images/lessons/css.png"
+                                            alt="html"
+                                            width="50"
+                                            height="50"
+                                        />
+                                    </h1>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <!-- lessons 2 -->
-                    <div class="col-lg-4 col-md-6 col-sm-12">
-                        <div class="fullLessons">
-                            <div
-                                class="lessonsCover d-flex justify-content-center align-items-center"
-                            >
-                                <img
-                                    src="./assets/images/lessons/html.png"
-                                    alt=""
-                                />
-                            </div>
-                            <div class="lessonsBody">
-                                <h1 class="lessonsName">
-                                    comming soon
-                                    <img
-                                        src="./assets/images/lessons/html.png"
-                                        alt="html"
-                                        width="50"
-                                        height="50"
-                                    />
-                                </h1>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- lessons 3 -->
-                    <div class="col-lg-4 col-md-6 col-sm-12">
-                        <div class="fullLessons">
-                            <div
-                                class="lessonsCover d-flex justify-content-center align-items-center"
-                            >
-                                <img
-                                    src="./assets/images/lessons/css.png"
-                                    alt=""
-                                />
-                            </div>
-                            <div class="lessonsBody">
-                                <h1 class="lessonsName">
-                                    comming soon
-                                    <img
-                                        src="./assets/images/lessons/css.png"
-                                        alt="html"
-                                        width="50"
-                                        height="50"
-                                    />
-                                </h1>
-                            </div>
-                        </div>
-                    </div>
+                </div>
+                <div class="area">
+                    <ul id="liItem" class="circles"></ul>
                 </div>
             </section>
+
             <!-- end lessons section  -->
         </main>
         <!--END MAIN SECTION  -->
@@ -540,5 +562,8 @@
 
         <!-- particles -->
         <script src="./assets/animation/particles-2/dist/particles.min.js"></script>
+
+        <!-- move bg  -->
+        <script src="./0-Docs/moveBG/movebg.js"></script>
     </body>
 </html>
