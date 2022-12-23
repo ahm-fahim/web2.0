@@ -30,6 +30,9 @@ body {
     background-color: var(--primaryColor);
     color: var(--themeColor);
 }
+#light-mode{
+    background-color: var(--primaryColor);
+}
 /* for particels  */
 .background {
     position: absolute;
@@ -93,6 +96,10 @@ body {
 .navLink:hover {
     color: var(--hilightColor);
     text-decoration: underline transparent;
+}
+#offcanvasDarkNavbar{
+    width: 250px;
+    background-color: var(--themeColor);
 }
 
 /* cover  */
