@@ -71,7 +71,7 @@ body {
 /* Logo  */
 .header {
     background-color: var(--glassColor);
-    width: 100%;
+    width: 90%;
     color: var(--primaryColor);
     background-size: cover;
     background-repeat: none;
