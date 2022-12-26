@@ -71,11 +71,14 @@ body {
 /* Logo  */
 .header {
     background-color: var(--glassColor);
-    width: 100%;
+    width: 90%;
     color: var(--primaryColor);
     background-size: cover;
     background-repeat: none;
     margin-bottom: 0px;
+    margin: 10px auto;
+    border-radius: 100px;
+    box-shadow: 2px 2px 50px var(--shadowColor);
 }
 
 .logoImg{
