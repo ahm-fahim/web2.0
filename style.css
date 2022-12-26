@@ -8,11 +8,11 @@
 :root {
     --primaryColor: #ffff;
     --secondaryColor: #242b2e;
-    --hilightColor: #FFC107;
+    --hilightColor: #ffc107;
     --themeColor: #16242e;
     --shadowColor: #8080806b;
-    --glassColor:#242b2e94;
-    --offWhiteColor:#dcdcdc;
+    --glassColor: #242b2e94;
+    --offWhiteColor: #dcdcdc;
 }
 
 html,
@@ -30,7 +30,7 @@ body {
     background-color: var(--primaryColor);
     color: var(--themeColor);
 }
-#light-mode{
+#light-mode {
     background-color: var(--primaryColor);
 }
 /* for particels  */
@@ -47,7 +47,7 @@ body {
     height: 40px;
     display: flex;
     align-items: center;
-    justify-content:center ;
+    justify-content: center;
     font-size: 22px;
     color: var(--hilightColor);
     background-color: var(--glassColor);
@@ -56,8 +56,8 @@ body {
     border-radius: 100%;
 }
 
-.toggleBTN{
-    border:none;
+.toggleBTN {
+    border: none;
 }
 
 #google_translate {
@@ -81,7 +81,7 @@ body {
     box-shadow: 2px 2px 50px var(--shadowColor);
 }
 
-.logoImg{
+.logoImg {
     height: 40px;
 }
 .logoText {
@@ -100,7 +100,7 @@ body {
     color: var(--hilightColor);
     text-decoration: underline transparent;
 }
-#offcanvasDarkNavbar{
+#offcanvasDarkNavbar {
     width: 250px;
     background-color: var(--themeColor);
 }
@@ -170,7 +170,7 @@ body {
 .project-title1 {
     letter-spacing: 10px;
     font-size: 25px;
-    color:var(--hilightColor);
+    color: var(--hilightColor);
 }
 .project-title2 {
     font-size: 20px;
@@ -266,13 +266,13 @@ body {
 /* project end  */
 
 /* lessons title  */
-#lessonsSection{
+#lessonsSection {
     position: relative;
 }
 .lessonsTitle1 {
     font-size: 25px;
     letter-spacing: 10px;
-    color:var(--hilightColor);
+    color: var(--hilightColor);
 }
 .lessonsTitle2 {
     color: var(--offWhiteColor);
